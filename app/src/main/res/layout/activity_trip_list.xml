@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hw.survey.activity.TripListActivity">
+    <RelativeLayout
+        android:background="#105df0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:src="@drawable/ic_back"
+            android:padding="15dp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#eeeeee"
+            android:text="出行列表"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:padding="8dp"
+                android:background="#eeeeee"
+                android:id="@+id/family_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></ListView>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                android:padding="8dp"
+                android:layout_height="50dp">
+                <Button
+                    android:id="@+id/btn_new"
+                    android:background="#105df0"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="#eeeeee"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="新建出行"/>
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="#67a35a"
+                    android:text="保存"
+                    android:textColor="#eeeeee" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/inHomeArea"
+            android:background="#81000000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:padding="16dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:layout_width="500dp"
+                android:layout_height="200dp">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="请选择该成员没有出行的原因："
+                    android:textSize="20sp"
+                    android:textColor="#666666"/>
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:id="@+id/inHomeReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textColor="#666666"/>
+                <TextView
+                    android:id="@+id/inHomeConfirm"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="18dp"
+                    android:background="#105df0"
+                    android:gravity="center"
+                    android:paddingRight="16dp"
+                    android:textColor="#eeeeee"
+                    android:text="确定"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

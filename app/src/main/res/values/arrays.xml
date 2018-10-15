@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="traffic_way">
+        <item>步行</item>
+        <item>自驾小汽车</item>
+        <item>乘坐小汽车</item>
+        <item>轨道</item>
+        <item>公交车</item>
+        <item>出租车</item>
+        <item>单位班车</item>
+        <item>校车</item>
+        <item>网约车</item>
+        <item>拼车、顺风车</item>
+        <item>摩托车</item>
+        <item>货车</item>
+        <item>共享汽车</item>
+        <item>自行车</item>
+        <item>共享单车</item>
+        <item>电动车</item>
+        <item>黑车</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="stop_place_complan">
+        <item>单位内停车场</item>
+        <item>公共停车场</item>
+        <item>路边及其他免费停车位</item>
+        <item>路边收费停车位</item>
+        <item>其它停车场</item>
+    </string-array>
+
+    <string-array name="stop_place_trip">
+        <item>路边免费停车位</item>
+        <item>路边收费停车位</item>
+        <item>公共停车场</item>
+        <item>建筑配建停车场</item>
+    </string-array>
+
+    <string-array name="stop_place">
+        <item>小区内停车位</item>
+        <item>路边及其他免费停车位</item>
+        <item>路边收费停车位</item>
+        <item>公共停车场</item>
+        <item>其它停车场</item>
+    </string-array>
+    <string-array name="stop_fee">
+        <item>免费</item>
+        <item>100元以下</item>
+        <item>100至200元（含）</item>
+        <item>200至300元（含）</item>
+        <item>300至400元（含）</item>
+        <item>400至500元（含）</item>
+        <item>500元以上</item>
+    </string-array>
+
+    <string-array name="work_in_home">
+        <item>在家或者本小区内工作</item>
+        <item>无业或离退休人员，无工作地</item>
+        <item>自由职业者，无固定工作地</item>
+    </string-array>
+
+    <string-array name="total_income">
+        <item>4000元以下</item>
+        <item>4001～6000元</item>
+        <item>6001～8000元</item>
+        <item>8001～10000元</item>
+        <item>10001～20000元</item>
+        <item>20001～30000元</item>
+        <item>30001～50000元</item>
+        <item>50000元以上</item>
+    </string-array>
+
+    <string-array name="price">
+        <item>5万以下</item>
+        <item>5万至10万</item>
+        <item>10万至20万</item>
+        <item>20万至30万</item>
+        <item>30万至50万</item>
+        <item>50万以上</item>
+    </string-array>
+    <string-array name="oil_fee">
+        <item>纯电动无燃油费</item>
+        <item>200元以下</item>
+        <item>200至500元</item>
+        <item>500至1000元</item>
+        <item>1000至2000元</item>
+        <item>2000元以上</item>
+    </string-array>
+    <string-array name="long_way">
+        <item>5000公里以下</item>
+        <item>5000至10000公里</item>
+        <item>10000至20000公里</item>
+        <item>20000公里以上</item>
+    </string-array>
+    <string-array name="buy_plan">
+        <item>计划今年内购买</item>
+        <item>计划三年内购买</item>
+        <item>计划五年内购买</item>
+        <item>无购买计划</item>
+    </string-array>
+    <string-array name="house_type">
+        <item>别墅、洋房、大户型</item>
+        <item>一般住房</item>
+        <item>老旧住房</item>
+        <item>公租房</item>
+    </string-array>
+    <string-array name="house_age">
+        <item>九十年代以前</item>
+        <item>九十年代</item>
+        <item>2000年至2004年</item>
+        <item>2005年至2009年</item>
+        <item>2010年至2014年</item>
+        <item>2015年</item>
+        <item>2016年</item>
+        <item>2017年及以后</item>
+    </string-array>
+
+    <string-array name="house_size">
+        <item>150平米以上</item>
+        <item>100至150平米（含）</item>
+        <item>80至100平米（含）</item>
+        <item>60至80平米（含）</item>
+        <item>40至60平米（含）</item>
+        <item>40平米及以下</item>
+    </string-array>
+
+    <string-array name="house_belong">
+        <item>自有住房</item>
+        <item>租（借）住房</item>
+        <item>雇主提供</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="earth_type">
+        <item>居住</item>
+        <item>商务办公</item>
+        <item>行政办公</item>
+        <item>商住两用</item>
+        <item>商业</item>
+        <item>宾馆</item>
+        <item>医疗</item>
+        <item>学校</item>
+        <item>工业</item>
+        <item>仓储</item>
+        <item>汽车站、火车站、机场等</item>
+        <item>公园、游乐园</item>
+        <item>其它</item>
+    </string-array>
+
+    <string-array name="carree">
+        <item>小学生</item>
+        <item>初中生</item>
+        <item>高中生</item>
+        <item>大学生，中（高）职</item>
+        <item>公务员及事业单位人员</item>
+        <item>公司职员</item>
+        <item>工业企业员工</item>
+        <item>私营、个体企业主</item>
+        <item>服务业人员</item>
+        <item>军警人员</item>
+        <item>专职电商、微商</item>
+        <item>其他自由职业者</item>
+        <item>专职司机、快递员、外卖员</item>
+        <item>离退休人员</item>
+        <item>离退休再就业人员</item>
+        <item>无业</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="bus">
+        <item>步行到站台距离远</item>
+        <item>候车时间长</item>
+        <item>拥堵导致速度慢，在途时间长</item>
+        <item>线路绕行远，在途时间长</item>
+        <item>停车多，在途时间长</item>
+        <item>准点率低，到达时间不可控</item>
+        <item>换乘次数多</item>
+        <item>换乘距离远，换乘不便</item>
+        <item>车内拥挤，舒适性低</item>
+        <item>已购车，更倾向于开车</item>
+        <item>选择舒适性更高的出行工具（网约车或出租车等）</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="brand">
+        <item>自主</item>
+        <item>合资</item>
+        <item>豪华</item>
+    </string-array>
+
+    <string-array name="buss_area">
+        <item>观音桥商圈</item>
+        <item>解放碑商圈</item>
+        <item>杨家坪商圈（含万象城）</item>
+        <item>南坪商圈</item>
+        <item>沙坪坝商圈</item>
+        <item>龙湖时代天街</item>
+        <item>大渡口步行街</item>
+        <item>巴南万达广场</item>
+        <item>爱琴海购物广场</item>
+        <item>新光天地</item>
+        <item>大学城新街、龙湖U城</item>
+        <item>北碚万达广场、北碚城南步行街、北碚老城商圈</item>
+        <item>两路金港国际</item>
+        <item>宜家、奥特莱斯</item>
+    </string-array>
+
+    <string-array name="aim">
+        <item>上班</item>
+        <item>上学</item>
+        <item>回家</item>
+        <item>回单位</item>
+        <item>公务外出</item>
+        <item>购物逛街</item>
+        <item>娱乐、公园游玩</item>
+        <item>外出就餐</item>
+        <item>看病探病</item>
+        <item>探亲访友</item>
+        <item>接送人</item>
+        <item>其它</item>
+    </string-array>
+
+
+
+    <string-array name="out_code">
+        <item>四川省</item>
+        <item>东北地区（黑龙江、吉林、辽宁、内蒙古东部）</item>
+        <item>京津唐地区</item>
+        <item>华北地区（内蒙古中部、河北、山西）</item>
+        <item>华中地区（河南、湖北、湖南）</item>
+        <item>长三角地区（上海、苏南、杭州、宁波等）</item>
+        <item>华东其它地区（山东、苏北、安徽、浙南、福建）</item>
+        <item>珠三角地区（广州、珠海、深圳）</item>
+        <item>华南其它地区（广东、广西、江西）</item>
+        <item>西南其它地区（云南、西藏、贵州）</item>
+        <item>西北地区（内蒙古西部、陕西、甘肃、青海、新疆）</item>
+        <item>港澳台地区</item>
+        <item>出境</item>
+    </string-array>
+
+    <string-array name="hukou">
+        <item>重庆市主城九区户籍</item>
+        <item>重庆市其它区县户籍</item>
+        <item>外省市户籍</item>
+    </string-array>
+
+    <string-array name="car_belong">
+        <item>重庆主城区号牌</item>
+        <item>重庆其它地区号牌</item>
+        <item>外省市号牌</item>
+    </string-array>
+
+    <string-array name="live_time">
+        <item>六个月以上</item>
+        <item>三到六个月</item>
+        <item>一到三个月</item>
+        <item>一个月以内</item>
+    </string-array>
+
+    <string-array name="hukou_from">
+        <item>江津</item>
+        <item>璧山</item>
+        <item>合川</item>
+        <item>永川</item>
+        <item>綦江</item>
+        <item>长寿</item>
+        <item>涪陵、丰都</item>
+        <item>铜梁、潼南</item>
+        <item>南川、武隆</item>
+        <item>大足、荣昌</item>
+        <item>渝东南</item>
+        <item>渝东北</item>
+    </string-array>
+
+    <string-array name="object_place">
+        <item>江津</item>
+        <item>璧山</item>
+        <item>合川</item>
+        <item>永川</item>
+        <item>綦江</item>
+        <item>长寿</item>
+        <item>涪陵、丰都</item>
+        <item>铜梁、潼南</item>
+        <item>南川、武隆</item>
+        <item>大足、荣昌</item>
+        <item>渝东南</item>
+        <item>渝东北</item>
+    </string-array>
+
+    <string-array name="subway">
+        <item>一号线</item>
+        <item>二号线</item>
+        <item>三号线</item>
+        <item>五号线</item>
+        <item>六号线</item>
+        <item>十号线</item>
+    </string-array>
+
+    <string-array name="trip_aim">
+        <item>回老家</item>
+        <item>商务出差</item>
+        <item>探亲访友</item>
+        <item>旅游</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="trip_type">
+        <item>火车</item>
+        <item>长途巴士</item>
+        <item>小汽车</item>
+        <item>摩托车</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="study_type">
+        <item>走读</item>
+        <item>住读</item>
+    </string-array>
+
+    <string-array name="yes_no">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+
+    <string-array name="name_type">
+        <item>本人</item>
+        <item>父母</item>
+        <item>无手机</item>
+    </string-array>
+
+    <string-array name="in_home_reason">
+        <item>休假在家</item>
+        <item>生病在家</item>
+        <item>年龄大腿脚不便</item>
+        <item>天气原因不想出门</item>
+        <item>在本小区内上班或活动</item>
+        <item>在家带孩子</item>
+        <item>其他 </item>
+    </string-array>
+    
+    <string-array name="q1s1">
+        <item>请选择</item>
+        <item>双龙湖街道</item>
+        <item>龙昌街社区</item>
+        <item>龙祥街社区</item>
+        <item>龙旺街社区</item>
+        <item>翠湖路社区</item>
+        <item>凯歌路社区 </item>
+        <item>观岩村</item>
+        <item>郑家村</item>
+        <item>鹿山村</item>
+        <item>方家山村</item>
+        <item>仙桃村</item>
+        <item>黄山村</item>
+    </string-array>
+
+    <string-array name="q1s2">
+        <item>请选择</item>
+        <item>松树桥社区</item>
+        <item>花卉东路社区</item>
+        <item>花卉西路社区</item>
+        <item>金龙路社区</item>
+        <item>武陵路社区</item>
+        <item>嘉州花园社区</item>
+        <item>金紫山社区</item>
+        <item>龙湖社区</item>
+        <item>新牌坊社区</item>
+    </string-array>
+
+    <string-array name="q1s3">
+        <item>请选择</item>
+        <item>圣东路社区</item>
+        <item>双湖路社区</item>
+        <item>宝桐路社区</item>
+        <item>馨兰路社区</item>
+        <item>金兰路社区</item>
+        <item>科兰路社区</item>
+        <item>龙石路社区</item>
+        <item>白鹤路社区</item>
+        <item>长河路社区</item>
+        <item>高岩路社区</item>
+        <item>双桐路社区</item>
+    </string-array>
+
+    <string-array name="q1s4">
+        <item>安康路社区</item>
+        <item>长空路社区</item>
+        <item>长翔路社区</item>
+        <item>凤鸣路社区</item>
+        <item>溜马山社区</item>
+        <item>宏锦路社区</item>
+        <item>桃源社区</item>
+        <item>环湖雅居社区</item>
+        <item>瓦房村</item>
+        <item>中建村</item>
+        <item>兴旺村</item>
+    </string-array>
+
+    <string-array name="q2s1">
+        <item>化龙路社区 </item>
+        <item>梅家梁社区</item>
+        <item>下新新社区 </item>
+        <item>新民街社区 </item>
+        <item>鱼新街社区</item>
+        <item>化龙桥社区 </item>
+        <item>江洲路社区 </item>
+        <item>石子坪社区 </item>
+        <item>秦家院社区</item>
+        <item>花土湾社区 </item>
+        <item>广益街社区</item>
+        <item>乌洋街社区</item>
+        <item>石洋街社区 </item>
+        <item>万泉街社区 </item>
+        <item>百节社区 </item>
+        <item>解放村</item>
+        <item>团结村 </item>
+        <item>盘龙村 </item>
+        <item>红炉村 </item>
+        <item>独龙桥村 </item>
+        <item>云篆山村 </item>
+        <item>农胜村 </item>
+        <item>干湾村</item>
+        <item>金竹村 </item>
+        <item>新华村</item>
+        <item>天明村 </item>
+        <item>大中村 </item>
+        <item>沿河村 </item>
+        <item>仙池村 </item>
+        <item>百胜村 </item>
+        <item>桥口坝村</item>
+    </string-array>
+
+    <string-array name="q2s2">
+        <item>林荫社区</item>
+        <item>滨江社区</item>
+        <item>李家沱正街社区</item>
+        <item>马王坪正街一社区</item>
+        <item>马王坪正街二社区</item>
+        <item>合建村社区</item>
+        <item>渝纱社区</item>
+        <item>桥南社区</item>
+        <item>西流沱社区</item>
+        <item>其龙社区</item>
+        <item>其龙村</item>
+        <item>群乐村</item>
+        <item>光明村</item>
+    </string-array>
+
+    <string-array name="q2s3">
+        <item>道角村</item>
+        <item>解放村</item>
+        <item>独龙桥村</item>
+        <item>红炉村</item>
+        <item>团结村</item>
+        <item>盘龙村</item>
+        <item>沿河村</item>
+        <item>梅家梁社区</item>
+        <item>百节社区</item>
+    </string-array>
+
+    <string-array name="q2s4">
+        <item>清溪园社区</item>
+        <item>土桥正街社区</item>
+        <item>屏都社区</item>
+        <item>王家坝社区</item>
+        <item>苦竹坝社区</item>
+        <item>走马梁社区</item>
+        <item>新工地社区</item>
+        <item>经建社区</item>
+        <item>重工社区</item>
+        <item>民主社区</item>
+        <item>红光社区</item>
+        <item>陈家湾社区</item>
+        <item>岔路口村</item>
+        <item>民主村</item>
+        <item>建新村</item>
+        <item>花溪村</item>
+        <item>新屋村</item>
+        <item>先锋村</item>
+    </string-array>
+
+    <string-array name="q2s5">
+        <item>一品社区</item>
+        <item>四桥村 </item>
+        <item>七田村 </item>
+        <item>永益村</item>
+        <item>金田村</item>
+        <item>乐遥村</item>
+        <item>燕云村一品</item>
+    </string-array>
+
+    <string-array name="q2s6">
+        <item>南彭社区</item>
+        <item>忠兴社区</item>
+        <item>石岗社区</item>
+        <item>大鱼村</item>
+        <item>白合子村</item>
+        <item>鸳鸯村</item>
+        <item>天台山村</item>
+        <item>清风桥村</item>
+        <item>塔落村</item>
+        <item>将军湾村</item>
+        <item>水竹村</item>
+        <item>断桥村</item>
+        <item>巨龙桥村</item>
+        <item>高碑村</item>
+        <item>大石塔村</item>
+    </string-array>
+
+    <string-array name="q2s7">
+        <item>界石一社区</item>
+        <item>界石二社区</item>
+        <item>公平社区</item>
+        <item>桂花村</item>
+        <item>海棠村</item>
+        <item>新玉村 </item>
+        <item>武新村</item>
+        <item>金鹅井村 </item>
+        <item>钟湾村</item>
+    </string-array>
+
+    <string-array name="q2s8">
+        <item>墙院村</item>
+        <item>海眼村</item>
+        <item>杨家洞村</item>
+        <item>保安村</item>
+        <item>庙垭村</item>
+        <item>中坝村</item>
+        <item>土地垴村</item>
+        <item>松子村</item>
+        <item>水口寺村</item>
+        <item>土桥村</item>
+        <item>钱家湾村</item>
+        <item>栋青村</item>
+        <item>景星村</item>
+        <item>桃花岛村</item>
+        <item>木洞一社区</item>
+        <item>木洞二社区</item>
+        <item>木洞三社区</item>
+    </string-array>
+
+    <string-array name="q2s9">
+        <item>金星村</item>
+        <item>白马村</item>
+        <item>合路村</item>
+        <item>柏树村</item>
+        <item>大桥村</item>
+        <item>大园村</item>
+        <item>中伦村</item>
+        <item>大连村</item>
+        <item>大兴村</item>
+        <item>石龙居委会</item>
+        <item>花石居委会</item>
+    </string-array>
+
+    <string-array name="q2s10">
+        <item>安澜社区</item>
+        <item>仁流社区</item>
+        <item>南龙社区</item>
+        <item>龙岗社区</item>
+        <item>五通村</item>
+        <item>湾湾村</item>
+        <item>思林村</item>
+        <item>院子村</item>
+        <item>永寿村</item>
+        <item>顶山村</item>
+        <item>平滩村</item>
+        <item>石板垭村</item>
+        <item>小龙村</item>
+        <item>石油沟村</item>
+        <item>坝上村</item>
+        <item>巴联村</item>
+        <item>棋盘村</item>
+        <item>柑子村</item>
+    </string-array>
+
+    <string-array name="q1">
+        <item>双龙湖街道</item>
+        <item>龙溪街道</item>
+        <item>回兴街道</item>
+        <item>双凤桥街道</item>
+    </string-array>
+
+    <string-array name="q2">
+        <item>鱼洞街道</item>
+        <item>李家沱街道</item>
+        <item>龙洲湾街道</item>
+        <item>花溪街道</item>
+        <item>一品街道</item>
+        <item>南彭街道</item>
+        <item>界石镇</item>
+        <item>木洞镇</item>
+        <item>石龙镇</item>
+        <item>安澜镇</item>
+    </string-array>
+
+    <string-array name="qu">
+        <item>渝北区</item>
+        <item>巴南区</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="居住（住宅）"/>
+    <item android:title="工业（工厂）"/>
+    <item android:title="宾馆、旅馆"/>
+    <item android:title="集贸市场"/>
+    <item android:title="商业、餐饮业"/>
+    <item android:title="金融保险"/>
+    <item android:title="行政办公"/>
+    <item android:title="科研单位"/>
+    <item android:title="大专院校"/>
+    <item android:title="中小学校"/>
+    <item android:title="文娱体育"/>
+    <item android:title="医疗卫生"/>
+    <item android:title="仓库货场"/>
+    <item android:title="建筑工地"/>
+
+    <item android:title="汽车站"/>
+    <item android:title="火车站"/>
+    <item android:title="港口"/>
+    <item android:title="飞机场"/>
+    <item android:title="公园、景区"/>
+    <item android:title="其他"/>
+</menu>

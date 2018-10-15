@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="工人"/>
+    <item android:title="公务员"/>
+    <item android:title="教师医务人员、文艺体育人员"/>
+    <item android:title="科研设计单位人员"/>
+    <item android:title="商业、服务人员"/>
+    <item android:title="企事业单位职员、负责人"/>
+    <item android:title="私有个体企业经营者"/>
+    <item android:title="中小学生"/>
+    <item android:title="大专院校学生"/>
+    <item android:title="司机"/>
+    <item android:title="军警政法人员"/>
+    <item android:title="离退休人员"/>
+    <item android:title="待业人员"/>
+    <item android:title="其他"/>
+</menu>

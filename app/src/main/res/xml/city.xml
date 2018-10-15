@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<city>
+    <qu name = "请选择">
+        <street name = "请选择">
+            <shequ>请选择</shequ>
+        </street>
+    </qu>
+    <qu name = "沙坪坝区">
+        <street name = "请选择">
+            <shequ>请选择</shequ>
+        </street>
+        <street name = "曾家镇">
+            <shequ>请选择</shequ>
+            <shequ>曾家社区</shequ>
+            <shequ>龙荫社区</shequ>
+            <shequ>汤家社区</shequ>
+            <shequ>五里社区</shequ>
+            <shequ>龙台社区</shequ>
+            <shequ>龙桥社区</shequ>
+        </street>
+        <street name = "陈家桥街道">
+            <shequ>请选择</shequ>
+            <shequ>桥南社区</shequ>
+            <shequ>桥北社区</shequ>
+            <shequ>桥东社区</shequ>
+            <shequ>学林社区</shequ>
+            <shequ>学府社区</shequ>
+            <shequ>学苑社区</shequ>
+            <shequ>官房寺社区</shequ>
+        </street>
+        <street name = "磁器口街道">
+            <shequ>请选择</shequ>
+            <shequ>金蓉社区</shequ>
+            <shequ>金碧社区</shequ>
+            <shequ>凤凰山社区</shequ>
+            <shequ>磁建村社区</shequ>
+        </street>
+        <street name = "歌乐山镇">
+            <shequ>请选择</shequ>
+            <shequ>大土村社区</shequ>
+            <shequ>高店子社区</shequ>
+            <shequ>矿山坡社区</shequ>
+        </street>
+        <street name = "联芳街道">
+            <shequ>请选择</shequ>
+            <shequ>双朝门社区</shequ>
+            <shequ>联芳桥社区</shequ>
+            <shequ>平顶山社区</shequ>
+            <shequ>圣泉社区</shequ>
+            <shequ>香榭里社区</shequ>
+            <shequ>学堂堡社区</shequ>
+        </street>
+        <street name = "土主镇">
+            <shequ>请选择</shequ>
+            <shequ>团结湾社区</shequ>
+            <shequ>土主社区</shequ>
+            <shequ>永祥社区</shequ>
+        </street>
+        <street name = "石井坡街道">
+            <shequ>请选择</shequ>
+            <shequ>和平山社区</shequ>
+            <shequ>建设坡社区</shequ>
+            <shequ>光荣坡社区</shequ>
+            <shequ>中心湾社区</shequ>
+            <shequ>团结坝社区</shequ>
+            <shequ>远祖桥社区</shequ>
+        </street>
+        <street name = "双碑街道">
+            <shequ>请选择</shequ>
+            <shequ>双碑街社区</shequ>
+            <shequ>自由村社区</shequ>
+            <shequ>勤居村社区</shequ>
+            <shequ>堆金村社区</shequ>
+        </street>
+        <street name = "天星桥街道">
+            <shequ>请选择</shequ>
+            <shequ>都市花园社区</shequ>
+            <shequ>天陈路社区</shequ>
+            <shequ>柑子村社区</shequ>
+            <shequ>石碾盘社区</shequ>
+            <shequ>小正街社区</shequ>
+            <shequ>红糟房社区</shequ>
+            <shequ>梨树湾社区</shequ>
+            <shequ>泉  景社区</shequ>
+            <shequ>晒光坪社区</shequ>
+        </street>
+        <street name = "童家桥街道">
+            <shequ>请选择</shequ>
+            <shequ>壮志路社区</shequ>
+            <shequ>和睦村社区</shequ>
+            <shequ>五灵观社区</shequ>
+            <shequ>文苑社区</shequ>
+            <shequ>阳光社区</shequ>
+        </street>
+        <street name = "香炉山街道">
+            <shequ>请选择</shequ>
+            <shequ>康居西城第一社区</shequ>
+            <shequ>康居西城第二社区</shequ>
+            <shequ>康居西城第三社区</shequ>
+            <shequ>思贤社区</shequ>
+            <shequ>学善社区</shequ>
+        </street>
+        <street name = "新桥街道">
+            <shequ>请选择</shequ>
+            <shequ>新桥社区</shequ>
+            <shequ>高滩岩社区</shequ>
+            <shequ>凤鸣山社区</shequ>
+            <shequ>上桥社区</shequ>
+            <shequ>张家湾社区</shequ>
+        </street>
+        <street name = "中梁镇">
+            <shequ>请选择</shequ>
+            <shequ>新店子社区</shequ>
+        </street>
+        <street name = "井口镇街道">
+            <shequ>请选择</shequ>
+            <shequ>江家院社区</shequ>
+            <shequ>柏杨村社区</shequ>
+            <shequ>宏城名都社区</shequ>
+            <shequ>美丽阳光家园社区</shequ>
+            <shequ>经济桥社区</shequ>
+            <shequ>松堡社区</shequ>
+        </street>
+
+        <street name = "沙坪坝街道">
+            <shequ>请选择</shequ>
+            <shequ>一心村社区</shequ>
+            <shequ>沙正街社区 </shequ>
+            <shequ>建工村社区</shequ>
+            <shequ>劳动路社区</shequ>
+            <shequ>饮水村社区</shequ>
+            <shequ>中渡口社区</shequ>
+            <shequ>新华村社区</shequ>
+            <shequ>松林坡社区</shequ>
+        </street>
+        <street name = "山洞街道">
+            <shequ>请选择</shequ>
+            <shequ>山洞社区</shequ>
+        </street>
+        <street name = "西永街道">
+            <shequ>请选择</shequ>
+            <shequ>永兴社区</shequ>
+            <shequ>棕树湾社区</shequ>
+            <shequ>微电园第一社区</shequ>
+        </street>
+        <street name = "土湾街道">
+            <shequ>请选择</shequ>
+            <shequ>民主村社区</shequ>
+            <shequ>新生村社区</shequ>
+            <shequ>模范村社区</shequ>
+            <shequ>金沙社区</shequ>
+            <shequ>滨江社区</shequ>
+            <shequ>工人村社区</shequ>
+        </street>
+        <street name = "丰文街道">
+            <shequ>请选择</shequ>
+            <shequ>丰文社区</shequ>
+            <shequ>崇贤社区</shequ>
+            <shequ>清悦社区</shequ>
+        </street>
+        <street name = "虎溪街道">
+            <shequ>请选择</shequ>
+            <shequ>虎兴社区</shequ>
+            <shequ>石牛岗社区</shequ>
+            <shequ>花马社区</shequ>
+            <shequ>大成湖社区</shequ>
+            <shequ>复兴寺社区</shequ>
+            <shequ>虎溪花园社区</shequ>
+            <shequ>熙美社区</shequ>
+        </street>
+        <street name = "小龙坎街道">
+            <shequ>请选择</shequ>
+            <shequ>龙泉路社区</shequ>
+            <shequ>康宁村社区</shequ>
+            <shequ>快乐里社区</shequ>
+            <shequ>嘉新社区</shequ>
+        </street>
+        <street name = "渝碚路街道">
+            <shequ>请选择</shequ>
+            <shequ>汉渝路社区</shequ>
+            <shequ>新体村社区</shequ>
+            <shequ>南友村社区</shequ>
+            <shequ>站东路社区</shequ>
+            <shequ>沙南街社区</shequ>
+            <shequ>杨公桥社区</shequ>
+            <shequ>杨梨路社区</shequ>
+            <shequ>双巷子社区</shequ>
+            <shequ>沙杨路社区</shequ>
+            <shequ>白鹤岭社区</shequ>
+        </street>
+        <street name = "覃家岗街道">
+            <shequ>请选择</shequ>
+            <shequ>凤天路社区</shequ>
+            <shequ>马家岩社区</shequ>
+            <shequ>上桥村（金桥社区）</shequ>
+            <shequ>新凤社区</shequ>
+            <shequ>新鸣社区</shequ>
+            <shequ>新立社区</shequ>
+            <shequ>梨园社区</shequ>
+            <shequ>梨树湾村(梨泉社区）</shequ>
+            <shequ>新桥村</shequ>
+        </street>
+    </qu>
+
+    <qu name = "大渡口区">
+        <street name = "请选择">
+            <shequ>请选择</shequ>
+        </street>
+        <street name = "跳磴镇">
+            <shequ>请选择</shequ>
+            <shequ>兰沁苑社区</shequ>
+            <shequ>白沙沱社区</shequ>
+        </street>
+        <street name = "九宫庙街道">
+            <shequ>请选择</shequ>
+            <shequ>创新社区</shequ>
+            <shequ>百花社区</shequ>
+            <shequ>新工社区</shequ>
+            <shequ>九怡社区</shequ>
+            <shequ>锦霞社区</shequ>
+        </street>
+        <street name = "跃进村街道">
+            <shequ>请选择</shequ>
+            <shequ>跃进社区</shequ>
+            <shequ>大堰社区</shequ>
+            <shequ>革马社区</shequ>
+            <shequ>跃新社区</shequ>
+            <shequ>堰兴社区</shequ>
+            <shequ>渝铁社区</shequ>
+            <shequ>东正社区</shequ>
+            <shequ>钢堰社区</shequ>
+        </street>
+        <street name = "茄子溪街道">
+            <shequ>请选择</shequ>
+            <shequ>伏牛溪社区</shequ>
+            <shequ>新港社区</shequ>
+            <shequ>永丰社区</shequ>
+            <shequ>惠丰社区</shequ>
+        </street>
+        <street name = "新山村街道">
+            <shequ>请选择</shequ>
+            <shequ>锁口丘社区</shequ>
+            <shequ>光冶社区</shequ>
+            <shequ>平安社区</shequ>
+            <shequ>新一社区</shequ>
+            <shequ>翠园社区</shequ>
+            <shequ>沪汉社区</shequ>
+        </street>
+        <street name = "春晖路街道">
+            <shequ>请选择</shequ>
+            <shequ>柏华社区</shequ>
+            <shequ>翠华社区</shequ>
+            <shequ>古渡社区</shequ>
+            <shequ>锦城社区</shequ>
+            <shequ>锦凤社区</shequ>
+            <shequ>锦愉社区</shequ>
+            <shequ>松青路社区</shequ>
+            <shequ>新华社区</shequ>
+            <shequ>阳光社区</shequ>
+        </street>
+        <street name = "八桥镇">
+            <shequ>请选择</shequ>
+            <shequ>凤阳社区</shequ>
+            <shequ>常嘉社区（公租房）</shequ>
+            <shequ>逸景社区（公租房）</shequ>
+            <shequ>丽景社区</shequ>
+            <shequ>龙都社区</shequ>
+            <shequ>融城社区</shequ>
+            <shequ>双林社区</shequ>
+            <shequ>万有社区</shequ>
+        </street>
+        <street name = "建胜镇">
+            <shequ>请选择</shequ>
+            <shequ>新雨社区</shequ>
+            <shequ>回龙桥社区</shequ>
+            <shequ>建新社区</shequ>
+        </street>
+    </qu>
+
+    <qu name = "渝北区">
+        <street name = "请选择">
+            <shequ>请选择</shequ>
+        </street>
+        <street name = "宝圣湖街道">
+            <shequ>请选择</shequ>
+            <shequ>长福路社区</shequ>
+            <shequ>兴科路社区</shequ>
+            <shequ>翠萍路社区</shequ>
+            <shequ>宝圣西路社区</shequ>
+            <shequ>海福路社区</shequ>
+            <shequ>湖滨西路社区</shequ>
+            <shequ>宝圣湖社区</shequ>
+            <shequ>西政社区</shequ>
+            <shequ>宝圣南路社区</shequ>
+            <shequ>万福社区</shequ>
+            <shequ>宝石路社区</shequ>
+            <shequ>果塘路社区</shequ>
+            <shequ>金果路社区</shequ>
+            <shequ>金石路社区</shequ>
+            <shequ>石盘河社区</shequ>
+        </street>
+        <street name = "回兴街道">
+            <shequ>请选择</shequ>
+            <shequ>锦华路社区</shequ>
+            <shequ>龙石路社区</shequ>
+            <shequ>双湖路社区</shequ>
+            <shequ>宝圣东路社区</shequ>
+            <shequ>科兰路社区</shequ>
+            <shequ>羽裳路社区</shequ>
+            <shequ>宝桐路社区</shequ>
+            <shequ>科桐路社区</shequ>
+            <shequ>金兰路社区 </shequ>
+            <shequ>金凯路社区</shequ>
+            <shequ>双桐路社区</shequ>
+            <shequ>高岩路社区</shequ>
+            <shequ>馨兰路社区</shequ>
+        </street>
+        <street name = "两路街道">
+            <shequ>请选择</shequ>
+            <shequ>义学路社区</shequ>
+            <shequ>同    茂社区</shequ>
+            <shequ>临    港社区</shequ>
+            <shequ>双北街社区</shequ>
+            <shequ>汉渝路社区</shequ>
+            <shequ>同    兴社区</shequ>
+            <shequ>石    油社区</shequ>
+            <shequ>泽    科社区</shequ>
+            <shequ>双凤路社区</shequ>
+            <shequ>新    华社区</shequ>
+            <shequ>张家口社区</shequ>
+        </street>
+        <street name = "龙山街道">
+            <shequ>请选择</shequ>
+            <shequ>花园新村社区</shequ>
+            <shequ>龙华路社区</shequ>
+            <shequ>龙脊新村社区</shequ>
+            <shequ>龙山路社区</shequ>
+            <shequ>盘溪河社区</shequ>
+            <shequ>旗龙路社区</shequ>
+            <shequ>旗山路社区</shequ>
+            <shequ>冉家坝社区</shequ>
+            <shequ>松牌路社区</shequ>
+            <shequ>松石路社区</shequ>
+            <shequ>天竺路社区</shequ>
+            <shequ>银桦路社区</shequ>
+            <shequ>余松路社区</shequ>
+        </street>
+        <street name = "龙塔街道">
+            <shequ>请选择</shequ>
+            <shequ>工农</shequ>
+            <shequ>紫福路</shequ>
+            <shequ>紫园路</shequ>
+            <shequ>紫荆路</shequ>
+            <shequ>龙头寺</shequ>
+            <shequ>龙塔</shequ>
+            <shequ>黄泥塝</shequ>
+            <shequ>红土地</shequ>
+            <shequ>鲁能西路</shequ>
+            <shequ>鲁能东路</shequ>
+        </street>
+        <street name = "龙溪街道">
+            <shequ>请选择</shequ>
+            <shequ>百合</shequ>
+            <shequ>新牌坊</shequ>
+            <shequ>花卉东路</shequ>
+            <shequ>龙湖</shequ>
+            <shequ>金龙路</shequ>
+            <shequ>李家花园</shequ>
+            <shequ>松树桥</shequ>
+            <shequ>锦绣</shequ>
+            <shequ>嘉州</shequ>
+            <shequ>安家嘴</shequ>
+            <shequ>红石支路</shequ>
+            <shequ>武陵路</shequ>
+            <shequ>金紫山</shequ>
+            <shequ>花卉西路</shequ>
+        </street>
+        <street name = "龙兴镇">
+            <shequ>请选择</shequ>
+            <shequ>回龙社区</shequ>
+            <shequ>同乐社区</shequ>
+            <shequ>普福社区</shequ>
+            <shequ>龙祥社区</shequ>
+            <shequ>和泽社区</shequ>
+        </street>
+        <street name = "双凤桥街道">
+            <shequ>请选择</shequ>
+            <shequ>安康路社区</shequ>
+            <shequ>长翔路社区</shequ>
+            <shequ>溜马山社区</shequ>
+            <shequ>长空路社区</shequ>
+            <shequ>宏锦路社区</shequ>
+            <shequ>凤鸣路社区</shequ>
+            <shequ>环湖雅居社区</shequ>
+            <shequ>桃源社区</shequ>
+            <shequ>博才路社区</shequ>
+        </street>
+        <street name = "双龙湖街道">
+            <shequ>请选择</shequ>
+            <shequ>龙祥街社区</shequ>
+            <shequ>凯歌路社区</shequ>
+            <shequ>滨港路社区</shequ>
+            <shequ>渝湖路社区</shequ>
+            <shequ>翠湖路社区</shequ>
+            <shequ>龙顺街社区</shequ>
+            <shequ>龙昌街社区</shequ>
+            <shequ>蓬莱社区</shequ>
+            <shequ>观音岩路社区</shequ>
+            <shequ>龙兴街社区</shequ>
+            <shequ>五星路社区</shequ>
+            <shequ>龙旺街社区</shequ>
+            <shequ>锦湖路社区</shequ>
+            <shequ>绿茂社区</shequ>
+            <shequ>锦湖路社区</shequ>
+            <shequ>民兴路社区</shequ>
+        </street>
+        <street name = "仙桃街道">
+            <shequ>请选择</shequ>
+            <shequ>金玉路社区</shequ>
+            <shequ>舟济路社区</shequ>
+            <shequ>祥和路社区</shequ>
+            <shequ>沐仙湖社区</shequ>
+            <shequ>百果路社区</shequ>
+            <shequ>同盛路社区</shequ>
+            <shequ>桂馥路社区</shequ>
+            <shequ>睦陵路社区</shequ>
+            <shequ>兰馨社区</shequ>
+        </street>
+        <street name = "悦来街道">
+            <shequ>请选择</shequ>
+            <shequ>嘉悦社区</shequ>
+            <shequ>嘉陵路社区</shequ>
+        </street>
+        <street name = "王家街道">
+            <shequ>请选择</shequ>
+            <shequ>王家社区</shequ>
+            <shequ>观月路社区</shequ>
+        </street>
+    </qu>
+
+    <qu name = "南岸区">
+        <street name = "请选择">
+            <shequ>请选择</shequ>
+        </street>
+        <street name = "海棠溪街道">
+            <shequ>请选择</shequ>
+            <shequ>海新街社区居委会</shequ>
+            <shequ>敦厚街社区居委会</shequ>
+            <shequ>海棠晓月社区居委会</shequ>
+            <shequ>罗家坝社区居委会</shequ>
+            <shequ>四海社区居委会</shequ>
+            <shequ>四公里社区居委会</shequ>
+            <shequ>学府路社区居委会</shequ>
+            <shequ>学苑社区居委会</shequ>
+            <shequ>烟雨堡社区居委会</shequ>
+            <shequ>南山道社区</shequ>
+        </street>
+        <street name = "李家沱街道">
+            <shequ>请选择</shequ>
+            <shequ>林荫社区</shequ>
+            <shequ>滨江社区</shequ>
+            <shequ>李家沱正街社区</shequ>
+            <shequ>马王坪正街一社区</shequ>
+            <shequ>马王坪正街二社区</shequ>
+            <shequ>合建村社区</shequ>
+            <shequ>渝纱社区</shequ>
+            <shequ>桥南社区</shequ>
+            <shequ>西流沱社区</shequ>
+            <shequ>其龙社区</shequ>
+            <shequ>其龙村</shequ>
+            <shequ>群乐村</shequ>
+            <shequ>光明村</shequ>
+        </street>
+        <street name = "龙门浩街道">
+            <shequ>请选择</shequ>
+            <shequ>上浩社区</shequ>
+            <shequ>一天门社区</shequ>
+            <shequ>上新街社区</shequ>
+            <shequ>下新街社区</shequ>
+        </street>
+        <street name = "弹子石街道">
+            <shequ>请选择</shequ>
+            <shequ>东山坪社区</shequ>
+            <shequ>富力社区</shequ>
+            <shequ>石桥社区</shequ>
+            <shequ>裕华社区</shequ>
+            <shequ>弹新街社区</shequ>
+            <shequ>王家沱社区</shequ>
+            <shequ>惠工村社区</shequ>
+            <shequ>大佛寺社区</shequ>
+        </street>
+        <street name = "天文街道">
+            <shequ>请选择</shequ>
+            <shequ>水云路社区</shequ>
+            <shequ>中一路社区</shequ>
+            <shequ>玉马路社区</shequ>
+            <shequ>兴塘路社区</shequ>
+        </street>
+        <street name = "峡口镇">
+            <shequ>请选择</shequ>
+            <shequ>大兴场社区</shequ>
+        </street>
+        <street name = "南坪街道">
+            <shequ>请选择</shequ>
+            <shequ>东兴路社区</shequ>
+            <shequ>阳光社区</shequ>
+            <shequ>正街社区</shequ>
+            <shequ>响水路社区</shequ>
+            <shequ>金紫街社区</shequ>
+            <shequ>东路社区</shequ>
+            <shequ>西路社区</shequ>
+            <shequ>南城社区</shequ>
+            <shequ>后堡社区</shequ>
+            <shequ>珊瑚社区</shequ>
+            <shequ>星光社区</shequ>
+            <shequ>玛瑙社区</shequ>
+        </street>
+        <street name = "南坪镇">
+            <shequ>请选择</shequ>
+            <shequ>汇雅社区</shequ>
+            <shequ>辅仁社区</shequ>
+            <shequ>回龙湾社区</shequ>
+            <shequ>南塘苑社区</shequ>
+            <shequ>金阳社区</shequ>
+            <shequ>渝能社区</shequ>
+            <shequ>康德社区</shequ>
+            <shequ>兴隆社区</shequ>
+            <shequ>白鹤苑社区</shequ>
+            <shequ>二塘</shequ>
+        </street>
+        <street name = "铜元局街道">
+            <shequ>请选择</shequ>
+            <shequ>芭蕉湾社区</shequ>
+            <shequ>广东山社区</shequ>
+            <shequ>风临洲社区</shequ>
+            <shequ>长江新村社区</shequ>
+            <shequ>上海城社区</shequ>
+            <shequ>双峰山社区</shequ>
+            <shequ>云满庭社区</shequ>
+            <shequ>观山水社区</shequ>
+        </street>
+        <street name = "涂山镇">
+            <shequ>请选择</shequ>
+            <shequ>骡子堡社区</shequ>
+            <shequ>红星社区</shequ>
+            <shequ>仁济路社区</shequ>
+            <shequ>友于里社区</shequ>
+            <shequ>腾龙社区</shequ>
+            <shequ>石溪路社区</shequ>
+            <shequ>福民社区</shequ>
+            <shequ>兴隆湾社区</shequ>
+            <shequ>黄荆坡社区</shequ>
+            <shequ>倒座庙社区</shequ>
+        </street>
+        <street name = "花园路街道">
+            <shequ>请选择</shequ>
+            <shequ>大石社区</shequ>
+            <shequ>明佳园社区</shequ>
+            <shequ>花园路社区</shequ>
+            <shequ>海峡路社区</shequ>
+            <shequ>金鹤社区</shequ>
+            <shequ>金山路社区</shequ>
+            <shequ>金堰社区</shequ>
+            <shequ>丹龙路社区</shequ>
+            <shequ>古楼湾社区</shequ>
+            <shequ>南湖社区</shequ>
+            <shequ>骑龙社区</shequ>
+        </street>
+        <street name = "长生桥镇">
+            <shequ>请选择</shequ>
+            <shequ>同景社区</shequ>
+            <shequ>茶花社区</shequ>
+            <shequ>桃花桥社区</shequ>
+            <shequ>百乐园社区</shequ>
+        </street>
+        <street name = "南山街道">
+            <shequ>请选择</shequ>
+            <shequ>南山路社区</shequ>
+            <shequ>文峰新街社区</shequ>
+            <shequ>黄桷垭社区</shequ>
+            <shequ>真武山社区</shequ>
+        </street>
+        <street name = "鸡冠石镇">
+            <shequ>请选择</shequ>
+            <shequ>石门社区</shequ>
+            <shequ>岩口社区</shequ>
+            <shequ>石龙村</shequ>
+        </street>
+        <street name = "南泉街道">
+            <shequ>请选择</shequ>
+            <shequ>鹿角社区居委会</shequ>
+            <shequ>南泉正街社区居委会</shequ>
+            <shequ>长南桥社区居委会</shequ>
+            <shequ>红星村委会</shequ>
+            <shequ>红旗村委会</shequ>
+            <shequ>自由村委会</shequ>
+            <shequ>虎啸村委会</shequ>
+            <shequ>和平村委会</shequ>
+        </street>
+    </qu>
+
+    <qu name = "江北区">
+        <street name = "请选择">
+            <shequ>请选择</shequ>
+        </street>
+        <street name = "石马河街道">
+            <shequ>请选择</shequ>
+            <shequ>景园社区</shequ>
+            <shequ>通用社区</shequ>
+            <shequ>新城社区</shequ>
+            <shequ>新意境社区</shequ>
+            <shequ>十年城社区</shequ>
+            <shequ>瑜康社区</shequ>
+            <shequ>桂花园社区</shequ>
+            <shequ>金果园社区</shequ>
+            <shequ>石子山社区</shequ>
+            <shequ>山水社区</shequ>
+            <shequ>南桥寺社区</shequ>
+            <shequ>玉带山社区</shequ>
+            <shequ>玉祥社区</shequ>
+        </street>
+        <street name = "李家沱街道">
+            <shequ>请选择</shequ>
+            <shequ>林荫社区</shequ>
+            <shequ>滨江社区</shequ>
+            <shequ>李家沱正街社区</shequ>
+            <shequ>马王坪正街一社区</shequ>
+            <shequ>马王坪正街二社区</shequ>
+            <shequ>合建村社区</shequ>
+            <shequ>渝纱社区</shequ>
+            <shequ>桥南社区</shequ>
+            <shequ>西流沱社区</shequ>
+            <shequ>其龙社区</shequ>
+            <shequ>其龙村</shequ>
+            <shequ>群乐村</shequ>
+            <shequ>光明村</shequ>
+        </street>
+        <street name = "铁山坪街道">
+            <shequ>请选择</shequ>
+            <shequ>正街社区</shequ>
+            <shequ>唐桂社区</shequ>
+            <shequ>东风社区</shequ>
+            <shequ>铁山社区</shequ>
+            <shequ>五里坪社区</shequ>
+        </street>
+        <street name = "五里店街道">
+            <shequ>请选择</shequ>
+            <shequ>劳动社区</shequ>
+            <shequ>雨花社区</shequ>
+            <shequ>富强社区</shequ>
+            <shequ>黎明社区</shequ>
+            <shequ>平安社区</shequ>
+            <shequ>工校社区</shequ>
+            <shequ>红土地社区</shequ>
+            <shequ>五里店社区</shequ>
+            <shequ>刘家台社区</shequ>
+            <shequ>渝能阳光社区</shequ>
+            <shequ>蓝色经典社区</shequ>
+        </street>
+        <street name = "大石坝街道">
+            <shequ>请选择</shequ>
+            <shequ>前卫</shequ>
+            <shequ>忠恕沱</shequ>
+            <shequ>东方港湾</shequ>
+            <shequ>正街</shequ>
+            <shequ>东海岸</shequ>
+            <shequ>瓦厂嘴</shequ>
+            <shequ>东原</shequ>
+            <shequ>大路</shequ>
+            <shequ>石门</shequ>
+            <shequ>天桥</shequ>
+            <shequ>石油</shequ>
+            <shequ>大庆村</shequ>
+            <shequ>黑院墙</shequ>
+        </street>
+        <street name = "江北城街道">
+            <shequ>请选择</shequ>
+            <shequ>桂花街社区</shequ>
+            <shequ>三洞桥社区</shequ>
+        </street>
+        <street name = "华新街街道">
+            <shequ>请选择</shequ>
+            <shequ>野水沟社区</shequ>
+            <shequ>大兴社区</shequ>
+            <shequ>适中社区</shequ>
+            <shequ>桥北社区</shequ>
+            <shequ>建新社区</shequ>
+            <shequ>观府国际社区</shequ>
+            <shequ>董家溪社区</shequ>
+            <shequ>东方家园社区</shequ>
+            <shequ>嘉陵社区</shequ>
+        </street>
+        <street name = "复盛镇">
+            <shequ>请选择</shequ>
+            <shequ>庙坝社区</shequ>
+            <shequ>祥韵社区</shequ>
+            <shequ>福生路社区</shequ>
+        </street>
+        <street name = "观音桥街道">
+            <shequ>请选择</shequ>
+            <shequ>天原社区</shequ>
+            <shequ>鸿恩寺社区</shequ>
+            <shequ>黄葛社区</shequ>
+            <shequ>鹏润蓝海社区</shequ>
+            <shequ>春晖社区</shequ>
+            <shequ>建西社区</shequ>
+            <shequ>洋河社区</shequ>
+            <shequ>塔坪社区</shequ>
+            <shequ>锦绣嘉陵社区</shequ>
+            <shequ>桃源社区</shequ>
+            <shequ>建东社区</shequ>
+            <shequ>建北社区</shequ>
+            <shequ>明珠社区</shequ>
+            <shequ>北国风光社区</shequ>
+            <shequ>小苑社区</shequ>
+            <shequ>富力海洋社区</shequ>
+            <shequ>洋河花园社区</shequ>
+            <shequ>渝北社区</shequ>
+            <shequ>鲤鱼池社区</shequ>
+        </street>
+        <street name = "鱼嘴镇">
+            <shequ>请选择</shequ>
+            <shequ>鱼城社区</shequ>
+            <shequ>棠富园社区</shequ>
+            <shequ>和韵家园社区</shequ>
+            <shequ>和锦社区</shequ>
+            <shequ>和悦社区</shequ>
+        </street>
+        <street name = "郭家沱街道">
+            <shequ>请选择</shequ>
+            <shequ>山涧水岸社区</shequ>
+            <shequ>大溪村社区</shequ>
+            <shequ>飞岚垭社区</shequ>
+            <shequ>锣旗寺社区</shequ>
+        </street>
+        <street name = "寸滩街道">
+            <shequ>请选择</shequ>
+            <shequ>溉澜溪社区</shequ>
+            <shequ>溉塘社区</shequ>
+            <shequ>兰溪社区</shequ>
+            <shequ>海语江山社区</shequ>
+            <shequ>茅溪社区</shequ>
+            <shequ>丽苑社区</shequ>
+            <shequ>黑石子社区</shequ>
+        </street>
+    </qu>
+
+    <qu name = "渝中区">
+        <street name = "请选择">
+            <shequ>请选择</shequ>
+        </street>
+        <street name = "菜园坝街道">
+            <shequ>请选择</shequ>
+            <shequ>珊瑚湾社区</shequ>
+            <shequ>平安街社区</shequ>
+            <shequ>交通街社区</shequ>
+            <shequ>竹木街社区</shequ>
+        </street>
+        <street name = "朝天门街道">
+            <shequ>请选择</shequ>
+            <shequ>二府衙社区</shequ>
+            <shequ>朝千路社区</shequ>
+            <shequ>白象街社区</shequ>
+            <shequ>巴县衙门社区</shequ>
+            <shequ>棉花街社区</shequ>
+            <shequ>陕西路社区</shequ>
+        </street>
+        <street name = "大坪街道">
+            <shequ>请选择</shequ>
+            <shequ>袁家岗社区</shequ>
+            <shequ>大坪正街社区</shequ>
+            <shequ>七牌坊社区</shequ>
+            <shequ>马家堡社区</shequ>
+            <shequ>浮图关社区</shequ>
+            <shequ>肖家湾社区</shequ>
+            <shequ>天灯堡社区</shequ>
+            <shequ>大黄路社区</shequ>
+        </street>
+        <street name = "大溪沟街道">
+            <shequ>请选择</shequ>
+            <shequ>罗家院</shequ>
+            <shequ>人和街</shequ>
+            <shequ>双钢路</shequ>
+            <shequ>华福巷</shequ>
+            <shequ>建设路</shequ>
+            <shequ>胜利路</shequ>
+            <shequ>张家花园</shequ>
+            <shequ>人民村</shequ>
+            <shequ>红球坝</shequ>
+        </street>
+        <street name = "解放碑街道">
+            <shequ>请选择</shequ>
+            <shequ>邹容路</shequ>
+            <shequ>公园路</shequ>
+            <shequ>民生路</shequ>
+            <shequ>莲花池</shequ>
+            <shequ>大井巷</shequ>
+            <shequ>罗汉寺</shequ>
+            <shequ>自力巷</shequ>
+            <shequ>沧白路</shequ>
+            <shequ>较场口</shequ>
+            <shequ>临江门</shequ>
+        </street>
+        <street name = "两路口街道">
+            <shequ>请选择</shequ>
+            <shequ>中山二路</shequ>
+            <shequ>枇杷山正街</shequ>
+            <shequ>重庆村</shequ>
+            <shequ>桂花园新村</shequ>
+            <shequ>国际村</shequ>
+            <shequ>铁路坡</shequ>
+            <shequ>王家坡</shequ>
+        </street>
+        <street name = "南纪门街道">
+            <shequ>请选择</shequ>
+            <shequ>凉亭子社区</shequ>
+            <shequ>十八梯社区</shequ>
+            <shequ>厚慈街</shequ>
+            <shequ>解放西路</shequ>
+            <shequ>凯旋路社区</shequ>
+            <shequ>邮政局巷</shequ>
+        </street>
+        <street name = "七星岗街道">
+            <shequ>请选择</shequ>
+            <shequ>归元寺</shequ>
+            <shequ>金汤街</shequ>
+            <shequ>领事巷</shequ>
+            <shequ>兴隆街</shequ>
+            <shequ>抗建堂</shequ>
+            <shequ>临华路</shequ>
+            <shequ>捍卫路</shequ>
+            <shequ>华一坡</shequ>
+        </street>
+        <street name = "石油路街道">
+            <shequ>请选择</shequ>
+            <shequ>虎头岩</shequ>
+            <shequ>金银湾社区</shequ>
+            <shequ>煤建新村社区</shequ>
+            <shequ>民乐村社区</shequ>
+            <shequ>彭家花园社区</shequ>
+            <shequ>石油路社区</shequ>
+            <shequ>新影村社区</shequ>
+        </street>
+        <street name = "化龙桥街道">
+            <shequ>请选择</shequ>
+            <shequ>红岩村社区</shequ>
+            <shequ>李子坝社区</shequ>
+        </street>
+        <street name = "上清寺街道">
+            <shequ>请选择</shequ>
+            <shequ>曾家岩社区</shequ>
+            <shequ>学田湾社区</shequ>
+            <shequ>春森路社区</shequ>
+            <shequ>上大田湾社区</shequ>
+            <shequ>嘉西村社区</shequ>
+            <shequ>桂花园社区</shequ>
+            <shequ>新都巷社区</shequ>
+        </street>
+    </qu>
+
+    <qu name = "北碚区">
+        <street name = "请选择">
+            <shequ>请选择</shequ>
+        </street>
+        <street name = "北温泉街道">
+            <shequ>请选择</shequ>
+            <shequ>城北社区</shequ>
+            <shequ>华光社区</shequ>
+            <shequ>雨台花园社区</shequ>
+            <shequ>云清路社区</shequ>
+            <shequ>缙云社区</shequ>
+            <shequ>郭家沱社区</shequ>
+            <shequ>新天花园社区</shequ>
+        </street>
+        <street name = "天生街道">
+            <shequ>请选择</shequ>
+            <shequ>碚峡路社区</shequ>
+            <shequ>荷花池社区</shequ>
+            <shequ>天生桥社区</shequ>
+            <shequ>泉外园社区</shequ>
+            <shequ>龙溪路社区</shequ>
+            <shequ>奔月路社区</shequ>
+            <shequ>新星路社区</shequ>
+            <shequ>西南大学北社区</shequ>
+            <shequ>西南大学南社区</shequ>
+        </street>
+        <street name = "蔡家岗街道">
+            <shequ>请选择</shequ>
+            <shequ>三溪口社区</shequ>
+            <shequ>蔡家街社区</shequ>
+            <shequ>灯塔街社区</shequ>
+            <shequ>中庚社区</shequ>
+            <shequ>云台社区</shequ>
+            <shequ>两江名居南社区</shequ>
+            <shequ>两江名居北社区</shequ>
+            <shequ>汪家堡社区</shequ>
+            <shequ>三溪村</shequ>
+        </street>
+        <street name = "东阳街道">
+            <shequ>请选择</shequ>
+            <shequ>黄桷社区</shequ>
+            <shequ>大新社区</shequ>
+            <shequ>丹阳社区</shequ>
+            <shequ>磨心坡社区</shequ>
+            <shequ>天府民居社区</shequ>
+        </street>
+        <street name = "龙凤桥街道">
+            <shequ>请选择</shequ>
+            <shequ>龙凤社区</shequ>
+            <shequ>燎原社区</shequ>
+            <shequ>兼善社区</shequ>
+            <shequ>群兴村</shequ>
+        </street>
+        <street name = "童家溪镇">
+            <shequ>请选择</shequ>
+            <shequ>苏家湾社区</shequ>
+            <shequ>马山垭社区</shequ>
+            <shequ>天成社区</shequ>
+        </street>
+        <street name = "歇马街道">
+            <shequ>请选择</shequ>
+            <shequ>红岩社区</shequ>
+            <shequ>华伟社区</shequ>
+            <shequ>小磨滩社区</shequ>
+            <shequ>状元碑社区</shequ>
+            <shequ>解放台社区</shequ>
+        </street>
+        <street name = "复兴街道">
+            <shequ>请选择</shequ>
+            <shequ>复兴社区</shequ>
+            <shequ>龙门社区</shequ>
+            <shequ>和源社区</shequ>
+            <shequ>太山社区</shequ>
+        </street>
+        <street name = "朝阳街道">
+            <shequ>请选择</shequ>
+            <shequ>天津路社区</shequ>
+            <shequ>牌坊湾社区</shequ>
+            <shequ>解放路社区</shequ>
+            <shequ>芦沟桥社区</shequ>
+            <shequ>河嘉村社区</shequ>
+            <shequ>新房子社区</shequ>
+            <shequ>大明社区</shequ>
+        </street>
+    </qu>
+
+    <qu name = "巴南区">
+        <street name = "请选择">
+            <shequ>请选择</shequ>
+        </street>
+        <street name = "花溪街道">
+            <shequ>请选择</shequ>
+            <shequ>走马梁社区</shequ>
+            <shequ>清溪园社区</shequ>
+            <shequ>岔路口村</shequ>
+            <shequ>岔路口社区</shequ>
+            <shequ>炒油场民主社区</shequ>
+            <shequ>道角社区</shequ>
+            <shequ>先锋村</shequ>
+            <shequ>建新村</shequ>
+            <shequ>经建社区</shequ>
+            <shequ>苦竹坝社区</shequ>
+            <shequ>柳镇社区</shequ>
+            <shequ>屏都社区</shequ>
+            <shequ>红光社区</shequ>
+            <shequ>陈家湾社区</shequ>
+            <shequ>土桥正街社区</shequ>
+            <shequ>王家坝社区</shequ>
+            <shequ>新工地社区</shequ>
+            <shequ>新屋村</shequ>
+            <shequ>学堂湾社区</shequ>
+            <shequ>重工社区</shequ>
+        </street>
+        <street name = "惠民街道">
+            <shequ>请选择</shequ>
+            <shequ>沙井村</shequ>
+            <shequ>晓春村</shequ>
+            <shequ>辅仁村</shequ>
+            <shequ>龙凤村</shequ>
+            <shequ>胜天村</shequ>
+            <shequ>显林村</shequ>
+            <shequ>社区居委会</shequ>
+        </street>
+        <street name = "龙洲湾街道">
+            <shequ>请选择</shequ>
+            <shequ>道角村</shequ>
+            <shequ>解放村</shequ>
+            <shequ>独龙桥村</shequ>
+            <shequ>红炉村</shequ>
+            <shequ>团结村</shequ>
+            <shequ>盘龙村</shequ>
+            <shequ>沿河村</shequ>
+            <shequ>梅家梁社区</shequ>
+            <shequ>百节社区</shequ>
+        </street>
+        <street name = "界石镇">
+            <shequ>请选择</shequ>
+            <shequ>桂花社区</shequ>
+            <shequ>和平社区</shequ>
+            <shequ>畅想社区</shequ>
+            <shequ>梨花社区</shequ>
+            <shequ>东城社区</shequ>
+        </street>
+        <street name = "李家沱街道">
+            <shequ>请选择</shequ>
+            <shequ>渝纱社区</shequ>
+            <shequ>八公里社区</shequ>
+            <shequ>马二社区</shequ>
+            <shequ>青岩社区</shequ>
+            <shequ>合建社区</shequ>
+            <shequ>松柏林社区</shequ>
+            <shequ>林荫社区</shequ>
+            <shequ>茶花社区</shequ>
+            <shequ>李正街社区</shequ>
+            <shequ>马一社区</shequ>
+            <shequ>群乐村</shequ>
+            <shequ>滨江社区</shequ>
+            <shequ>西流沱社区</shequ>
+            <shequ>其龙村</shequ>
+            <shequ>恒大城社区</shequ>
+            <shequ>桥南社区</shequ>
+            <shequ>无园湾社区</shequ>
+            <shequ>其龙社区</shequ>
+            <shequ>青年塘社区</shequ>
+        </street>
+        <street name = "龙洲湾街道">
+            <shequ>请选择</shequ>
+            <shequ>百节社区</shequ>
+            <shequ>龙海社区</shequ>
+            <shequ>梅家梁社区</shequ>
+            <shequ>龙华社区</shequ>
+            <shequ>龙德社区</shequ>
+            <shequ>龙滨社区</shequ>
+            <shequ>龙腾社区</shequ>
+            <shequ>道角村</shequ>
+            <shequ>解放村</shequ>
+            <shequ>独龙桥村</shequ>
+            <shequ>红炉村</shequ>
+            <shequ>团结村</shequ>
+            <shequ>沿河村</shequ>
+        </street>
+        <street name = "鱼洞街道">
+            <shequ>请选择</shequ>
+            <shequ>江洲路社区居委会</shequ>
+            <shequ>化龙路社区居委会</shequ>
+            <shequ>化龙桥社区居委会</shequ>
+            <shequ>鱼新街社区居委会</shequ>
+            <shequ>下新新社区居委会</shequ>
+            <shequ>新民街社区居委会</shequ>
+            <shequ>花土湾社区居委会</shequ>
+            <shequ>秦家院社区居委会</shequ>
+            <shequ>莲花社区居委会</shequ>
+            <shequ>乌洋街社区居委会</shequ>
+            <shequ>石洋街社区居委会</shequ>
+            <shequ>万泉街社区居委会</shequ>
+            <shequ>广益街社区居委会</shequ>
+        </street>
+    </qu>
+
+    <qu name = "九龙坡区">
+        <street name = "请选择">
+            <shequ>请选择</shequ>
+        </street>
+        <street name = "华岩镇">
+            <shequ>请选择</shequ>
+            <shequ>民安华福社区</shequ>
+            <shequ>华福雅苑社区</shequ>
+            <shequ>华岩新城社区</shequ>
+            <shequ>幸福村社区</shequ>
+            <shequ>石龙村社区</shequ>
+            <shequ>田坝村社区</shequ>
+            <shequ>中南村社区</shequ>
+            <shequ>西铁社区</shequ>
+        </street>
+        <street name = "九龙镇">
+            <shequ>请选择</shequ>
+            <shequ>马王社区</shequ>
+            <shequ>龙泉社区</shequ>
+            <shequ>巴国城社区</shequ>
+            <shequ>九龙花园社区</shequ>
+            <shequ>水碾社区</shequ>
+            <shequ>盘龙社区</shequ>
+            <shequ>广厦城社区</shequ>
+            <shequ>彩云湖社区</shequ>
+            <shequ>盘龙新城社区</shequ>
+            <shequ>大堰社区</shequ>
+        </street>
+        <street name = "谢家湾街道">
+            <shequ>请选择</shequ>
+            <shequ>劳动一村社区</shequ>
+            <shequ>劳动三村社区</shequ>
+            <shequ>民主村社区</shequ>
+            <shequ>大公馆社区</shequ>
+            <shequ>赵家山社区</shequ>
+            <shequ>渝中花园社区</shequ>
+            <shequ>谢家湾正街社区</shequ>
+            <shequ>鹅公岩社区</shequ>
+            <shequ>直港大道社区</shequ>
+            <shequ>袁家岗社区</shequ>
+            <shequ>黄家码头社区</shequ>
+            <shequ>解放台社区</shequ>
+            <shequ>华润.凌江社区</shequ>
+            <shequ>杨坪社区</shequ>
+        </street>
+        <street name = "渝州路街道">
+            <shequ>请选择</shequ>
+            <shequ>埝山苑社区</shequ>
+            <shequ>科一社区</shequ>
+            <shequ>奥体社区</shequ>
+            <shequ>渝州一社区</shequ>
+            <shequ>渝州二社区</shequ>
+            <shequ>科二社区</shequ>
+            <shequ>红育坡社区</shequ>
+            <shequ>白马凼社区</shequ>
+            <shequ>六店社区</shequ>
+        </street>
+        <street name = "杨家坪街道">
+            <shequ>请选择</shequ>
+            <shequ>新华一村</shequ>
+            <shequ>新华二村</shequ>
+            <shequ>新华三村</shequ>
+            <shequ>西郊二村</shequ>
+            <shequ>西郊三村</shequ>
+            <shequ>新胜村</shequ>
+            <shequ>兴胜路</shequ>
+            <shequ>前进路</shequ>
+            <shequ>团结路</shequ>
+            <shequ>天宝路</shequ>
+            <shequ>天兴路</shequ>
+            <shequ>杨渡村</shequ>
+            <shequ>杨渡路</shequ>
+        </street>
+        <street name = "黄桷坪街道">
+            <shequ>请选择</shequ>
+            <shequ>九龙湾社区</shequ>
+            <shequ>五龙庙社区</shequ>
+            <shequ>邮电支路社区</shequ>
+            <shequ>小湾社区</shequ>
+            <shequ>唐家湾社区</shequ>
+            <shequ>滩子口社区</shequ>
+            <shequ>三角道社区</shequ>
+            <shequ>黄正街社区</shequ>
+            <shequ>新市场社区</shequ>
+        </street>
+        <street name = "石坪桥街道">
+            <shequ>请选择</shequ>
+            <shequ>横街社区</shequ>
+            <shequ>建筑村</shequ>
+            <shequ>石坪村</shequ>
+            <shequ>新视界</shequ>
+            <shequ>冶金村</shequ>
+            <shequ>造漆村</shequ>
+            <shequ>后街社区</shequ>
+        </street>
+        <street name = "中梁山街道">
+            <shequ>请选择</shequ>
+            <shequ>西山村</shequ>
+            <shequ>共和村</shequ>
+            <shequ>华龙家园社区</shequ>
+            <shequ>华福家园社区</shequ>
+            <shequ>协兴村社区</shequ>
+            <shequ>康苑社区</shequ>
+            <shequ>福苑社区</shequ>
+            <shequ>半山一村社区</shequ>
+            <shequ>半山二村社区</shequ>
+            <shequ>华岩新村社区</shequ>
+        </street>
+        <street name = "二郎街道">
+            <shequ>请选择</shequ>
+            <shequ>二郎</shequ>
+            <shequ>迎宾路</shequ>
+            <shequ>科城路</shequ>
+            <shequ>石杨二</shequ>
+            <shequ>石杨三</shequ>
+            <shequ>五台山</shequ>
+            <shequ>同天苑</shequ>
+            <shequ>云泽路</shequ>
+        </street>
+        <street name = "石桥铺街道">
+            <shequ>请选择</shequ>
+            <shequ>石新路社区</shequ>
+            <shequ>柏林社区</shequ>
+            <shequ>朝阳路社区</shequ>
+            <shequ>高庙社区</shequ>
+            <shequ>兰花社区</shequ>
+            <shequ>老顶坡社区</shequ>
+            <shequ>石小路社区</shequ>
+            <shequ>石杨一社区</shequ>
+            <shequ>渝州新城社区</shequ>
+            <shequ>紫薇社区</shequ>
+            <shequ>白鹤社区</shequ>
+        </street>
+    </qu>
+
+    <qu name = "两江新区">
+        <street name = "请选择">
+            <shequ>请选择</shequ>
+        </street>
+        <street name = "康美街道">
+            <shequ>请选择</shequ>
+            <shequ>金竹苑社区</shequ>
+            <shequ>银竹苑社区</shequ>
+            <shequ>康庄美地一社区</shequ>
+            <shequ>康庄美地二社区</shequ>
+        </street>
+        <street name = "礼嘉街道">
+            <shequ>请选择</shequ>
+            <shequ>嘉兴社区</shequ>
+            <shequ>嘉和社区</shequ>
+            <shequ>白马社区</shequ>
+            <shequ>富安社区</shequ>
+        </street>
+        <street name = "人和街道">
+            <shequ>请选择</shequ>
+            <shequ>和睦路社区</shequ>
+            <shequ>龙寿路社区</shequ>
+            <shequ>万寿山社区</shequ>
+            <shequ>邢家桥社区</shequ>
+            <shequ>万年路社区</shequ>
+            <shequ>万紫山社区</shequ>
+            <shequ>人兴路社区</shequ>
+            <shequ>天湖美镇社区</shequ>
+            <shequ>金和社区</shequ>
+            <shequ>金祥社区</shequ>
+            <shequ>万和苑社区筹备组</shequ>
+        </street>
+        <street name = "鸳鸯街道">
+            <shequ>请选择</shequ>
+            <shequ>金谷社区</shequ>
+            <shequ>丹鹤社区</shequ>
+            <shequ>金桥社区</shequ>
+            <shequ>白鹭社区</shequ>
+            <shequ>金岭社区</shequ>
+        </street>
+        <street name = "大竹林街道">
+            <shequ>请选择</shequ>
+            <shequ>水竹苑社区</shequ>
+            <shequ>紫竹苑社区</shequ>
+            <shequ>凤栖沱社区</shequ>
+            <shequ>星汇社区</shequ>
+            <shequ>汪家桥社区</shequ>
+        </street>
+        <street name = "天宫殿街道">
+            <shequ>请选择</shequ>
+            <shequ>天龙路社区</shequ>
+            <shequ>星湖路社区</shequ>
+            <shequ>红枫路社区</shequ>
+            <shequ>太湖西路社区</shequ>
+            <shequ>东湖北路社区</shequ>
+            <shequ>丁香路社区</shequ>
+            <shequ>东湖南路社区</shequ>
+            <shequ>洪湖东路社区</shequ>
+        </street>
+        <street name = "金山街道">
+            <shequ>请选择</shequ>
+            <shequ>金渝社区</shequ>
+            <shequ>金湖社区</shequ>
+            <shequ>奥园社区</shequ>
+            <shequ>民心佳园社区</shequ>
+        </street>
+        <street name = "翠云街道">
+            <shequ>请选择</shequ>
+            <shequ>翠渝路社区</shequ>
+            <shequ>福安社区</shequ>
+            <shequ>云竹路社区</shequ>
+            <shequ>云卉路社区</shequ>
+        </street>
+    </qu>
+</city>

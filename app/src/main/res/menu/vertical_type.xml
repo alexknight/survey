@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="步行"/>
+    <item android:title="自行车"/>
+    <item android:title="电动车"/>
+    <item android:title="公交车"/>
+    <item android:title="出租车"/>
+    <item android:title="私人小汽车"/>
+    <item android:title="单位小汽车"/>
+    <item android:title="单位客车"/>
+    <item android:title="摩托车"/>
+    <item android:title="其他"/>
+</menu>

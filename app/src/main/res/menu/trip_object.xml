@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="上班"/>
+    <item android:title="上学"/>
+    <item android:title="接送小孩"/>
+    <item android:title="回家"/>
+    <item android:title="公务"/>
+    <item android:title="购物餐饮"/>
+    <item android:title="文体娱乐"/>
+    <item android:title="探亲访友"/>
+    <item android:title="看病探病"/>
+    <item android:title="公园、景区游览"/>
+    <item android:title="其他"/>
+</menu>

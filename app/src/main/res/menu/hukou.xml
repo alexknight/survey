@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="本市户籍"/>
+    <item android:title="非本市户籍、居住6个月及以上"/>
+    <item android:title="非本市户籍、居住6个月以下"/>
+</menu>
