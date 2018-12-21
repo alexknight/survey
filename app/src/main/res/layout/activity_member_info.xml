@@ -45,86 +45,86 @@
                     android:background="#eeeeee"
                     android:orientation="vertical">
 
-                    <!--<LinearLayout-->
-                        <!--android:layout_marginTop="1dp"-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="30dp"-->
-                        <!--android:orientation="horizontal"-->
-                        <!--android:background="#ffffff">-->
-                        <!--<TextView-->
-                            <!--android:paddingLeft="16dp"-->
-                            <!--android:paddingRight="16dp"-->
-                            <!--android:gravity="center"-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:text="工作地或学校信息"-->
-                            <!--android:textSize="15sp"-->
-                            <!--android:textColor="#105df0"/>-->
-                    <!--</LinearLayout>-->
+                    <LinearLayout
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="工作地或学校信息"
+                            android:textSize="15sp"
+                            android:textColor="#105df0"/>
+                    </LinearLayout>
 
-                    <!--<LinearLayout-->
-                        <!--android:layout_marginTop="1dp"-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="50dp"-->
-                        <!--android:orientation="horizontal"-->
-                        <!--android:background="#ffffff">-->
-                        <!--<TextView-->
-                            <!--android:paddingLeft="16dp"-->
-                            <!--android:paddingRight="16dp"-->
-                            <!--android:gravity="center"-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:text="工作/学校地址"-->
-                            <!--android:textSize="15sp"-->
-                            <!--android:textColor="#666666"/>-->
-                        <!--<TextView-->
-                            <!--android:id="@+id/tv_family_loc"-->
-                            <!--android:gravity="center_vertical"-->
-                            <!--android:layout_width="0dp"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:layout_weight="1"-->
-                            <!--android:layout_marginRight="16dp"-->
-                            <!--android:text="x=0.0000  y=0.0000"-->
-                            <!--android:textColor="#666666"/>-->
-                        <!--<ImageView-->
-                            <!--android:layout_width="20dp"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:padding="5dp"-->
-                            <!--android:scaleType="fitCenter"-->
-                            <!--android:layout_marginRight="5dp"-->
-                            <!--android:src="@drawable/ic_arrow_normal"/>-->
-                    <!--</LinearLayout>-->
-                    <!--<LinearLayout-->
-                        <!--android:layout_marginTop="1dp"-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="50dp"-->
-                        <!--android:orientation="horizontal"-->
-                        <!--android:background="#ffffff">-->
-                        <!--<TextView-->
-                            <!--android:paddingLeft="16dp"-->
-                            <!--android:paddingRight="16dp"-->
-                            <!--android:gravity="center"-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:text="详细地址"-->
-                            <!--android:textSize="15sp"-->
-                            <!--android:textColor="#666666"/>-->
-                        <!--<TextView-->
-                            <!--android:id="@+id/tv_family_loc_detail"-->
-                            <!--android:gravity="center_vertical"-->
-                            <!--android:layout_width="0dp"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:layout_weight="1"-->
-                            <!--android:layout_marginRight="16dp"-->
-                            <!--android:textColor="#666666"/>-->
-                        <!--<ImageView-->
-                            <!--android:layout_width="20dp"-->
-                            <!--android:layout_height="match_parent"-->
-                            <!--android:padding="5dp"-->
-                            <!--android:layout_marginRight="5dp"-->
-                            <!--android:scaleType="fitCenter"-->
-                            <!--android:src="@drawable/ic_arrow_normal"/>-->
-                    <!--</LinearLayout>-->
+                    <LinearLayout
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="工作/学校地址"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <TextView
+                            android:id="@+id/tv_family_loc"
+                            android:gravity="center_vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginRight="16dp"
+                            android:text="x=0.0000  y=0.0000"
+                            android:textColor="#666666"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/ic_arrow_normal"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="详细地址"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <TextView
+                            android:id="@+id/tv_family_loc_detail"
+                            android:gravity="center_vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_marginRight="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_arrow_normal"/>
+                    </LinearLayout>
 
                     <!--<LinearLayout-->
                         <!--android:layout_marginTop="1dp"-->
@@ -171,6 +171,7 @@
                             android:textColor="#666666"/>
                         <TextView
                             android:id="@+id/tv_sex"
+                            android:entries="@array/tv_sex"
                             android:layout_width="0dp"
                             android:gravity="center_vertical|right"
                             android:layout_height="match_parent"
@@ -234,7 +235,7 @@
                             android:textSize="15sp"
                             android:textColor="#666666"/>
                         <com.weiwangcn.betterspinner.library.BetterSpinner
-                            android:entries="@array/hukou"
+                            android:entries="@array/editTextHukou"
                             android:id="@+id/editTextHukou"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
@@ -258,7 +259,7 @@
                             android:textSize="15sp"
                             android:textColor="#666666"/>
                         <com.weiwangcn.betterspinner.library.BetterSpinner
-                            android:entries="@array/hukou"
+                            android:entries="@array/local"
                             android:id="@+id/local"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
@@ -358,12 +359,12 @@
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="职业"
+                            android:text="非杭州户籍居住时间"
                             android:textSize="15sp"
                             android:textColor="#666666"/>
                         <com.weiwangcn.betterspinner.library.BetterSpinner
-                            android:entries="@array/carree"
-                            android:id="@+id/editTextCarrer"
+                            android:entries="@array/nonLocalLiveTime"
+                            android:id="@+id/nonLocalLiveTime"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -371,6 +372,83 @@
                             android:layout_marginRight="16dp"
                             android:textColor="#666666"/>
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="文化程度"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:entries="@array/eduLevel"
+                            android:id="@+id/eduLevel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="职业"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:entries="@array/carree"
+                            android:id="@+id/carree"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="职位"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:entries="@array/carreeLevel"
+                            android:id="@+id/carreeLevel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+
                     <LinearLayout
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
@@ -387,8 +465,8 @@
                             android:textSize="15sp"
                             android:textColor="#666666"/>
                         <com.weiwangcn.betterspinner.library.BetterSpinner
-                            android:entries="@array/carree"
-                            android:id="@+id/editWorkType"
+                            android:entries="@array/businessType"
+                            android:id="@+id/businessType"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -396,6 +474,33 @@
                             android:layout_marginRight="16dp"
                             android:textColor="#666666"/>
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="个人年收入"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:entries="@array/yearIncome"
+                            android:id="@+id/yearIncome"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+
                     <LinearLayout
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
@@ -412,8 +517,8 @@
                             android:textSize="15sp"
                             android:textColor="#666666"/>
                         <com.weiwangcn.betterspinner.library.BetterSpinner
-                            android:entries="@array/carree"
-                            android:id="@+id/freeParking"
+                            android:entries="@array/hasFreeParking"
+                            android:id="@+id/hasFreeParking"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -438,6 +543,7 @@
                             android:textSize="15sp"
                             android:textColor="#105df0"/>
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
@@ -583,7 +689,7 @@
                             android:textSize="15sp"
                             android:textColor="#666666"/>
                         <com.weiwangcn.betterspinner.library.BetterSpinner
-                            android:entries="@array/traffic_way"
+                            android:entries="@array/trafficTimes"
                             android:id="@+id/lastMonthLeaveHzTimes"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
@@ -634,7 +740,7 @@
                             android:textSize="15sp"
                             android:textColor="#666666"/>
                         <com.weiwangcn.betterspinner.library.BetterSpinner
-                            android:entries="@array/traffic_way"
+                            android:entries="@array/onceTrafficMaxTime"
                             android:id="@+id/onceTrafficMaxTime"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
@@ -644,85 +750,85 @@
                             android:textColor="#666666"/>
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:visibility="gone"
-                        android:id="@+id/stopTypeArea"
-                        android:layout_marginTop="1dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:orientation="horizontal"
-                        android:background="#ffffff">
-                        <TextView
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:gravity="center"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="单位停车停车场类别"
-                            android:textSize="15sp"
-                            android:textColor="#666666"/>
-                        <com.weiwangcn.betterspinner.library.BetterSpinner
-                            android:entries="@array/stop_place"
-                            android:id="@+id/editTextStopType"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:layout_marginRight="16dp"
-                            android:textColor="#666666"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:visibility="gone"
-                        android:id="@+id/stopFeeArea"
-                        android:layout_marginTop="1dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:orientation="horizontal"
-                        android:background="#ffffff">
-                        <TextView
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:gravity="center"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="单位月均停车费"
-                            android:textSize="15sp"
-                            android:textColor="#666666"/>
-                        <com.weiwangcn.betterspinner.library.BetterSpinner
-                            android:entries="@array/stop_fee"
-                            android:id="@+id/editTextStopFee"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:inputType="number"
-                            android:layout_marginRight="16dp"
-                            android:textColor="#666666"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:visibility="gone"
-                        android:layout_marginTop="1dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:orientation="horizontal"
-                        android:background="#ffffff">
-                        <TextView
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:gravity="center"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="上班不使用地面公交的原因"
-                            android:textSize="15sp"
-                            android:textColor="#666666"/>
-                        <Spinner
-                            android:entries="@array/bus"
-                            android:id="@+id/editTextReason"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:inputType="number"
-                            android:layout_marginRight="16dp"
-                            android:textColor="#666666"/>
-                    </LinearLayout>
+                    <!--<LinearLayout-->
+                        <!--android:visibility="gone"-->
+                        <!--android:id="@+id/stopTypeArea"-->
+                        <!--android:layout_marginTop="1dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:background="#ffffff">-->
+                        <!--<TextView-->
+                            <!--android:paddingLeft="16dp"-->
+                            <!--android:paddingRight="16dp"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="单位停车停车场类别"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:textColor="#666666"/>-->
+                        <!--<com.weiwangcn.betterspinner.library.BetterSpinner-->
+                            <!--android:entries="@array/stop_place"-->
+                            <!--android:id="@+id/editTextStopType"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_marginRight="16dp"-->
+                            <!--android:textColor="#666666"/>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:visibility="gone"-->
+                        <!--android:id="@+id/stopFeeArea"-->
+                        <!--android:layout_marginTop="1dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:background="#ffffff">-->
+                        <!--<TextView-->
+                            <!--android:paddingLeft="16dp"-->
+                            <!--android:paddingRight="16dp"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="单位月均停车费"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:textColor="#666666"/>-->
+                        <!--<com.weiwangcn.betterspinner.library.BetterSpinner-->
+                            <!--android:entries="@array/stop_fee"-->
+                            <!--android:id="@+id/editTextStopFee"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:inputType="number"-->
+                            <!--android:layout_marginRight="16dp"-->
+                            <!--android:textColor="#666666"/>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:visibility="gone"-->
+                        <!--android:layout_marginTop="1dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:background="#ffffff">-->
+                        <!--<TextView-->
+                            <!--android:paddingLeft="16dp"-->
+                            <!--android:paddingRight="16dp"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="上班不使用地面公交的原因"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:textColor="#666666"/>-->
+                        <!--<Spinner-->
+                            <!--android:entries="@array/bus"-->
+                            <!--android:id="@+id/editTextReason"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:inputType="number"-->
+                            <!--android:layout_marginRight="16dp"-->
+                            <!--android:textColor="#666666"/>-->
+                    <!--</LinearLayout>-->
                 </LinearLayout>
             </ScrollView>
 

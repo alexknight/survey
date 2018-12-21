@@ -561,6 +561,7 @@
 
             <com.weiwangcn.betterspinner.library.BetterSpinner
                 android:id="@+id/spinner_house_times"
+                android:entries="@array/spinner_house_times"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -586,6 +587,7 @@
 
             <com.weiwangcn.betterspinner.library.BetterSpinner
                 android:id="@+id/spinner_house_area"
+                android:entries="@array/spinner_house_area"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -611,6 +613,7 @@
 
         <com.weiwangcn.betterspinner.library.BetterSpinner
             android:id="@+id/spinner_family_type"
+            android:entries="@array/spinner_family_type"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -648,6 +651,7 @@
 
             <com.weiwangcn.betterspinner.library.BetterSpinner
                 android:id="@+id/spinner_parking_catgory"
+                android:entries="@array/spinner_parking_catgory"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -673,6 +677,7 @@
 
             <com.weiwangcn.betterspinner.library.BetterSpinner
                 android:id="@+id/spinner_parking_owner"
+                android:entries="@array/spinner_parking_owner"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

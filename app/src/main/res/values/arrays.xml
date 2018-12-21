@@ -57,26 +57,160 @@
         <item>非本户户籍</item>
     </string-array>
 
-    <string-array name="traffic_way">
-        <item>步行</item>
-        <item>自驾小汽车</item>
-        <item>乘坐小汽车</item>
-        <item>轨道</item>
-        <item>公交车</item>
-        <item>出租车</item>
-        <item>单位班车</item>
-        <item>校车</item>
-        <item>网约车</item>
-        <item>拼车、顺风车</item>
-        <item>摩托车</item>
-        <item>货车</item>
-        <item>共享汽车</item>
-        <item>自行车</item>
-        <item>共享单车</item>
-        <item>电动车</item>
-        <item>黑车</item>
+    <string-array name="nonLocalLiveTime">
+        <item>半年以上</item>
+        <item>半年以下</item>
+    </string-array>
+
+    <string-array name="eduLevel">
+        <item>小学及以下</item>
+        <item>初中</item>
+        <item>高中、中专、技校</item>
+        <item>大学、大专</item>
+        <item>研究生及以上</item>
+    </string-array>
+
+    <string-array name="carree">
+        <item>学龄前儿童</item>
+        <item>在校中小学生</item>
+        <item>在校大专及以上学生</item>
+        <item>公务员</item>
+        <item>事业单位（含学校、医院）人员</item>
+        <item>私营个体企业主</item>
+        <item>在家电商或外贸人员</item>
+        <item>工厂员工</item>
+        <item>各类企业员工</item>
+        <item>无业、失业人员</item>
+        <item>离退休人员</item>
+        <item>农民（不含打工者）</item>
+        <item>专职司机、快递员、外卖员</item>
+        <item>离退休人员</item>
+        <item>专职司机或快递员</item>
+        <item>农民（不含打工者）</item>
         <item>其他</item>
     </string-array>
+
+    <string-array name="carreeLevel">
+        <item>一般职员</item>
+        <item>中层管理</item>
+        <item>高管</item>
+    </string-array>
+
+    <string-array name="businessType">
+        <item>房地产业</item>
+        <item>建筑业</item>
+        <item>金融业</item>
+        <item>批发和零售业</item>
+        <item>科学研究和技术服务业</item>
+        <item>教育</item>
+        <item>交通运输、仓储和邮政业</item>
+        <item>租赁和商务服务业</item>
+        <item>住宿和餐饮业</item>
+        <item>文化、体育和娱乐业</item>
+        <item>卫生和社会工作</item>
+        <item>信息传输、软件和信息技术服务业</item>
+        <item>农林渔牧业</item>
+        <item>公共管理、社会保障和社会组织</item>
+        <item>居民服务、修理和其它服务业</item>
+        <item>水力、环境和公共设施管理业</item>
+        <item>采矿业</item>
+        <item>电力、热力、燃气及水生产和供应业</item>
+        <item>国际组织</item>
+    </string-array>
+
+
+    <string-array name="yearIncome">
+        <item>无收入</item>
+        <item>5万元以下</item>
+        <item>5-10万元</item>
+        <item>10-20万元</item>
+        <item>20-40万元</item>
+        <item>40万元以上</item>
+    </string-array>
+
+    <string-array name="hasFreeParking">
+        <item>有</item>
+        <item>无</item>
+    </string-array>
+
+    <string-array name="trafficTimes">
+        <item>未离开</item>
+        <item>1～2次</item>
+        <item>3～4次</item>
+        <item>5～6次</item>
+        <item>7～10次</item>
+        <item>10次以上</item>
+    </string-array>
+
+    <string-array name="traffic_way">
+        <item>飞机</item>
+        <item>高铁或城际铁路</item>
+        <item>普通铁路</item>
+        <item>长途客车</item>
+        <item>旅游大巴</item>
+        <item>出租车</item>
+        <item>网约车</item>
+        <item>私人小汽车</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="onceTrafficMaxTime">
+        <item>20分钟</item>
+        <item>30分钟</item>
+        <item>40分钟</item>
+        <item>50分钟</item>
+        <item>60分钟</item>
+        <item>90分钟</item>
+        <item>90分钟以上</item>
+    </string-array>
+
+    <!--出行部分-->
+    <string-array name="aim">
+        <item>上班</item>
+        <item>上学</item>
+        <item>公务业务</item>
+        <item>文娱（含餐饮）体育</item>
+        <item>探亲访友</item>
+        <item>接送学生</item>
+        <item>回家</item>
+        <item>回程或回单位</item>
+        <item>看病探病</item>
+        <item>其它</item>
+    </string-array>
+
+    <!--<string-array name="">-->
+        <!--<item></item>-->
+        <!--<item></item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="">-->
+        <!--<item></item>-->
+        <!--<item></item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="">-->
+        <!--<item></item>-->
+        <!--<item></item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="">-->
+        <!--<item></item>-->
+        <!--<item></item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="">-->
+        <!--<item></item>-->
+        <!--<item></item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="">-->
+        <!--<item></item>-->
+        <!--<item></item>-->
+    <!--</string-array>-->
+
+
+
+
     <string-array name="stop_place_complan">
         <item>单位内停车场</item>
         <item>公共停车场</item>
@@ -203,25 +337,6 @@
         <item>其它</item>
     </string-array>
 
-    <string-array name="carree">
-        <item>小学生</item>
-        <item>初中生</item>
-        <item>高中生</item>
-        <item>大学生，中（高）职</item>
-        <item>公务员及事业单位人员</item>
-        <item>公司职员</item>
-        <item>工业企业员工</item>
-        <item>私营、个体企业主</item>
-        <item>服务业人员</item>
-        <item>军警人员</item>
-        <item>专职电商、微商</item>
-        <item>其他自由职业者</item>
-        <item>专职司机、快递员、外卖员</item>
-        <item>离退休人员</item>
-        <item>离退休再就业人员</item>
-        <item>无业</item>
-        <item>其他</item>
-    </string-array>
 
     <string-array name="bus">
         <item>步行到站台距离远</item>
@@ -260,22 +375,6 @@
         <item>两路金港国际</item>
         <item>宜家、奥特莱斯</item>
     </string-array>
-
-    <string-array name="aim">
-        <item>上班</item>
-        <item>上学</item>
-        <item>回家</item>
-        <item>回单位</item>
-        <item>公务外出</item>
-        <item>购物逛街</item>
-        <item>娱乐、公园游玩</item>
-        <item>外出就餐</item>
-        <item>看病探病</item>
-        <item>探亲访友</item>
-        <item>接送人</item>
-        <item>其它</item>
-    </string-array>
-
 
 
     <string-array name="out_code">
