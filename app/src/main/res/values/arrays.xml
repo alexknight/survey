@@ -1,6 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string-array name="spinner_house_times">
+        <item>90年代以前</item>
+        <item>90年代</item>
+        <item>2000-2004年</item>
+        <item>2005-2009年</item>
+        <item>2010-2015年</item>
+        <item>2016年及以后</item>
+    </string-array>
+
+    <string-array name="spinner_house_area">
+        <item>50平米及以下</item>
+        <item>50-70（含）平米</item>
+        <item>70-90（含）平米</item>
+        <item>90-120（含）平米</item>
+        <item>120平米以上</item>
+    </string-array>
+
+    <string-array name="spinner_family_type">
+        <item>自有住房</item>
+        <item>租（借）住房</item>
+        <item>雇主提供</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="spinner_parking_catgory">
+        <item>小区内固定车位</item>
+        <item>小区内非固定车位</item>
+        <item>路边及其他免费停车位</item>
+        <item>路边收费停车位</item>
+        <item>公共停车场</item>
+        <item>其他停车场</item>
+    </string-array>
+
+    <string-array name="spinner_parking_owner">
+        <item>自有产权</item>
+        <item>包月租赁</item>
+        <item>包年租赁</item>
+        <item>按次计算</item>
+        <item>免费停车</item>
+    </string-array>
+
+    <string-array name="tv_sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="editTextHukou">
+        <item>杭州市户籍</item>
+        <item>非杭州市户籍</item>
+    </string-array>
+
+    <string-array name="local">
+        <item>本户户籍</item>
+        <item>非本户户籍</item>
+    </string-array>
+
     <string-array name="traffic_way">
         <item>步行</item>
         <item>自驾小汽车</item>

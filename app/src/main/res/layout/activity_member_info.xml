@@ -45,112 +45,112 @@
                     android:background="#eeeeee"
                     android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_marginTop="1dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:orientation="horizontal"
-                        android:background="#ffffff">
-                        <TextView
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:gravity="center"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="工作地或学校信息"
-                            android:textSize="15sp"
-                            android:textColor="#105df0"/>
-                    </LinearLayout>
+                    <!--<LinearLayout-->
+                        <!--android:layout_marginTop="1dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:background="#ffffff">-->
+                        <!--<TextView-->
+                            <!--android:paddingLeft="16dp"-->
+                            <!--android:paddingRight="16dp"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="工作地或学校信息"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:textColor="#105df0"/>-->
+                    <!--</LinearLayout>-->
 
-                    <LinearLayout
-                        android:layout_marginTop="1dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:orientation="horizontal"
-                        android:background="#ffffff">
-                        <TextView
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:gravity="center"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="工作/学校地址"
-                            android:textSize="15sp"
-                            android:textColor="#666666"/>
-                        <TextView
-                            android:id="@+id/tv_family_loc"
-                            android:gravity="center_vertical"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:layout_marginRight="16dp"
-                            android:text="x=0.0000  y=0.0000"
-                            android:textColor="#666666"/>
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:scaleType="fitCenter"
-                            android:layout_marginRight="5dp"
-                            android:src="@drawable/ic_arrow_normal"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_marginTop="1dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:orientation="horizontal"
-                        android:background="#ffffff">
-                        <TextView
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:gravity="center"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="详细地址"
-                            android:textSize="15sp"
-                            android:textColor="#666666"/>
-                        <TextView
-                            android:id="@+id/tv_family_loc_detail"
-                            android:gravity="center_vertical"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:layout_marginRight="16dp"
-                            android:textColor="#666666"/>
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:layout_marginRight="5dp"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/ic_arrow_normal"/>
-                    </LinearLayout>
+                    <!--<LinearLayout-->
+                        <!--android:layout_marginTop="1dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:background="#ffffff">-->
+                        <!--<TextView-->
+                            <!--android:paddingLeft="16dp"-->
+                            <!--android:paddingRight="16dp"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="工作/学校地址"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:textColor="#666666"/>-->
+                        <!--<TextView-->
+                            <!--android:id="@+id/tv_family_loc"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_marginRight="16dp"-->
+                            <!--android:text="x=0.0000  y=0.0000"-->
+                            <!--android:textColor="#666666"/>-->
+                        <!--<ImageView-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:scaleType="fitCenter"-->
+                            <!--android:layout_marginRight="5dp"-->
+                            <!--android:src="@drawable/ic_arrow_normal"/>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_marginTop="1dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:background="#ffffff">-->
+                        <!--<TextView-->
+                            <!--android:paddingLeft="16dp"-->
+                            <!--android:paddingRight="16dp"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:text="详细地址"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:textColor="#666666"/>-->
+                        <!--<TextView-->
+                            <!--android:id="@+id/tv_family_loc_detail"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_marginRight="16dp"-->
+                            <!--android:textColor="#666666"/>-->
+                        <!--<ImageView-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:layout_marginRight="5dp"-->
+                            <!--android:scaleType="fitCenter"-->
+                            <!--android:src="@drawable/ic_arrow_normal"/>-->
+                    <!--</LinearLayout>-->
 
-                    <LinearLayout
-                        android:layout_marginTop="1dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:orientation="horizontal"
-                        android:background="#ffffff">
+                    <!--<LinearLayout-->
+                        <!--android:layout_marginTop="1dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:background="#ffffff">-->
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:text="用地性质"
-                            android:textColor="#666666"
-                            android:textSize="15sp" />
-                        <com.weiwangcn.betterspinner.library.BetterSpinner
-                            android:entries="@array/earth_type"
-                            android:id="@+id/editTextEarthType"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:layout_marginRight="16dp"
-                            android:textColor="#666666"/>
-                    </LinearLayout>
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:paddingLeft="16dp"-->
+                            <!--android:paddingRight="16dp"-->
+                            <!--android:text="用地性质"-->
+                            <!--android:textColor="#666666"-->
+                            <!--android:textSize="15sp" />-->
+                        <!--<com.weiwangcn.betterspinner.library.BetterSpinner-->
+                            <!--android:entries="@array/earth_type"-->
+                            <!--android:id="@+id/editTextEarthType"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_marginRight="16dp"-->
+                            <!--android:textColor="#666666"/>-->
+                    <!--</LinearLayout>-->
 
 
 
@@ -236,6 +236,30 @@
                         <com.weiwangcn.betterspinner.library.BetterSpinner
                             android:entries="@array/hukou"
                             android:id="@+id/editTextHukou"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="杭州市户籍详细情况"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:entries="@array/hukou"
+                            android:id="@+id/local"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -348,6 +372,159 @@
                             android:textColor="#666666"/>
                     </LinearLayout>
                     <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="工作行业"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:entries="@array/carree"
+                            android:id="@+id/editWorkType"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="单位是否有免费停车位"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:entries="@array/carree"
+                            android:id="@+id/freeParking"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="个人运营商信息"
+                            android:textSize="15sp"
+                            android:textColor="#105df0"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="移动号码数量"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <EditText
+                            android:id="@+id/mobileNum"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:hint="请输入"
+                            android:textSize="15sp"
+                            android:gravity="center_vertical|right"
+                            android:text=""
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="联通号码数量"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <EditText
+                            android:id="@+id/unionNum"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:hint="请输入"
+                            android:textSize="15sp"
+                            android:gravity="center_vertical|right"
+                            android:text=""
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="电信号码数量"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <EditText
+                            android:id="@+id/telecNum"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:hint="请输入"
+                            android:textSize="15sp"
+                            android:gravity="center_vertical|right"
+                            android:text=""
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:visibility="gone"
                         android:id="@+id/studyArea"
                         android:layout_marginTop="1dp"
@@ -386,7 +563,7 @@
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="上班出行方式"
+                            android:text="对外出行情况"
                             android:textSize="15sp"
                             android:textColor="#105df0"/>
                     </LinearLayout>
@@ -402,12 +579,12 @@
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="常用出行方式"
+                            android:text="最近一个月离开杭州的次数"
                             android:textSize="15sp"
                             android:textColor="#666666"/>
                         <com.weiwangcn.betterspinner.library.BetterSpinner
                             android:entries="@array/traffic_way"
-                            android:id="@+id/editTextTraffic"
+                            android:id="@+id/lastMonthLeaveHzTimes"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -415,6 +592,58 @@
                             android:layout_marginRight="16dp"
                             android:textColor="#666666"/>
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="最近一个月离开杭州的主要交通工具"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:entries="@array/traffic_way"
+                            android:id="@+id/lastMonthLeaveHzTraffic"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="工作/上学单程出行承受最大时间(min)"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:entries="@array/traffic_way"
+                            android:id="@+id/onceTrafficMaxTime"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+
                     <LinearLayout
                         android:visibility="gone"
                         android:id="@+id/stopTypeArea"

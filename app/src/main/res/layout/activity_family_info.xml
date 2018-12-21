@@ -147,82 +147,6 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_arrow_normal" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:background="#ffffff">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:text="套内住房面积"
-                android:textColor="#666666"
-                android:textSize="15sp" />
-            <com.weiwangcn.betterspinner.library.BetterSpinner
-                android:id="@+id/spinner_house_size"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:inputType="number"
-                android:layout_marginRight="16dp"
-                android:textColor="#666666"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="1dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:background="#ffffff">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:text="房屋产权"
-                android:textColor="#666666"
-                android:textSize="15sp" />
-            <com.weiwangcn.betterspinner.library.BetterSpinner
-                android:id="@+id/spinner_house_belong"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:inputType="number"
-                android:layout_marginRight="16dp"
-                android:textColor="#666666"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:background="#ffffff">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:text="家庭月均总收入"
-                android:textColor="#666666"
-                android:textSize="15sp" />
-            <com.weiwangcn.betterspinner.library.BetterSpinner
-                android:id="@+id/spinner_total_income"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:inputType="number"
-                android:layout_marginRight="16dp"
-                android:textColor="#666666"/>
-        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
@@ -342,6 +266,43 @@
                 android:textSize="15sp" />
         </LinearLayout>
 
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:background="#ffffff">-->
+            <!--<TextView-->
+                <!--android:paddingLeft="16dp"-->
+                <!--android:paddingRight="16dp"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:text="小汽车数量"-->
+                <!--android:textSize="15sp"-->
+                <!--android:textColor="#666666"/>-->
+            <!--<EditText-->
+                <!--android:id="@+id/editTextCar"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:inputType="number"-->
+                <!--android:gravity="center_vertical|right"-->
+                <!--android:text="0"-->
+                <!--android:selectAllOnFocus="true"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:textColor="#666666"/>-->
+            <!--<Button-->
+                <!--android:visibility="gone"-->
+                <!--android:text="详细情况"-->
+                <!--android:id="@+id/btn_car_detail"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginRight="16dp" />-->
+        <!--</LinearLayout>-->
+
         <LinearLayout
             android:layout_marginTop="1dp"
             android:layout_width="match_parent"
@@ -354,11 +315,11 @@
                 android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="小汽车数量"
+                android:text="普通自行车"
                 android:textSize="15sp"
                 android:textColor="#666666"/>
             <EditText
-                android:id="@+id/editTextCar"
+                android:id="@+id/editNormalBicycle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -368,15 +329,91 @@
                 android:selectAllOnFocus="true"
                 android:layout_marginRight="16dp"
                 android:textColor="#666666"/>
-            <Button
-                android:visibility="gone"
-                android:text="详细情况"
-                android:id="@+id/btn_car_detail"
-                android:paddingRight="20dp"
-                android:paddingLeft="20dp"
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <TextView
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginRight="16dp" />
+                android:text="电动自行车"
+                android:textSize="15sp"
+                android:textColor="#666666"/>
+            <EditText
+                android:id="@+id/editElectricBicycle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:gravity="center_vertical|right"
+                android:text="0"
+                android:selectAllOnFocus="true"
+                android:layout_marginRight="16dp"
+                android:textColor="#666666"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <TextView
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="摩托车"
+                android:textSize="15sp"
+                android:textColor="#666666"/>
+            <EditText
+                android:id="@+id/editMotorcycle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:gravity="center_vertical|right"
+                android:text="0"
+                android:selectAllOnFocus="true"
+                android:layout_marginRight="16dp"
+                android:textColor="#666666"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <TextView
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="私人小客车"
+                android:textSize="15sp"
+                android:textColor="#666666"/>
+            <EditText
+                android:id="@+id/editPrivateCar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:gravity="center_vertical|right"
+                android:text="0"
+                android:selectAllOnFocus="true"
+                android:layout_marginRight="16dp"
+                android:textColor="#666666"/>
+
         </LinearLayout>
 
         <LinearLayout
@@ -391,47 +428,331 @@
                 android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="车牌归属地"
+                android:text="浙A牌车辆数"
                 android:textSize="15sp"
                 android:textColor="#666666"/>
+            <EditText
+                android:id="@+id/zheACarNum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:gravity="center_vertical|right"
+                android:text="0"
+                android:selectAllOnFocus="true"
+                android:layout_marginRight="16dp"
+                android:textColor="#666666"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <TextView
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="调查当日限行车辆数"
+                android:textSize="15sp"
+                android:textColor="#666666"/>
+            <EditText
+                android:id="@+id/limitCarNum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:gravity="center_vertical|right"
+                android:text="0"
+                android:selectAllOnFocus="true"
+                android:layout_marginRight="16dp"
+                android:textColor="#666666"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <TextView
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="单位小汽车"
+                android:textSize="15sp"
+                android:textColor="#666666"/>
+            <EditText
+                android:id="@+id/editCompanyCar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:gravity="center_vertical|right"
+                android:text="0"
+                android:selectAllOnFocus="true"
+                android:layout_marginRight="16dp"
+                android:textColor="#666666"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <TextView
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="其他车辆"
+                android:textSize="15sp"
+                android:textColor="#666666"/>
+            <EditText
+                android:id="@+id/editOtherCar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:gravity="center_vertical|right"
+                android:text="0"
+                android:selectAllOnFocus="true"
+                android:layout_marginRight="16dp"
+                android:textColor="#666666"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="住房信息"
+            android:textColor="#105df0"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="居住建筑竣工年代"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
             <com.weiwangcn.betterspinner.library.BetterSpinner
-                android:id="@+id/carBelong"
+                android:id="@+id/spinner_house_times"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-
-                android:gravity="center_vertical|right"
+                android:inputType="number"
                 android:layout_marginRight="16dp"
                 android:textColor="#666666"/>
         </LinearLayout>
         <LinearLayout
-            android:layout_marginTop="1dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:background="#ffffff">
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
             <TextView
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="摩托车数量"
-                android:textSize="15sp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="家庭住房面积"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/spinner_house_area"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_marginRight="16dp"
                 android:textColor="#666666"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="住房性质"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/spinner_family_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:layout_marginRight="16dp"
+            android:textColor="#666666"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="家庭端小汽车停放情况"
+            android:textColor="#105df0"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="停车场类别"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/spinner_parking_catgory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_marginRight="16dp"
+                android:textColor="#666666"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="停车场权属"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/spinner_parking_owner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_marginRight="16dp"
+                android:textColor="#666666"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="停车场费用"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
             <EditText
-                android:id="@+id/editTextMobike"
+                android:id="@+id/editParkingCost"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:inputType="number"
+                android:text="0"
+                android:selectAllOnFocus="true"
+                android:textColor="#666666" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="行驶里程"
+            android:textColor="#105df0"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="工作日私人小汽车平均行驶里程"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editDriverMiles"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:inputType="number"
                 android:gravity="center_vertical|right"
-                android:selectAllOnFocus="true"
                 android:text="0"
+                android:selectAllOnFocus="true"
                 android:layout_marginRight="16dp"
                 android:textColor="#666666"/>
         </LinearLayout>
-
     </LinearLayout>
     </ScrollView>
     <LinearLayout
