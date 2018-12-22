@@ -790,6 +790,32 @@
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:text="上车处地铁线"
+                    android:textSize="15sp"
+                    android:textColor="#666666"/>
+                <TextView
+                    android:id="@+id/startSubwayLine"
+                    android:entries="@array/subwayLines"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical|right"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:text="请选择"
+                    android:textColor="#666666"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_arrow_normal"/>
+                <TextView
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:text="上车站点"
                     android:textSize="15sp"
                     android:textColor="#666666"/>
@@ -824,12 +850,38 @@
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:text="换乘处地铁线"
+                    android:textSize="15sp"
+                    android:textColor="#666666"/>
+                <TextView
+                    android:id="@+id/changeSubwayLine"
+                    android:entries="@array/subwayLines"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical|right"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:text="请选择"
+                    android:textColor="#666666"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_arrow_normal"/>
+                <TextView
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:text="换乘站点"
                     android:textSize="15sp"
                     android:textColor="#666666"/>
                 <TextView
-                    android:id="@+id/changeStation"
-                    android:entries="@array/changeStation"
+                    android:id="@+id/changeSubwaystation"
+                    android:entries="@array/changeSubwaystation"
                     android:layout_width="0dp"
                     android:gravity="center_vertical|right"
                     android:layout_height="match_parent"
@@ -858,12 +910,38 @@
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:text="下车处地铁线"
+                    android:textSize="15sp"
+                    android:textColor="#666666"/>
+                <TextView
+                    android:id="@+id/leaveSubwayLine"
+                    android:entries="@array/subwayLines"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical|right"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:text="请选择"
+                    android:textColor="#666666"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_arrow_normal"/>
+                <TextView
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:text="下车站点"
                     android:textSize="15sp"
                     android:textColor="#666666"/>
                 <TextView
-                    android:id="@+id/leaveStation"
-                    android:entries="@array/leaveStation"
+                    android:id="@+id/leaveSubwayStation"
+                    android:entries="@array/leaveSubwayStation"
                     android:layout_width="0dp"
                     android:gravity="center_vertical|right"
                     android:layout_height="match_parent"

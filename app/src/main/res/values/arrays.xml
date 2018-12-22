@@ -290,315 +290,418 @@
         <item>其他停车场（如大院）</item>
     </string-array>
 
-    <!--<string-array name="">-->
-        <!--<item></item>-->
-        <!--<item></item>-->
-    <!--</string-array>-->
-
-    <!--<string-array name="">-->
-        <!--<item></item>-->
-        <!--<item></item>-->
-    <!--</string-array>-->
-
-    <!--<string-array name="">-->
-        <!--<item></item>-->
-        <!--<item></item>-->
-    <!--</string-array>-->
-
-    <!--<string-array name="">-->
-        <!--<item></item>-->
-        <!--<item></item>-->
-    <!--</string-array>-->
-
-    <!--<string-array name="">-->
-        <!--<item></item>-->
-        <!--<item></item>-->
-    <!--</string-array>-->
-
-
-
-
-    <string-array name="stop_place_complan">
-        <item>单位内停车场</item>
-        <item>公共停车场</item>
-        <item>路边及其他免费停车位</item>
-        <item>路边收费停车位</item>
-        <item>其它停车场</item>
-    </string-array>
-
-    <string-array name="stop_place_trip">
-        <item>路边免费停车位</item>
-        <item>路边收费停车位</item>
-        <item>公共停车场</item>
-        <item>建筑配建停车场</item>
-    </string-array>
-
-    <string-array name="stop_place">
-        <item>小区内停车位</item>
-        <item>路边及其他免费停车位</item>
-        <item>路边收费停车位</item>
-        <item>公共停车场</item>
-        <item>其它停车场</item>
-    </string-array>
-    <string-array name="stop_fee">
-        <item>免费</item>
-        <item>100元以下</item>
-        <item>100至200元（含）</item>
-        <item>200至300元（含）</item>
-        <item>300至400元（含）</item>
-        <item>400至500元（含）</item>
-        <item>500元以上</item>
-    </string-array>
-
-    <string-array name="work_in_home">
-        <item>在家或者本小区内工作</item>
-        <item>无业或离退休人员，无工作地</item>
-        <item>自由职业者，无固定工作地</item>
-    </string-array>
-
-    <string-array name="total_income">
-        <item>4000元以下</item>
-        <item>4001～6000元</item>
-        <item>6001～8000元</item>
-        <item>8001～10000元</item>
-        <item>10001～20000元</item>
-        <item>20001～30000元</item>
-        <item>30001～50000元</item>
-        <item>50000元以上</item>
-    </string-array>
-
-    <string-array name="price">
-        <item>5万以下</item>
-        <item>5万至10万</item>
-        <item>10万至20万</item>
-        <item>20万至30万</item>
-        <item>30万至50万</item>
-        <item>50万以上</item>
-    </string-array>
-    <string-array name="oil_fee">
-        <item>纯电动无燃油费</item>
-        <item>200元以下</item>
-        <item>200至500元</item>
-        <item>500至1000元</item>
-        <item>1000至2000元</item>
-        <item>2000元以上</item>
-    </string-array>
-    <string-array name="long_way">
-        <item>5000公里以下</item>
-        <item>5000至10000公里</item>
-        <item>10000至20000公里</item>
-        <item>20000公里以上</item>
-    </string-array>
-    <string-array name="buy_plan">
-        <item>计划今年内购买</item>
-        <item>计划三年内购买</item>
-        <item>计划五年内购买</item>
-        <item>无购买计划</item>
-    </string-array>
-    <string-array name="house_type">
-        <item>别墅、洋房、大户型</item>
-        <item>一般住房</item>
-        <item>老旧住房</item>
-        <item>公租房</item>
-    </string-array>
-    <string-array name="house_age">
-        <item>九十年代以前</item>
-        <item>九十年代</item>
-        <item>2000年至2004年</item>
-        <item>2005年至2009年</item>
-        <item>2010年至2014年</item>
-        <item>2015年</item>
-        <item>2016年</item>
-        <item>2017年及以后</item>
-    </string-array>
-
-    <string-array name="house_size">
-        <item>150平米以上</item>
-        <item>100至150平米（含）</item>
-        <item>80至100平米（含）</item>
-        <item>60至80平米（含）</item>
-        <item>40至60平米（含）</item>
-        <item>40平米及以下</item>
-    </string-array>
-
-    <string-array name="house_belong">
-        <item>自有住房</item>
-        <item>租（借）住房</item>
-        <item>雇主提供</item>
-        <item>其他</item>
-    </string-array>
-
-    <string-array name="earth_type">
-        <item>居住</item>
-        <item>商务办公</item>
-        <item>行政办公</item>
-        <item>商住两用</item>
-        <item>商业</item>
-        <item>宾馆</item>
-        <item>医疗</item>
-        <item>学校</item>
-        <item>工业</item>
-        <item>仓储</item>
-        <item>汽车站、火车站、机场等</item>
-        <item>公园、游乐园</item>
-        <item>其它</item>
-    </string-array>
-
-
-    <string-array name="bus">
-        <item>步行到站台距离远</item>
-        <item>候车时间长</item>
-        <item>拥堵导致速度慢，在途时间长</item>
-        <item>线路绕行远，在途时间长</item>
-        <item>停车多，在途时间长</item>
-        <item>准点率低，到达时间不可控</item>
-        <item>换乘次数多</item>
-        <item>换乘距离远，换乘不便</item>
-        <item>车内拥挤，舒适性低</item>
-        <item>已购车，更倾向于开车</item>
-        <item>选择舒适性更高的出行工具（网约车或出租车等）</item>
-        <item>其他</item>
-    </string-array>
-
-    <string-array name="brand">
-        <item>自主</item>
-        <item>合资</item>
-        <item>豪华</item>
-    </string-array>
-
-    <string-array name="buss_area">
-        <item>观音桥商圈</item>
-        <item>解放碑商圈</item>
-        <item>杨家坪商圈（含万象城）</item>
-        <item>南坪商圈</item>
-        <item>沙坪坝商圈</item>
-        <item>龙湖时代天街</item>
-        <item>大渡口步行街</item>
-        <item>巴南万达广场</item>
-        <item>爱琴海购物广场</item>
-        <item>新光天地</item>
-        <item>大学城新街、龙湖U城</item>
-        <item>北碚万达广场、北碚城南步行街、北碚老城商圈</item>
-        <item>两路金港国际</item>
-        <item>宜家、奥特莱斯</item>
-    </string-array>
-
-
-    <string-array name="out_code">
-        <item>四川省</item>
-        <item>东北地区（黑龙江、吉林、辽宁、内蒙古东部）</item>
-        <item>京津唐地区</item>
-        <item>华北地区（内蒙古中部、河北、山西）</item>
-        <item>华中地区（河南、湖北、湖南）</item>
-        <item>长三角地区（上海、苏南、杭州、宁波等）</item>
-        <item>华东其它地区（山东、苏北、安徽、浙南、福建）</item>
-        <item>珠三角地区（广州、珠海、深圳）</item>
-        <item>华南其它地区（广东、广西、江西）</item>
-        <item>西南其它地区（云南、西藏、贵州）</item>
-        <item>西北地区（内蒙古西部、陕西、甘肃、青海、新疆）</item>
-        <item>港澳台地区</item>
-        <item>出境</item>
-    </string-array>
-
-    <string-array name="hukou">
-        <item>重庆市主城九区户籍</item>
-        <item>重庆市其它区县户籍</item>
-        <item>外省市户籍</item>
-    </string-array>
-
-    <string-array name="car_belong">
-        <item>重庆主城区号牌</item>
-        <item>重庆其它地区号牌</item>
-        <item>外省市号牌</item>
-    </string-array>
-
-    <string-array name="live_time">
-        <item>六个月以上</item>
-        <item>三到六个月</item>
-        <item>一到三个月</item>
-        <item>一个月以内</item>
-    </string-array>
-
-    <string-array name="hukou_from">
-        <item>江津</item>
-        <item>璧山</item>
-        <item>合川</item>
-        <item>永川</item>
-        <item>綦江</item>
-        <item>长寿</item>
-        <item>涪陵、丰都</item>
-        <item>铜梁、潼南</item>
-        <item>南川、武隆</item>
-        <item>大足、荣昌</item>
-        <item>渝东南</item>
-        <item>渝东北</item>
-    </string-array>
-
-    <string-array name="object_place">
-        <item>江津</item>
-        <item>璧山</item>
-        <item>合川</item>
-        <item>永川</item>
-        <item>綦江</item>
-        <item>长寿</item>
-        <item>涪陵、丰都</item>
-        <item>铜梁、潼南</item>
-        <item>南川、武隆</item>
-        <item>大足、荣昌</item>
-        <item>渝东南</item>
-        <item>渝东北</item>
-    </string-array>
-
-    <string-array name="subway">
+    <string-array name="subwayLines">
         <item>一号线</item>
         <item>二号线</item>
-        <item>三号线</item>
-        <item>五号线</item>
-        <item>六号线</item>
-        <item>十号线</item>
+        <item>四号线</item>
     </string-array>
 
-    <string-array name="trip_aim">
-        <item>回老家</item>
-        <item>商务出差</item>
-        <item>探亲访友</item>
-        <item>旅游</item>
-        <item>其他</item>
+    <string-array name="changeStation">
+        <item>未换乘</item>
+        <item>彭埠</item>
+        <item>火车东站</item>
+        <item>近江</item>
+        <item>凤起路</item>
+        <item>钱江</item>
     </string-array>
 
-    <string-array name="trip_type">
-        <item>火车</item>
-        <item>长途巴士</item>
-        <item>小汽车</item>
-        <item>摩托车</item>
-        <item>其他</item>
+    <string-array name="yihaoxian">
+        <item>湘湖</item>
+        <item>滨康路</item>
+        <item>西兴</item>
+        <item>滨和路</item>
+        <item>江陵路</item>
+        <item>近江</item>
+        <item>婺江路</item>
+        <item>城站</item>
+        <item>定安路</item>
+        <item>龙翔桥</item>
+        <item>凤起路</item>
+        <item>武林广场</item>
+        <item>西湖文化广场</item>
+        <item>打铁关</item>
+        <item>闸弄口</item>
+        <item>火车东</item>
+        <item>彭埠</item>
+        <item>七堡</item>
+        <item>九和路</item>
+        <item>九堡</item>
+        <item>客运中心</item>
+        <item>下沙西</item>
+        <item>金沙湖</item>
+        <item>高沙路</item>
+        <item>文泽路</item>
+        <item>文海南路</item>
+        <item>云水</item>
+        <item>下沙江滨</item>
+        <item>乔司南</item>
+        <item>乔司</item>
+        <item>翁梅</item>
+        <item>余杭高铁站</item>
+        <item>南苑</item>
+        <item>临平</item>
     </string-array>
 
-    <string-array name="study_type">
-        <item>走读</item>
-        <item>住读</item>
+    <string-array name="erhaoxian">
+        <item>朝阳</item>
+        <item>曹家桥</item>
+        <item>潘水</item>
+        <item>人民路</item>
+        <item>杭发厂</item>
+        <item>人民广场</item>
+        <item>建设一路</item>
+        <item>建设三路</item>
+        <item>振宁路</item>
+        <item>飞虹路</item>
+        <item>盈丰路</item>
+        <item>钱江世纪城</item>
+        <item>钱江路</item>
+        <item>庆春广场</item>
+        <item>庆菱路</item>
+        <item>建国北路</item>
+        <item>中河北路</item>
+        <item>凤起路</item>
+        <item>武林门</item>
+        <item>沈塘桥</item>
+        <item>学院路</item>
+        <item>古翠路</item>
+        <item>丰潭路</item>
+        <item>文新</item>
+        <item>三坝</item>
+        <item>虾龙圩</item>
+        <item>三墩</item>
+        <item>墩祥街</item>
+        <item>金家渡</item>
+        <item>白洋</item>
+        <item>杜甫村</item>
+        <item>良渚</item>
     </string-array>
 
-    <string-array name="yes_no">
-        <item>是</item>
-        <item>否</item>
+    <string-array name="sihaoxian">
+        <item>彭埠</item>
+        <item>火车东站</item>
+        <item>新风</item>
+        <item>新塘</item>
+        <item>景芳</item>
+        <item>钱江路</item>
+        <item>江锦路</item>
+        <item>市民中心</item>
+        <item>城星路</item>
+        <item>近江</item>
+        <item>甬江路</item>
+        <item>南星桥</item>
+        <item>复兴路</item>
+        <item>水澄桥</item>
+        <item>联庄</item>
+        <item>中医药大学</item>
+        <item>杨家墩</item>
+        <item>浦沿</item>
     </string-array>
 
-    <string-array name="name_type">
-        <item>本人</item>
-        <item>父母</item>
-        <item>无手机</item>
-    </string-array>
+    <!--<string-array name="">-->
+        <!--<item></item>-->
+        <!--<item></item>-->
+    <!--</string-array>-->
 
-    <string-array name="in_home_reason">
-        <item>休假在家</item>
-        <item>生病在家</item>
-        <item>年龄大腿脚不便</item>
-        <item>天气原因不想出门</item>
-        <item>在本小区内上班或活动</item>
-        <item>在家带孩子</item>
-        <item>其他 </item>
-    </string-array>
+    <!--<string-array name="">-->
+        <!--<item></item>-->
+        <!--<item></item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="">-->
+        <!--<item></item>-->
+        <!--<item></item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="">-->
+        <!--<item></item>-->
+        <!--<item></item>-->
+    <!--</string-array>-->
+
+
+
+
+    <!--<string-array name="stop_place_complan">-->
+        <!--<item>单位内停车场</item>-->
+        <!--<item>公共停车场</item>-->
+        <!--<item>路边及其他免费停车位</item>-->
+        <!--<item>路边收费停车位</item>-->
+        <!--<item>其它停车场</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="stop_place_trip">-->
+        <!--<item>路边免费停车位</item>-->
+        <!--<item>路边收费停车位</item>-->
+        <!--<item>公共停车场</item>-->
+        <!--<item>建筑配建停车场</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="stop_place">-->
+        <!--<item>小区内停车位</item>-->
+        <!--<item>路边及其他免费停车位</item>-->
+        <!--<item>路边收费停车位</item>-->
+        <!--<item>公共停车场</item>-->
+        <!--<item>其它停车场</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="stop_fee">-->
+        <!--<item>免费</item>-->
+        <!--<item>100元以下</item>-->
+        <!--<item>100至200元（含）</item>-->
+        <!--<item>200至300元（含）</item>-->
+        <!--<item>300至400元（含）</item>-->
+        <!--<item>400至500元（含）</item>-->
+        <!--<item>500元以上</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="work_in_home">-->
+        <!--<item>在家或者本小区内工作</item>-->
+        <!--<item>无业或离退休人员，无工作地</item>-->
+        <!--<item>自由职业者，无固定工作地</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="total_income">-->
+        <!--<item>4000元以下</item>-->
+        <!--<item>4001～6000元</item>-->
+        <!--<item>6001～8000元</item>-->
+        <!--<item>8001～10000元</item>-->
+        <!--<item>10001～20000元</item>-->
+        <!--<item>20001～30000元</item>-->
+        <!--<item>30001～50000元</item>-->
+        <!--<item>50000元以上</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="price">-->
+        <!--<item>5万以下</item>-->
+        <!--<item>5万至10万</item>-->
+        <!--<item>10万至20万</item>-->
+        <!--<item>20万至30万</item>-->
+        <!--<item>30万至50万</item>-->
+        <!--<item>50万以上</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="oil_fee">-->
+        <!--<item>纯电动无燃油费</item>-->
+        <!--<item>200元以下</item>-->
+        <!--<item>200至500元</item>-->
+        <!--<item>500至1000元</item>-->
+        <!--<item>1000至2000元</item>-->
+        <!--<item>2000元以上</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="long_way">-->
+        <!--<item>5000公里以下</item>-->
+        <!--<item>5000至10000公里</item>-->
+        <!--<item>10000至20000公里</item>-->
+        <!--<item>20000公里以上</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="buy_plan">-->
+        <!--<item>计划今年内购买</item>-->
+        <!--<item>计划三年内购买</item>-->
+        <!--<item>计划五年内购买</item>-->
+        <!--<item>无购买计划</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="house_type">-->
+        <!--<item>别墅、洋房、大户型</item>-->
+        <!--<item>一般住房</item>-->
+        <!--<item>老旧住房</item>-->
+        <!--<item>公租房</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="house_age">-->
+        <!--<item>九十年代以前</item>-->
+        <!--<item>九十年代</item>-->
+        <!--<item>2000年至2004年</item>-->
+        <!--<item>2005年至2009年</item>-->
+        <!--<item>2010年至2014年</item>-->
+        <!--<item>2015年</item>-->
+        <!--<item>2016年</item>-->
+        <!--<item>2017年及以后</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="house_size">-->
+        <!--<item>150平米以上</item>-->
+        <!--<item>100至150平米（含）</item>-->
+        <!--<item>80至100平米（含）</item>-->
+        <!--<item>60至80平米（含）</item>-->
+        <!--<item>40至60平米（含）</item>-->
+        <!--<item>40平米及以下</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="house_belong">-->
+        <!--<item>自有住房</item>-->
+        <!--<item>租（借）住房</item>-->
+        <!--<item>雇主提供</item>-->
+        <!--<item>其他</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="earth_type">-->
+        <!--<item>居住</item>-->
+        <!--<item>商务办公</item>-->
+        <!--<item>行政办公</item>-->
+        <!--<item>商住两用</item>-->
+        <!--<item>商业</item>-->
+        <!--<item>宾馆</item>-->
+        <!--<item>医疗</item>-->
+        <!--<item>学校</item>-->
+        <!--<item>工业</item>-->
+        <!--<item>仓储</item>-->
+        <!--<item>汽车站、火车站、机场等</item>-->
+        <!--<item>公园、游乐园</item>-->
+        <!--<item>其它</item>-->
+    <!--</string-array>-->
+
+
+    <!--<string-array name="bus">-->
+        <!--<item>步行到站台距离远</item>-->
+        <!--<item>候车时间长</item>-->
+        <!--<item>拥堵导致速度慢，在途时间长</item>-->
+        <!--<item>线路绕行远，在途时间长</item>-->
+        <!--<item>停车多，在途时间长</item>-->
+        <!--<item>准点率低，到达时间不可控</item>-->
+        <!--<item>换乘次数多</item>-->
+        <!--<item>换乘距离远，换乘不便</item>-->
+        <!--<item>车内拥挤，舒适性低</item>-->
+        <!--<item>已购车，更倾向于开车</item>-->
+        <!--<item>选择舒适性更高的出行工具（网约车或出租车等）</item>-->
+        <!--<item>其他</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="brand">-->
+        <!--<item>自主</item>-->
+        <!--<item>合资</item>-->
+        <!--<item>豪华</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="buss_area">-->
+        <!--<item>观音桥商圈</item>-->
+        <!--<item>解放碑商圈</item>-->
+        <!--<item>杨家坪商圈（含万象城）</item>-->
+        <!--<item>南坪商圈</item>-->
+        <!--<item>沙坪坝商圈</item>-->
+        <!--<item>龙湖时代天街</item>-->
+        <!--<item>大渡口步行街</item>-->
+        <!--<item>巴南万达广场</item>-->
+        <!--<item>爱琴海购物广场</item>-->
+        <!--<item>新光天地</item>-->
+        <!--<item>大学城新街、龙湖U城</item>-->
+        <!--<item>北碚万达广场、北碚城南步行街、北碚老城商圈</item>-->
+        <!--<item>两路金港国际</item>-->
+        <!--<item>宜家、奥特莱斯</item>-->
+    <!--</string-array>-->
+
+
+    <!--<string-array name="out_code">-->
+        <!--<item>四川省</item>-->
+        <!--<item>东北地区（黑龙江、吉林、辽宁、内蒙古东部）</item>-->
+        <!--<item>京津唐地区</item>-->
+        <!--<item>华北地区（内蒙古中部、河北、山西）</item>-->
+        <!--<item>华中地区（河南、湖北、湖南）</item>-->
+        <!--<item>长三角地区（上海、苏南、杭州、宁波等）</item>-->
+        <!--<item>华东其它地区（山东、苏北、安徽、浙南、福建）</item>-->
+        <!--<item>珠三角地区（广州、珠海、深圳）</item>-->
+        <!--<item>华南其它地区（广东、广西、江西）</item>-->
+        <!--<item>西南其它地区（云南、西藏、贵州）</item>-->
+        <!--<item>西北地区（内蒙古西部、陕西、甘肃、青海、新疆）</item>-->
+        <!--<item>港澳台地区</item>-->
+        <!--<item>出境</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="hukou">-->
+        <!--<item>重庆市主城九区户籍</item>-->
+        <!--<item>重庆市其它区县户籍</item>-->
+        <!--<item>外省市户籍</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="car_belong">-->
+        <!--<item>重庆主城区号牌</item>-->
+        <!--<item>重庆其它地区号牌</item>-->
+        <!--<item>外省市号牌</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="live_time">-->
+        <!--<item>六个月以上</item>-->
+        <!--<item>三到六个月</item>-->
+        <!--<item>一到三个月</item>-->
+        <!--<item>一个月以内</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="hukou_from">-->
+        <!--<item>江津</item>-->
+        <!--<item>璧山</item>-->
+        <!--<item>合川</item>-->
+        <!--<item>永川</item>-->
+        <!--<item>綦江</item>-->
+        <!--<item>长寿</item>-->
+        <!--<item>涪陵、丰都</item>-->
+        <!--<item>铜梁、潼南</item>-->
+        <!--<item>南川、武隆</item>-->
+        <!--<item>大足、荣昌</item>-->
+        <!--<item>渝东南</item>-->
+        <!--<item>渝东北</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="object_place">-->
+        <!--<item>江津</item>-->
+        <!--<item>璧山</item>-->
+        <!--<item>合川</item>-->
+        <!--<item>永川</item>-->
+        <!--<item>綦江</item>-->
+        <!--<item>长寿</item>-->
+        <!--<item>涪陵、丰都</item>-->
+        <!--<item>铜梁、潼南</item>-->
+        <!--<item>南川、武隆</item>-->
+        <!--<item>大足、荣昌</item>-->
+        <!--<item>渝东南</item>-->
+        <!--<item>渝东北</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="subway">-->
+        <!--<item>一号线</item>-->
+        <!--<item>二号线</item>-->
+        <!--<item>三号线</item>-->
+        <!--<item>五号线</item>-->
+        <!--<item>六号线</item>-->
+        <!--<item>十号线</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="trip_aim">-->
+        <!--<item>回老家</item>-->
+        <!--<item>商务出差</item>-->
+        <!--<item>探亲访友</item>-->
+        <!--<item>旅游</item>-->
+        <!--<item>其他</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="trip_type">-->
+        <!--<item>火车</item>-->
+        <!--<item>长途巴士</item>-->
+        <!--<item>小汽车</item>-->
+        <!--<item>摩托车</item>-->
+        <!--<item>其他</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="study_type">-->
+        <!--<item>走读</item>-->
+        <!--<item>住读</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="yes_no">-->
+        <!--<item>是</item>-->
+        <!--<item>否</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="name_type">-->
+        <!--<item>本人</item>-->
+        <!--<item>父母</item>-->
+        <!--<item>无手机</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="in_home_reason">-->
+        <!--<item>休假在家</item>-->
+        <!--<item>生病在家</item>-->
+        <!--<item>年龄大腿脚不便</item>-->
+        <!--<item>天气原因不想出门</item>-->
+        <!--<item>在本小区内上班或活动</item>-->
+        <!--<item>在家带孩子</item>-->
+        <!--<item>其他 </item>-->
+    <!--</string-array>-->
     
     <string-array name="q1s1">
         <item>请选择</item>
