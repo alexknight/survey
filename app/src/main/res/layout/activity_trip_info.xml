@@ -356,6 +356,7 @@
                     android:textColor="#666666"/>
                 <TextView
                     android:id="@+id/tv_first_traffic_way"
+                    android:entries="@array/tv_first_traffic_way"
                     android:layout_width="0dp"
                     android:gravity="center_vertical|right"
                     android:layout_height="match_parent"
@@ -389,6 +390,7 @@
                     android:textColor="#666666"/>
                 <TextView
                     android:id="@+id/tv_sec_traffic_way"
+                    android:entries="@array/tv_sec_traffic_way"
                     android:layout_width="0dp"
                     android:gravity="center_vertical|right"
                     android:layout_height="match_parent"
@@ -422,6 +424,7 @@
                     android:textColor="#666666"/>
                 <TextView
                     android:id="@+id/tv_third_traffic_way"
+                    android:entries="@array/tv_third_traffic_way"
                     android:layout_width="0dp"
                     android:gravity="center_vertical|right"
                     android:layout_height="match_parent"
@@ -455,6 +458,7 @@
                     android:textColor="#666666"/>
                 <TextView
                     android:id="@+id/tv_fourth_traffic_way"
+                    android:entries="@array/tv_fourth_traffic_way"
                     android:layout_width="0dp"
                     android:gravity="center_vertical|right"
                     android:layout_height="match_parent"
@@ -560,7 +564,7 @@
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="本次出行费用"
+                    android:text="本次出行费用(元)"
                     android:textSize="15sp"
                     android:textColor="#666666"/>
                 <EditText
@@ -611,6 +615,7 @@
                     android:textColor="#666666"/>
                 <TextView
                     android:id="@+id/tv_parking_way"
+                    android:entries="@array/tv_parking_way"
                     android:layout_width="0dp"
                     android:gravity="center_vertical|right"
                     android:layout_height="match_parent"
@@ -790,6 +795,7 @@
                     android:textColor="#666666"/>
                 <TextView
                     android:id="@+id/startStation"
+                    android:entries="@array/startStation"
                     android:layout_width="0dp"
                     android:gravity="center_vertical|right"
                     android:layout_height="match_parent"
@@ -823,6 +829,7 @@
                     android:textColor="#666666"/>
                 <TextView
                     android:id="@+id/changeStation"
+                    android:entries="@array/changeStation"
                     android:layout_width="0dp"
                     android:gravity="center_vertical|right"
                     android:layout_height="match_parent"
@@ -856,6 +863,7 @@
                     android:textColor="#666666"/>
                 <TextView
                     android:id="@+id/leaveStation"
+                    android:entries="@array/leaveStation"
                     android:layout_width="0dp"
                     android:gravity="center_vertical|right"
                     android:layout_height="match_parent"

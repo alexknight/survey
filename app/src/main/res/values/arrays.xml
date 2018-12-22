@@ -178,10 +178,117 @@
         <item>其它</item>
     </string-array>
 
-    <!--<string-array name="">-->
-        <!--<item></item>-->
-        <!--<item></item>-->
-    <!--</string-array>-->
+    <string-array name="tv_first_traffic_way">
+        <item>全程步行</item>
+        <item>自有自行车</item>
+        <item>公共自行车</item>
+        <item>共享单车</item>
+        <item>共享电动车</item>
+        <item>助动车和电动车</item>
+        <item>自驾小汽车</item>
+        <item>搭乘小汽车</item>
+        <item>公交车</item>
+        <item>地铁</item>
+        <item>顶灯出租车</item>
+        <item>网约车</item>
+        <item>租赁/共享汽车</item>
+        <item>摩托车</item>
+        <item>班车</item>
+        <item>水上巴士</item>
+        <item>其它</item>
+    </string-array>
+
+    <string-array name="tv_sec_traffic_way">
+        <item>自有自行车</item>
+        <item>公共自行车</item>
+        <item>共享单车</item>
+        <item>共享电动车</item>
+        <item>助动车和电动车</item>
+        <item>自驾小汽车</item>
+        <item>搭乘小汽车</item>
+        <item>公交车</item>
+        <item>地铁</item>
+        <item>顶灯出租车</item>
+        <item>网约车</item>
+        <item>租赁/共享汽车</item>
+        <item>摩托车</item>
+        <item>班车</item>
+        <item>水上巴士</item>
+        <item>其它</item>
+    </string-array>
+
+    <string-array name="tv_third_traffic_way">
+        <item>自有自行车</item>
+        <item>公共自行车</item>
+        <item>共享单车</item>
+        <item>共享电动车</item>
+        <item>助动车和电动车</item>
+        <item>自驾小汽车</item>
+        <item>搭乘小汽车</item>
+        <item>公交车</item>
+        <item>地铁</item>
+        <item>顶灯出租车</item>
+        <item>网约车</item>
+        <item>租赁/共享汽车</item>
+        <item>摩托车</item>
+        <item>班车</item>
+        <item>水上巴士</item>
+        <item>其它</item>
+    </string-array>
+
+    <string-array name="tv_fourth_traffic_way">
+        <item>自有自行车</item>
+        <item>公共自行车</item>
+        <item>共享单车</item>
+        <item>共享电动车</item>
+        <item>助动车和电动车</item>
+        <item>自驾小汽车</item>
+        <item>搭乘小汽车</item>
+        <item>公交车</item>
+        <item>地铁</item>
+        <item>顶灯出租车</item>
+        <item>网约车</item>
+        <item>租赁/共享汽车</item>
+        <item>摩托车</item>
+        <item>班车</item>
+        <item>水上巴士</item>
+        <item>其它</item>
+    </string-array>
+
+    <string-array name="tv_fifth_traffic_way">
+        <item>自有自行车</item>
+        <item>公共自行车</item>
+        <item>共享单车</item>
+        <item>共享电动车</item>
+        <item>助动车和电动车</item>
+        <item>自驾小汽车</item>
+        <item>搭乘小汽车</item>
+        <item>公交车</item>
+        <item>地铁</item>
+        <item>顶灯出租车</item>
+        <item>网约车</item>
+        <item>租赁/共享汽车</item>
+        <item>摩托车</item>
+        <item>班车</item>
+        <item>水上巴士</item>
+        <item>其它</item>
+    </string-array>
+
+    <string-array name="tv_parking_way">
+        <item>单位停车场</item>
+        <item>路边及其他免费停车场</item>
+        <item>路边收费停车场</item>
+        <item>公共停车场</item>
+        <item>其他停车场（如大院）</item>
+    </string-array>
+
+    <string-array name="startStation">
+        <item>单位停车场</item>
+        <item>路边及其他免费停车场</item>
+        <item>路边收费停车场</item>
+        <item>公共停车场</item>
+        <item>其他停车场（如大院）</item>
+    </string-array>
 
     <!--<string-array name="">-->
         <!--<item></item>-->
