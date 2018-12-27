@@ -339,7 +339,6 @@ public class LocationActivity extends Activity
                         Bundle bundle = new Bundle();
                         bundle.putString("address", getResources().getStringArray(R.array.out_code)[pos]);
                         bundle.putString("addressDetail",getResources().getStringArray(R.array.out_code)[pos]);
-                        bundle.putString("addressType","");
                         bundle.putInt("type",1);
                         Intent intent1 = new Intent();
                         intent1.putExtras(bundle);
@@ -358,7 +357,6 @@ public class LocationActivity extends Activity
                         Bundle bundle = new Bundle();
                         bundle.putString("address", family.address);
                         bundle.putString("addressDetail", family.addressDetail);
-                        bundle.putString("addressType","居住");
                         bundle.putInt("type",1);
                         Intent intent2 = new Intent();
                         intent2.putExtras(bundle);
@@ -378,11 +376,10 @@ public class LocationActivity extends Activity
                 if(posFamily >= 0 && posPerson >= 0){
                     Person person = MyApplication.currentUsers.getSelectUser().families.get(posFamily).people.get(posPerson);
 
-                    if(!(TextUtils.isEmpty(person.address) || TextUtils.isEmpty(person.earthType))){
+                    if(!(TextUtils.isEmpty(person.address) )){
                         Bundle bundle = new Bundle();
                         bundle.putString("address", person.address);
                         bundle.putString("addressDetail", person.addressDetail);
-                        bundle.putString("addressType",person.earthType);
                         bundle.putInt("type",1);
                         Intent intent2 = new Intent();
                         intent2.putExtras(bundle);

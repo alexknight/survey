@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,7 +22,6 @@ import com.hw.survey.R;
 import com.hw.survey.dao.DataUtil;
 import com.hw.survey.family.Family;
 import com.hw.survey.util.AddressUtils;
-import com.hw.survey.util.ViewUtils;
 import com.weiwangcn.betterspinner.library.BetterSpinner;
 
 import butterknife.ButterKnife;
@@ -44,6 +44,9 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
     @InjectView(R.id.tv_family_loc)
     TextView address;
 
+    @InjectView(R.id.buildFinishTime)
+    BetterSpinner buildFinishTime;
+
     @InjectView(R.id.tv_family_loc_detail)
     TextView addressDetail;
 
@@ -53,14 +56,41 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
     @InjectView(R.id.editTextFamilyUP6)
     EditText up6Num;
 
-    @InjectView(R.id.editTextFamilyTemp)
-    EditText tempNum;
+    @InjectView(R.id.editBike)
+    EditText editBike;
+
+    @InjectView(R.id.editAutoBike)
+    EditText editAutoBike;
+
+    @InjectView(R.id.editTextMobike)
+    EditText editTextMobike;
+
+    @InjectView(R.id.editTextCar)
+    EditText editTextCar;
+
+    @InjectView(R.id.hangzhouCarNumLinearLayout)
+    LinearLayout hangzhouCarNumLinearLayout;
+
+    @InjectView(R.id.newEnergyCarNumLinearLayout)
+    LinearLayout newEnergyCarNumLinearLayout;
+
+    @InjectView(R.id.editTextCompanyCar)
+    EditText editTextCompanyCar;
+
+    @InjectView(R.id.editOtherCar)
+    EditText editOtherCar;
+
+    @InjectView(R.id.hangzhouCarNum)
+    EditText hangzhouCarNum;
+
+    @InjectView(R.id.newEnegyCarNum)
+    EditText newEnegyCarNum;
+
+    @InjectView(R.id.limitCarNum)
+    EditText limitCarNum;
 
     @InjectView(R.id.editTextCar)
     EditText car;
-
-    @InjectView(R.id.carBelong)
-    BetterSpinner carBelong;
 
     @InjectView(R.id.editTextMobike)
     EditText moto;
@@ -68,19 +98,14 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
     @InjectView(R.id.spinner_house_size)
     BetterSpinner spinner_house_size;
 
-    @InjectView(R.id.spinner_total_income)
-    BetterSpinner spinner_total_income;
-
     @InjectView(R.id.spinner_house_belong)
     BetterSpinner spinner_house_belong;
 
     ArrayAdapter<String> adapterHouseSize;
     ArrayAdapter<String> adapterHouseBelong;
-    ArrayAdapter<String> adapterTotalIncome;
+    ArrayAdapter<String> adapterFinishTime;
 
     private int pos;
-
-    ArrayAdapter<String> adapter;
 
     Family family;
 
@@ -93,17 +118,15 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
         setContentView(R.layout.activity_family_info);
         ButterKnife.inject(this);
 
-        adapter = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.car_belong));
-        carBelong.setAdapter(adapter);
-
         adapterHouseSize = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.house_size));
         spinner_house_size.setAdapter(adapterHouseSize);
 
         adapterHouseBelong = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.house_belong));
         spinner_house_belong.setAdapter(adapterHouseBelong);
 
-        adapterTotalIncome = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.total_income));
-        spinner_total_income.setAdapter(adapterTotalIncome);
+        adapterFinishTime = new ArrayAdapter<String>(this,R.layout.spinner_item,getResources().getStringArray(R.array.house_age));
+        buildFinishTime = findViewById(R.id.buildFinishTime);
+        buildFinishTime.setAdapter(adapterFinishTime);
 
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -165,9 +188,7 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
                     tt = Integer.valueOf(total.getText().toString());
                 }
                 int temp = 0;
-                if(!TextUtils.isEmpty(tempNum.getText().toString())){
-                    temp = Integer.valueOf(tempNum.getText().toString());
-                }
+
                 if(i > 0 && (i >= tt - temp)){
                     Toast.makeText(FamilyInfoActivity.this,
                             "家庭中应包含至少一位六周岁以上人口",Toast.LENGTH_SHORT).show();
@@ -177,63 +198,76 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
             }
         });
 
+        EditText[] allCars = {editBike, editAutoBike, editTextMobike, editTextCar, editTextCompanyCar, editOtherCar};
 
-        tempNum.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        EditText[] partCars = {hangzhouCarNum,newEnegyCarNum,limitCarNum};
 
-            }
 
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                if(TextUtils.isEmpty(s.toString()))
-                    return;
-                int i = Integer.valueOf(s.toString());
-                int tt = 0;
-                if(!TextUtils.isEmpty(total.getText().toString())){
-                    tt = Integer.valueOf(total.getText().toString());
-                }
-                int kid = 0;
-                if(!TextUtils.isEmpty(up6Num.getText().toString())){
-                    kid = Integer.valueOf(up6Num.getText().toString());
-                }
-                if(i > 0 && (i >= tt - kid)){
-                    Toast.makeText(FamilyInfoActivity.this,
-                            "家庭中应包含至少一位成年人",Toast.LENGTH_SHORT).show();
-                    tempNum.setText("0");
-                }
-            }
-        });
-
-        car.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                if(TextUtils.isEmpty(s.toString()))
-                    return;
-                int carNum = Integer.valueOf(s.toString());
-                if(carNum > 0){
-                    ViewUtils.enableSpinner(carBelong);
-                }else {
-                    ViewUtils.disableSpinner(carBelong);
+        for (final EditText car: allCars){
+            car.addTextChangedListener(new TextWatcher() {
+                @Override
+                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
                 }
 
+                @Override
+                public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                }
+
+                @Override
+                public void afterTextChanged(Editable s) {
+                    if(TextUtils.isEmpty(s.toString()))
+                        return;
+                    int i = Integer.valueOf(s.toString());
+
+                    if(i > 10 ){
+                        Toast.makeText(FamilyInfoActivity.this,
+                                "请确认该车辆数量是否超过10辆",Toast.LENGTH_SHORT).show();
+                    }
+
+                }
+            });
+        }
+
+        for (final EditText partCar: partCars){
+            if (Integer.valueOf(partCar.getText().toString())>Integer.valueOf(editTextCar.getText().toString())){
+                Toast.makeText(FamilyInfoActivity.this,
+                        "数量超过本家庭私人小客车数量，请核实",Toast.LENGTH_SHORT).show();
             }
-        });
+        }
+
+        if (Integer.valueOf(editTextCar.getText().toString())>0){
+            hangzhouCarNumLinearLayout.setVisibility(View.VISIBLE);
+            newEnergyCarNumLinearLayout.setVisibility(View.VISIBLE);
+        }else if (Integer.valueOf(editTextCar.getText().toString())==0){
+            hangzhouCarNumLinearLayout.setVisibility(View.INVISIBLE);
+            newEnergyCarNumLinearLayout.setVisibility(View.INVISIBLE);
+        }
+
+//        car.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//                if(TextUtils.isEmpty(s.toString()))
+//                    return;
+//                int carNum = Integer.valueOf(s.toString());
+//                if(carNum > 0){
+//                    ViewUtils.enableSpinner(carBelong);
+//                }else {
+//                    ViewUtils.disableSpinner(carBelong);
+//                }
+//
+//            }
+//        });
 
         btn_prev.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -301,6 +335,10 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
                     return false;
                 }
 
+                if(!isEmpty(buildFinishTime.getText().toString())){
+                    family.buildFinishTime = buildFinishTime.getText().toString();
+                }
+
                 if(!isEmpty(spinner_house_size.getText().toString())){
                     family.houseSize = spinner_house_size.getText().toString();
                 }else {
@@ -313,10 +351,6 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
                 }else {
                     Toast.makeText(FamilyInfoActivity.this,"请选择房屋产权",Toast.LENGTH_LONG).show();
                     return false;
-                }
-
-                if(!isEmpty(spinner_total_income.getText().toString())){
-                    family.totalIncome = spinner_total_income.getText().toString();
                 }
 
                 if(!isEmpty(total.getText().toString())){
@@ -334,21 +368,9 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
                     family.up6Num = Integer.valueOf(up6Num.getText().toString());
                 }
 
-                if(!isEmpty(tempNum.getText().toString())){
-                    family.tempNum = Integer.valueOf(tempNum.getText().toString());
-                }
 
                 if(!isEmpty(car.getText().toString())){
                     family.carNum = Integer.valueOf(car.getText().toString());
-                }
-
-                if(family.carNum > 0){
-                    if(!isEmpty(carBelong.getText().toString())){
-                        family.carAddress = carBelong.getText().toString();
-                    }else {
-                        Toast.makeText(FamilyInfoActivity.this,"请选择车牌归属地！",Toast.LENGTH_LONG).show();
-                        return false;
-                    }
                 }
 
 
@@ -378,9 +400,6 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
                     addressDetail.setText(family.addressDetail);
                 }
 
-                if(!TextUtils.isEmpty(family.carAddress)){
-                    carBelong.setText(family.carAddress);
-                }
 
                 if(family.totalNum > 0){
                     total.setText(String.valueOf(family.totalNum));
@@ -390,14 +409,8 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
                     up6Num.setText(String.valueOf(family.up6Num));
                 }
 
-                if(family.tempNum > 0){
-                    tempNum.setText(String.valueOf(family.tempNum));
-                }
-
                 if(family.carNum > 0){
                     car.setText(String.valueOf(family.carNum));
-                }else {
-                    ViewUtils.disableSpinner(carBelong);
                 }
 
                 if(family.motoNum > 0){
@@ -412,9 +425,7 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
                     spinner_house_belong.setText(family.houseBelong);
                 }
 
-                if(!TextUtils.isEmpty(family.totalIncome)){
-                    spinner_total_income.setText(family.totalIncome);
-                }
+
             }
         }
     }

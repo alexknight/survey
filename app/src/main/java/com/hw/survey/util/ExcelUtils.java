@@ -101,8 +101,8 @@ public class ExcelUtils {
         int familyLine = 0;
 
         String[] memberTitle = { "个人编号", "是否完成", "家庭编号", "工作地地址经度(BD09)","工作地地址纬度(BD09)",
-                "工作地地址经度(WGS84)","工作地地址纬度(WGS84)","工作地地址名称","用地性质",
-                "是否有固定工作地","性别","年龄","户籍情况","居住时间","非本市户籍来源",
+                "工作地地址经度(WGS84)","工作地地址纬度(WGS84)","工作地地址名称",
+                "是否有固定工作地","性别","年龄","户籍情况","非杭州户籍居住时间",
                 "职业","就学情况","上班常用出行方式","单位停车场类别","单位停车场收费","移动号数量","联通号数量",
                 "电信号数量","是否更换本地号","手机注册名","乘坐飞机次数","乘坐火车次数","前往重庆市主城区以外区县的次数",
                 "主要目的地","出行目的","出行方式","无出行的原因"
@@ -198,10 +198,8 @@ public class ExcelUtils {
                     sheetFamily.addCell(new Label(17, familyId, String.valueOf(family.motoNum)));
                     sheetFamily.addCell(new Label(18, familyId, insertString(family.stopPlace)));
                     sheetFamily.addCell(new Label(19, familyId, insertString(family.stopFee)));
-                    sheetFamily.addCell(new Label(20, familyId, family.buyPlan.equals(textYes)?intDone:intUnDone));
                     sheetFamily.addCell(new Label(21, familyId, insertString(family.batteryCar)));
                     sheetFamily.addCell(new Label(22, familyId, insertString(family.houseSize)));
-                    sheetFamily.addCell(new Label(23, familyId, insertString(family.totalIncome)));
                     sheetFamily.addCell(new Label(24, familyId, insertString(family.houseBelong)));
                     sheetFamily.addCell(new Label(25, familyId, insertString(family.phone)));
 
@@ -219,13 +217,11 @@ public class ExcelUtils {
                             sheetMember.addCell(new Label(5,memberId,String.valueOf(addressMember1[0])));
                             sheetMember.addCell(new Label(6,memberId,String.valueOf(addressMember1[1])));
                             sheetMember.addCell(new Label(7,memberId,insertString(member.addressDetail)));
-                            sheetMember.addCell(new Label(8,memberId,insertString(member.earthType)));
                             sheetMember.addCell(new Label(9,memberId,String.valueOf(member.getWorkPlaceType())));
                             sheetMember.addCell(new Label(10,memberId,insertString(member.sex)));
                             sheetMember.addCell(new Label(11,memberId,String.valueOf(member.age)));
                             sheetMember.addCell(new Label(12,memberId,insertString(member.hukou)));
                             sheetMember.addCell(new Label(13,memberId,TextUtils.isEmpty(member.liveTime)?intUnDone:member.liveTime));
-                            sheetMember.addCell(new Label(14,memberId,insertString(member.comeFrom)));
                             sheetMember.addCell(new Label(15,memberId,insertString(member.carrer)));
                             sheetMember.addCell(new Label(16,memberId,insertString(member.studyType)));
                             sheetMember.addCell(new Label(17,memberId,insertString(member.commonTripWay)));
@@ -236,12 +232,12 @@ public class ExcelUtils {
                             sheetMember.addCell(new Label(22,memberId,String.valueOf(member.dianxinNum)));
                             sheetMember.addCell(new Label(23,memberId,member.isLocalNum.equals(textYes)?intDone:intUnDone));
                             sheetMember.addCell(new Label(24,memberId,insertString(member.phoneName)));
-                            sheetMember.addCell(new Label(25,memberId,String.valueOf(member.planeTime)));
-                            sheetMember.addCell(new Label(26,memberId,String.valueOf(member.trainTime)));
+                            sheetMember.addCell(new Label(25,memberId,String.valueOf(member.leaveHzTimes)));
+                            sheetMember.addCell(new Label(26,memberId,String.valueOf(member.mainTrafficWay)));
                             sheetMember.addCell(new Label(27,memberId,String.valueOf(member.tripTime)));
                             sheetMember.addCell(new Label(28,memberId,insertString(member.objectPlace)));
                             sheetMember.addCell(new Label(29,memberId,insertString(member.aim)));
-                            sheetMember.addCell(new Label(30,memberId,insertString(member.tripWay)));
+                            sheetMember.addCell(new Label(30,memberId,insertString(member.bearMaxTime)));
                             sheetMember.addCell(new Label(31,memberId,TextUtils.isEmpty(member.isInHomeReason)?intUnDone:member.isInHomeReason));
 
                             List<Trip> trips = member.tripList;

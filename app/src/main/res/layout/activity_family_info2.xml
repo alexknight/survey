@@ -31,9 +31,6 @@
         android:background="#eeeeee"
         android:orientation="vertical">
 
-
-
-
         <LinearLayout
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
@@ -144,7 +141,7 @@
                 android:gravity="center"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
-                android:text="夜间停放地点"
+                android:text="停车场类别"
                 android:textColor="#666666"
                 android:textSize="15sp" />
             <com.weiwangcn.betterspinner.library.BetterSpinner
@@ -156,6 +153,7 @@
                 android:layout_marginRight="16dp"
                 android:textColor="#666666"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_marginTop="1dp"
             android:layout_width="match_parent"
@@ -169,7 +167,33 @@
                 android:gravity="center"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
-                android:text="月均夜间停车费"
+                android:text="停车场权属"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:entries="@array/stop_place"
+                android:id="@+id/editParkingOwner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                android:textColor="#666666"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="停车场费用"
                 android:textColor="#666666"
                 android:textSize="15sp" />
             <com.weiwangcn.betterspinner.library.BetterSpinner
@@ -183,7 +207,9 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:id="@+id/editDriverDistLinearLayout"
+            android:layout_marginTop="1dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
@@ -194,90 +220,21 @@
                 android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="购车意愿"
+                android:text="工作日私人小汽车平均行驶里程（km）"
                 android:textSize="15sp"
-                android:textColor="#105df0"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="1dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:background="#ffffff">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:text="购车计划"
-                android:textColor="#666666"
-                android:textSize="15sp" />
-            <com.weiwangcn.betterspinner.library.BetterSpinner
-                android:entries="@array/buy_plan"
-                android:id="@+id/spinnerPlan"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginRight="16dp"
                 android:textColor="#666666"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="1dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:background="#ffffff">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:text="是否考虑购买新能源汽车"
-                android:textColor="#666666"
-                android:textSize="15sp" />
-            <com.weiwangcn.betterspinner.library.BetterSpinner
-                android:entries="@array/yes_no"
-                android:id="@+id/spinner_battery"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginRight="16dp"
-                android:textColor="#666666"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="#ffffff"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:text="户主或某一家庭成员手机号码（自愿提供）"
-                android:textColor="#666666"
-                android:textSize="15sp" />
-
             <EditText
-                android:id="@+id/editTextFamilyPhone"
+                android:id="@+id/editDriverDist"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_marginRight="16dp"
                 android:layout_weight="1"
-                android:gravity="center_vertical|right"
                 android:inputType="number"
-                android:selectAllOnFocus="true"
-                android:textColor="#666666" />
+                android:gravity="center_vertical|right"
+                android:text="0"
+                android:layout_marginRight="16dp"
+                android:textColor="#666666"/>
         </LinearLayout>
+
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"

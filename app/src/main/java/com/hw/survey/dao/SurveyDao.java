@@ -34,7 +34,6 @@ public class SurveyDao {
         contentValues.put("car_address",family.carAddress);
         contentValues.put("stop_place",family.tempNum);
         contentValues.put("stop_fee",family.tempNum);
-        contentValues.put("buyPlan",family.tempNum);
         contentValues.put("batteryCar",family.tempNum);
         contentValues.put("houseSize",family.tempNum);
         contentValues.put("isDone",family.isDone);

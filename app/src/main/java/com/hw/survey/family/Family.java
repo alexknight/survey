@@ -27,15 +27,17 @@ public class Family implements Serializable {
     public int motoNum = 0;
 
     public String stopPlace = "";
+    public String editParkingOwner = "";
     public String stopFee = "";
+    public String editDriverDist="";
 
-    public String buyPlan = "";
     public String batteryCar = "";
     public String houseSize = "";
     public String houseBelong = "";
-    public String totalIncome = "";
     public String phone = "";
     public int isDone = 0;
+
+    public String buildFinishTime = "";
 
     public Family(){
         people = new ArrayList<>();
@@ -49,13 +51,14 @@ public class Family implements Serializable {
     public boolean isFinish(){
         boolean isBaseOK =  !(TextUtils.isEmpty(address) ||
                 TextUtils.isEmpty(addressDetail) ||
-                totalNum == 0 || TextUtils.isEmpty(buyPlan) ||
+                totalNum == 0  ||
+                TextUtils.isEmpty(buildFinishTime) ||
                 TextUtils.isEmpty(batteryCar) ||
                 TextUtils.isEmpty(houseSize)) || TextUtils.isEmpty(houseBelong);
         if(carNum == 0){
             return isBaseOK;
         }else {
-            return isBaseOK && (!TextUtils.isEmpty(stopPlace)) && (!TextUtils.isEmpty(stopFee));
+            return isBaseOK && (!TextUtils.isEmpty(stopPlace)) && (!TextUtils.isEmpty(editParkingOwner)) &&(!TextUtils.isEmpty(stopFee));
         }
     }
 

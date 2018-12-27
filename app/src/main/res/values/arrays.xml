@@ -37,7 +37,8 @@
     </string-array>
 
     <string-array name="stop_place">
-        <item>小区内停车位</item>
+        <item>小区内固定车位</item>
+        <item>小区内非固定车位</item>
         <item>路边及其他免费停车位</item>
         <item>路边收费停车位</item>
         <item>公共停车场</item>
@@ -70,6 +71,15 @@
         <item>50000元以上</item>
     </string-array>
 
+    <string-array name="yearIncome">
+        <item>无收入</item>
+        <item>5万以下</item>
+        <item>5万至10万</item>
+        <item>10万至20万</item>
+        <item>20万至40万</item>
+        <item>40万以上</item>
+    </string-array>
+
     <string-array name="price">
         <item>5万以下</item>
         <item>5万至10万</item>
@@ -92,12 +102,7 @@
         <item>10000至20000公里</item>
         <item>20000公里以上</item>
     </string-array>
-    <string-array name="buy_plan">
-        <item>计划今年内购买</item>
-        <item>计划三年内购买</item>
-        <item>计划五年内购买</item>
-        <item>无购买计划</item>
-    </string-array>
+
     <string-array name="house_type">
         <item>别墅、洋房、大户型</item>
         <item>一般住房</item>
@@ -105,23 +110,20 @@
         <item>公租房</item>
     </string-array>
     <string-array name="house_age">
-        <item>九十年代以前</item>
-        <item>九十年代</item>
+        <item>90年代以前</item>
+        <item>90年代</item>
         <item>2000年至2004年</item>
         <item>2005年至2009年</item>
-        <item>2010年至2014年</item>
-        <item>2015年</item>
-        <item>2016年</item>
-        <item>2017年及以后</item>
+        <item>2010年至2015年</item>
+        <item>2016年及以后</item>
     </string-array>
 
     <string-array name="house_size">
-        <item>150平米以上</item>
-        <item>100至150平米（含）</item>
-        <item>80至100平米（含）</item>
-        <item>60至80平米（含）</item>
-        <item>40至60平米（含）</item>
-        <item>40平米及以下</item>
+        <item>50平米及以下</item>
+        <item>50-70（含）平米</item>
+        <item>70-90（含）平米</item>
+        <item>90-120（含）平米</item>
+        <item>120平米以上</item>
     </string-array>
 
     <string-array name="house_belong">
@@ -131,21 +133,14 @@
         <item>其他</item>
     </string-array>
 
-    <string-array name="earth_type">
-        <item>居住</item>
-        <item>商务办公</item>
-        <item>行政办公</item>
-        <item>商住两用</item>
-        <item>商业</item>
-        <item>宾馆</item>
-        <item>医疗</item>
-        <item>学校</item>
-        <item>工业</item>
-        <item>仓储</item>
-        <item>汽车站、火车站、机场等</item>
-        <item>公园、游乐园</item>
-        <item>其它</item>
+    <string-array name="parking_owner">
+        <item>自有产权</item>
+        <item>包月租赁</item>
+        <item>包年租赁</item>
+        <item>按次计算</item>
+        <item>免费停车</item>
     </string-array>
+
 
     <string-array name="carree">
         <item>小学生</item>
@@ -165,6 +160,30 @@
         <item>离退休再就业人员</item>
         <item>无业</item>
         <item>其他</item>
+    </string-array>
+
+    <string-array name="jobType">
+        <item>制造业</item>
+        <item>房地产业</item>
+        <item>建筑业</item>
+        <item>金融业</item>
+        <item>批发和零售业</item>
+        <item>科学研究和技术服务业</item>
+        <item>教育</item>
+        <item>交通运输、仓储和邮政业</item>
+        <item>租赁和商务服务业</item>
+        <item>住宿和餐饮业</item>
+        <item>文化、体育和娱乐业</item>
+        <item>卫生和社会工作</item>
+        <item>信息传输、软件和信息技术服务业</item>
+        <item>农林渔牧业</item>
+        <item>公共管理、社会保障和社会组织</item>
+        <item>居民服务、修理和其它服务业</item>
+        <item>水力、环境和公共设施管理业</item>
+        <item>采矿业</item>
+        <item>电力、热力、燃气及水生产和供应业</item>
+        <item>国际组织</item>
+
     </string-array>
 
     <string-array name="bus">
@@ -239,37 +258,56 @@
     </string-array>
 
     <string-array name="hukou">
-        <item>重庆市主城九区户籍</item>
-        <item>重庆市其它区县户籍</item>
-        <item>外省市户籍</item>
+        <item>杭州市户籍</item>
+        <item>非杭州市户籍</item>
     </string-array>
 
-    <string-array name="car_belong">
-        <item>重庆主城区号牌</item>
-        <item>重庆其它地区号牌</item>
-        <item>外省市号牌</item>
+    <string-array name="hukouDetail">
+        <item>本户户籍</item>
+        <item>非本户户籍</item>
     </string-array>
 
     <string-array name="live_time">
-        <item>六个月以上</item>
-        <item>三到六个月</item>
-        <item>一到三个月</item>
-        <item>一个月以内</item>
+        <item>半年以上</item>
+        <item>半年以下</item>
     </string-array>
 
-    <string-array name="hukou_from">
-        <item>江津</item>
-        <item>璧山</item>
-        <item>合川</item>
-        <item>永川</item>
-        <item>綦江</item>
-        <item>长寿</item>
-        <item>涪陵、丰都</item>
-        <item>铜梁、潼南</item>
-        <item>南川、武隆</item>
-        <item>大足、荣昌</item>
-        <item>渝东南</item>
-        <item>渝东北</item>
+    <string-array name="eduLevel">
+        <item>小学及以下</item>
+        <item>初中</item>
+        <item>高中、中专、技校</item>
+        <item>大学、大专</item>
+        <item>研究生及以上</item>
+    </string-array>
+
+    <string-array name="carrerLevel">
+        <item>一般职员</item>
+        <item>中层管理</item>
+        <item>高管</item>
+    </string-array>
+
+    <string-array name="hasFreeParking">
+        <item>有</item>
+        <item>无</item>
+    </string-array>
+
+    <string-array name="leaveHzTimes">
+        <item>未离开</item>
+        <item>1-2次</item>
+        <item>3-4次</item>
+        <item>5-6次</item>
+        <item>7-10次</item>
+        <item>10次以上</item>
+    </string-array>
+
+    <string-array name="bearMaxTime">
+        <item>20分钟</item>
+        <item>30分钟</item>
+        <item>40分钟</item>
+        <item>50分钟</item>
+        <item>60分钟</item>
+        <item>90分钟</item>
+        <item>90分钟以上</item>
     </string-array>
 
     <string-array name="object_place">
@@ -315,11 +353,6 @@
     <string-array name="study_type">
         <item>走读</item>
         <item>住读</item>
-    </string-array>
-
-    <string-array name="yes_no">
-        <item>是</item>
-        <item>否</item>
     </string-array>
 
     <string-array name="name_type">

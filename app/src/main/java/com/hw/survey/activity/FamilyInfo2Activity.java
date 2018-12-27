@@ -3,12 +3,15 @@ package com.hw.survey.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.hw.survey.MyApplication;
@@ -37,23 +40,22 @@ public class FamilyInfo2Activity extends Activity {
     @InjectView(R.id.editText6)
     BetterSpinner otherCar;
 
+    @InjectView(R.id.editParkingOwner)
+    BetterSpinner editParkingOwner;
+
     @InjectView(R.id.editText7)
     BetterSpinner stopFee;
 
-    @InjectView(R.id.spinnerPlan)
-    BetterSpinner spinnerPlan;
+    @InjectView(R.id.editDriverDist)
+    EditText editDriverDist;
 
-    @InjectView(R.id.spinner_battery)
-    BetterSpinner spinner_battery;
-
-    @InjectView(R.id.editTextFamilyPhone)
-    EditText familyPhone;
+    @InjectView(R.id.editDriverDistLinearLayout)
+    LinearLayout editDriverDistLinearLayout;
 
 
+    ArrayAdapter<String> adapterEditParkingOwner;
     ArrayAdapter<String> adapterStopPlace;
     ArrayAdapter<String> adapterStopFee;
-    ArrayAdapter<String> adapterPlan;
-    ArrayAdapter<String> adapterBattery;
 
     private int pos;
 
@@ -95,6 +97,7 @@ public class FamilyInfo2Activity extends Activity {
 
 
         initView();
+
     }
 
     private boolean isEmpty(String s){
@@ -116,6 +119,11 @@ public class FamilyInfo2Activity extends Activity {
                         Toast.makeText(FamilyInfo2Activity.this,"请选择夜间停放地点",Toast.LENGTH_LONG).show();
                         return false;
                     }
+
+                    if (!isEmpty(editParkingOwner.getText().toString())){
+                        family.editParkingOwner = editParkingOwner.getText().toString();
+                    }
+
                     if(!isEmpty(stopFee.getText().toString())){
                         family.stopFee = stopFee.getText().toString();
                     }else {
@@ -124,23 +132,10 @@ public class FamilyInfo2Activity extends Activity {
                     }
                 }
 
-                if(!isEmpty(spinnerPlan.getText().toString())){
-                    family.buyPlan = spinnerPlan.getText().toString();
-                }else {
-                    Toast.makeText(FamilyInfo2Activity.this,"请选择购车计划",Toast.LENGTH_LONG).show();
-                    return false;
+                if(!isEmpty(editDriverDist.getText().toString())){
+                    family.editDriverDist = editDriverDist.getText().toString();
                 }
 
-                if(!isEmpty(spinner_battery.getText().toString())){
-                    family.batteryCar = spinner_battery.getText().toString();
-                }else {
-                    Toast.makeText(FamilyInfo2Activity.this,"请选择是否考虑购买新能源汽车",Toast.LENGTH_LONG).show();
-                    return false;
-                }
-
-                if(!isEmpty(familyPhone.getText().toString())){
-                    family.phone = familyPhone.getText().toString();
-                }
 
                 family.initMembers();
 
@@ -156,16 +151,23 @@ public class FamilyInfo2Activity extends Activity {
     private void initView(){
         if(pos > -1 && MyApplication.currentUsers.getSelectUser().families.size() > pos){
             Family family = MyApplication.currentUsers.getSelectUser().families.get(pos);
+
+            if (family.carNum>0){
+                editDriverDistLinearLayout.setVisibility(View.VISIBLE);
+            }else {
+                editDriverDistLinearLayout.setVisibility(View.INVISIBLE);
+            }
+
             if(family != null){
 
                 adapterStopPlace = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.stop_place));
                 otherCar.setAdapter(adapterStopPlace);
+                adapterEditParkingOwner = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.parking_owner));
+                editParkingOwner.setAdapter(adapterEditParkingOwner);
                 adapterStopFee = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.stop_fee));
                 stopFee.setAdapter(adapterStopFee);
-                adapterPlan =new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.buy_plan));
-                spinnerPlan.setAdapter(adapterPlan);
-                adapterBattery = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.yes_no));
-                spinner_battery.setAdapter(adapterBattery);
+
+
 
                 if(family.carNum < 1){
                     otherCar.setDropDownHeight(0);
@@ -183,17 +185,6 @@ public class FamilyInfo2Activity extends Activity {
                     }
                 }
 
-                if(!TextUtils.isEmpty(family.buyPlan)){
-                    spinnerPlan.setText(family.buyPlan);
-                }
-
-                if(!TextUtils.isEmpty(family.batteryCar)){
-                    spinner_battery.setText(family.batteryCar);
-                }
-
-                if(!TextUtils.isEmpty(family.phone)){
-                    familyPhone.setText(family.phone);
-                }
             }
         }
     }

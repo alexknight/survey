@@ -17,16 +17,18 @@ public class Person implements Serializable {
     public String address = "";
     public String addressDetail = "";
 
-    public String earthType = "";
-
     public int age;
     public String sex = "";
 
     public String hukou = "";
+    public String hukouDetail = "";
     public String liveTime = "";
-    public String comeFrom = "";
-    public String cityCode = "";
+    public String eduLevel = "";
     public String carrer = "";
+    public String carrerLevel="";
+    public String jobType="";
+    public String yearIncome="";
+    public String hasFreeParking="";
     public String studyType = "";
     public String commonTripWay = "";
     public String stopType = "";
@@ -36,12 +38,8 @@ public class Person implements Serializable {
     public int dianxinNum = 0;
     public String isLocalNum = "";
     public String phoneName = "";
-    public int planeTime = 0;
-    public int trainTime = 0;
-    public int tripTime = 0;
-    public String objectPlace = "";
-    public String aim = "";
-    public String tripWay = "";
+    public int leaveHzTimes = 0;
+    public String bearMaxTime = "";
     public String workInHomeReason = "";
 
     public boolean isInHome =false;
@@ -65,27 +63,10 @@ public class Person implements Serializable {
 
     public boolean isFinish(){
         boolean common = !(TextUtils.isEmpty(address) || TextUtils.isEmpty(addressDetail)
-                || TextUtils.isEmpty(earthType)
                 || age < 7 || TextUtils.isEmpty(sex) || TextUtils.isEmpty(hukou)
                 || TextUtils.isEmpty(carrer) || TextUtils.isEmpty(commonTripWay));
         boolean hukouFinsh = true;
-        if(!hukou.equals("重庆市主城九区户籍")){
-            if(TextUtils.isEmpty(liveTime)){
-                hukouFinsh = false;
-            }else {
-                if(!liveTime.equals("六个月以上")){
-                    if(hukou.equals("重庆市其它区县户籍")){
-                        hukouFinsh = !TextUtils.isEmpty(comeFrom);
-                    }else {
-                        hukouFinsh = (!TextUtils.isEmpty(cityCode)) && (!TextUtils.isEmpty(isLocalNum));
-                    }
-//
-//                    if(hukouFinsh){
-//                        hukouFinsh = !TextUtils.isEmpty(isLocalNum);
-//                    }
-                }
-            }
-        }
+
         boolean studyFinish = true;
         if(isStudent()){
             studyFinish = !(TextUtils.isEmpty(studyType)||TextUtils.isEmpty(phoneName));

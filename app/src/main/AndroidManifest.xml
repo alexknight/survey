@@ -29,7 +29,7 @@
         android:supportsRtl="true">
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="GQopPbbSR5vw5fcwLuWVG2a3BL7dKMPi" />
+            android:value="fxuEj4XpjmaGqxq6TGFwqpdPHZIkST4U" />
 
         <activity
             android:name="com.hw.survey.activity.MainActivity"

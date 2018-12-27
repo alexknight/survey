@@ -179,7 +179,7 @@ public class TripListActivity extends Activity {
         });
     }
 
-    private void initView(){
+        private void initView(){
         if(posFamily > -1 && MyApplication.currentUsers.getSelectUser().families.size() > posFamily){
             Family family = MyApplication.currentUsers.getSelectUser().families.get(posFamily);
             if(posPerson > -1 && family != null && family.people != null && family.people.size() > posPerson){

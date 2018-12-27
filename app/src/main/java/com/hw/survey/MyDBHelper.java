@@ -73,7 +73,6 @@ public class MyDBHelper extends SQLiteOpenHelper{
                 " `car_address` TEXT," +
                 " `stop_place` TEXT," +
                 " `stop_fee` TEXT," +
-                " `buyPlan` TEXT," +
                 " `batteryCar` TEXT," +
                 " `houseSize` TEXT," +
                 " `isDone` INTEGER DEFAULT 0" +

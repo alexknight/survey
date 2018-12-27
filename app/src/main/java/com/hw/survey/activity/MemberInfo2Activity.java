@@ -3,9 +3,7 @@ package com.hw.survey.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
 import android.text.TextUtils;
-import android.text.TextWatcher;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -18,8 +16,10 @@ import com.hw.survey.R;
 import com.hw.survey.dao.DataUtil;
 import com.hw.survey.family.Family;
 import com.hw.survey.family.Person;
-import com.hw.survey.util.ViewUtils;
 import com.weiwangcn.betterspinner.library.BetterSpinner;
+
+import butterknife.ButterKnife;
+import butterknife.InjectView;
 
 import static com.hw.survey.MyApplication.currentUsers;
 
@@ -37,23 +37,18 @@ public class MemberInfo2Activity extends Activity {
     EditText yidong;
     EditText liantong;
     EditText dianxin;
-    BetterSpinner spinnerLocalPhone;
-    BetterSpinner spinnerPhoneName;
 
-    EditText planeTime;
-    EditText trainTime;
+    @InjectView(R.id.leaveHzTimes)
+    BetterSpinner leaveHzTimes;
 
-    EditText tripTime;
-    BetterSpinner spinnerObjectPlace;
-    BetterSpinner spinnerAim;
-    BetterSpinner spinnerWay;
+//    @InjectView(R.id.mainTrafficWay)
+//    BetterSpinner mainTrafficWay;
 
-    ArrayAdapter<String> adapterLocalPhone;
-    ArrayAdapter<String> adapterPhoneName;
-    ArrayAdapter<String> adapterObjectPlace;
-    ArrayAdapter<String> adapterAim;
-    ArrayAdapter<String> adapterWay;
+    BetterSpinner bearMaxTime;
 
+    ArrayAdapter<String> adapterBearMaxTime;
+
+    ArrayAdapter<String> adapterLeaveHzTimes;
     private Person person;
 
     @Override
@@ -66,6 +61,7 @@ public class MemberInfo2Activity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member_info2);
+        ButterKnife.inject(this);
 
         initView();
 
@@ -111,59 +107,18 @@ public class MemberInfo2Activity extends Activity {
         liantong = findViewById(R.id.editTextLianTongNum);
         dianxin = findViewById(R.id.editTextDianxinNum);
 
-        planeTime  = findViewById(R.id.planeTime);
-        trainTime = findViewById(R.id.trainTime);
 
-        tripTime = findViewById(R.id.tripTime);
-        tripTime.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                if(!TextUtils.isEmpty(s.toString())){
-                    int i = Integer.valueOf(s.toString());
-                    if(i == 0){
-                        ViewUtils.disableSpinner(spinnerAim);
-                        ViewUtils.disableSpinner(spinnerObjectPlace);
-                        ViewUtils.disableSpinner(spinnerWay);
-                    }else {
-                        ViewUtils.enableSpinner(spinnerAim);
-                        ViewUtils.enableSpinner(spinnerObjectPlace);
-                        ViewUtils.enableSpinner(spinnerWay);
-                    }
-                }
-            }
-        });
 
         //init Spinner
-        adapterLocalPhone = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.yes_no));
-        adapterPhoneName = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.name_type));
-        adapterObjectPlace = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.object_place));
-        adapterAim = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.trip_aim));
-        adapterWay = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.trip_type));
+        adapterLeaveHzTimes = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.leaveHzTimes));
+        adapterBearMaxTime = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.bearMaxTime));
 
-        spinnerLocalPhone = findViewById(R.id.editTextChoose);
-        spinnerLocalPhone.setAdapter(adapterLocalPhone);
 
-        spinnerPhoneName = findViewById(R.id.editTextType);
-        spinnerPhoneName.setAdapter(adapterPhoneName);
+        leaveHzTimes.setAdapter(adapterLeaveHzTimes);
 
-        spinnerObjectPlace = findViewById(R.id.objectPlace);
-        spinnerObjectPlace.setAdapter(adapterObjectPlace);
 
-        spinnerAim = findViewById(R.id.aim);
-        spinnerAim.setAdapter(adapterAim);
-
-        spinnerWay = findViewById(R.id.tripType);
-        spinnerWay.setAdapter(adapterWay);
+        bearMaxTime = findViewById(R.id.bearMaxTime);
+        bearMaxTime.setAdapter(adapterBearMaxTime);
     }
 
     private boolean isEmpty(String s){
@@ -180,19 +135,7 @@ public class MemberInfo2Activity extends Activity {
                 liantong.setText(String.valueOf(person.liantongNum));
                 dianxin.setText(String.valueOf(person.dianxinNum));
 
-                planeTime.setText(String.valueOf(person.planeTime));
-                trainTime.setText(String.valueOf(person.trainTime));
-
-                tripTime.setText(String.valueOf(person.tripTime));
-                if(person.tripTime > 0){
-                    ViewUtils.enableSpinner(spinnerAim);
-                    ViewUtils.enableSpinner(spinnerObjectPlace);
-                    ViewUtils.enableSpinner(spinnerWay);
-                }else {
-                    ViewUtils.disableSpinner(spinnerAim);
-                    ViewUtils.disableSpinner(spinnerObjectPlace);
-                    ViewUtils.disableSpinner(spinnerWay);
-                }
+                leaveHzTimes.setText(String.valueOf(person.leaveHzTimes));
 
 
 
@@ -201,27 +144,16 @@ public class MemberInfo2Activity extends Activity {
                         findViewById(R.id.localArea).setVisibility(View.GONE);
                     }else if((isEmpty(person.liveTime)) || (person.liveTime.equals("六个月以上"))){
                         findViewById(R.id.localArea).setVisibility(View.GONE);
-                    }else {
-                        spinnerLocalPhone.setText(person.isLocalNum);
                     }
                 }
 
                 if(!person.isStudent()){
                     findViewById(R.id.phoneArea).setVisibility(View.GONE);
-                }else {
-                    spinnerPhoneName.setText(person.phoneName);
                 }
 
-                if(!isEmpty(person.objectPlace)){
-                    spinnerObjectPlace.setText(person.objectPlace);
-                }
 
-                if(!isEmpty(person.aim)){
-                    spinnerAim.setText(person.aim);
-                }
-
-                if(!isEmpty(person.tripWay)){
-                    spinnerWay.setText(person.tripWay);
+                if(!isEmpty(person.bearMaxTime)){
+                    bearMaxTime.setText(person.bearMaxTime);
                 }
             }
         }
@@ -254,75 +186,12 @@ public class MemberInfo2Activity extends Activity {
                     return false;
                 }
 
-                if(findViewById(R.id.localArea).getVisibility() == View.VISIBLE){
-                    if(!isEmpty(spinnerLocalPhone.getText().toString())){
-                        person.isLocalNum = spinnerLocalPhone.getText().toString();
-                    }else {
-                        Toast.makeText(MemberInfo2Activity.this,"请选择是否更换为本地手机号！",Toast.LENGTH_LONG).show();
-                        return false;
-                    }
-                }else {
-                    person.isLocalNum = "";
-                }
 
-                if(findViewById(R.id.phoneArea).getVisibility() == View.VISIBLE){
-                    if(!isEmpty(spinnerPhoneName.getText().toString())){
-                        person.phoneName = spinnerPhoneName.getText().toString();
-                    }else {
-                        Toast.makeText(MemberInfo2Activity.this,"请选择手机注册名！",Toast.LENGTH_LONG).show();
-                        return false;
-                    }
-                }else {
-                    person.phoneName = "";
-                }
-
-                if(!isEmpty(planeTime.getText().toString())){
-                    person.planeTime = Integer.valueOf(planeTime.getText().toString());
+                if(!isEmpty(leaveHzTimes.getText().toString())){
+                    person.leaveHzTimes = Integer.valueOf(leaveHzTimes.getText().toString());
                 }else {
                     Toast.makeText(MemberInfo2Activity.this,"近一年乘坐飞机出行的次数不能为空！",Toast.LENGTH_LONG).show();
                     return false;
-                }
-
-                if(!isEmpty(trainTime.getText().toString())){
-                    person.trainTime = Integer.valueOf(trainTime.getText().toString());
-                }else {
-                    Toast.makeText(MemberInfo2Activity.this,"近一年乘坐火车出行的次数不能为空！",Toast.LENGTH_LONG).show();
-                    return false;
-                }
-
-                if(!isEmpty(tripTime.getText().toString())){
-                    person.tripTime = Integer.valueOf(tripTime.getText().toString());
-                }else {
-                    Toast.makeText(MemberInfo2Activity.this,"出行次数不能为空！",Toast.LENGTH_LONG).show();
-                    return false;
-                }
-
-
-                if(person.tripTime > 0){
-                    if(!isEmpty(spinnerObjectPlace.getText().toString())){
-                        person.objectPlace = spinnerObjectPlace.getText().toString();
-                    }else {
-                        Toast.makeText(MemberInfo2Activity.this,"请选择主要目的地！",Toast.LENGTH_LONG).show();
-                        return false;
-                    }
-
-                    if(!isEmpty(spinnerAim.getText().toString())){
-                        person.aim = spinnerAim.getText().toString();
-                    }else {
-                        Toast.makeText(MemberInfo2Activity.this,"请选择出行目的！",Toast.LENGTH_LONG).show();
-                        return false;
-                    }
-
-                    if(!isEmpty(spinnerWay.getText().toString())){
-                        person.tripWay = spinnerWay.getText().toString();
-                    }else {
-                        Toast.makeText(MemberInfo2Activity.this,"请选择出行方式！",Toast.LENGTH_LONG).show();
-                        return false;
-                    }
-                }else {
-                    person.objectPlace = "";
-                    person.aim = "";
-                    person.tripWay = "";
                 }
 
 

@@ -127,34 +127,6 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_marginTop="1dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:orientation="horizontal"
-                        android:background="#ffffff">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:text="用地性质"
-                            android:textColor="#666666"
-                            android:textSize="15sp" />
-                        <com.weiwangcn.betterspinner.library.BetterSpinner
-                            android:entries="@array/earth_type"
-                            android:id="@+id/editTextEarthType"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:layout_marginRight="16dp"
-                            android:textColor="#666666"/>
-                    </LinearLayout>
-
-
-
-                    <LinearLayout
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
@@ -242,6 +214,34 @@
                             android:layout_marginRight="16dp"
                             android:textColor="#666666"/>
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/hukouDetailLinearLayout"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="杭州户籍详细情况"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:entries="@array/hukouDetail"
+                            android:id="@+id/hukouDetail"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+
                     <LinearLayout
                         android:visibility="gone"
                         android:id="@+id/liveTimeArea"
@@ -256,7 +256,7 @@
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="本地居住时间"
+                            android:text="非杭州户籍居住时间"
                             android:textSize="15sp"
                             android:textColor="#666666"/>
                         <com.weiwangcn.betterspinner.library.BetterSpinner
@@ -269,10 +269,9 @@
                             android:layout_marginRight="16dp"
                             android:textColor="#666666"/>
                     </LinearLayout>
+
                     <LinearLayout
-                        android:visibility="gone"
-                        android:id="@+id/farmerArea"
-                        android:layout_marginTop="1dp"
+                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:orientation="horizontal"
@@ -283,41 +282,16 @@
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="非主城户籍来源"
+                            android:text="文化程度"
                             android:textSize="15sp"
                             android:textColor="#666666"/>
                         <com.weiwangcn.betterspinner.library.BetterSpinner
-                            android:entries="@array/hukou_from"
-                            android:id="@+id/editTextHukouFrom"
+                            android:entries="@array/eduLevel"
+                            android:id="@+id/eduLevel"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:layout_marginRight="16dp"
-                            android:textColor="#666666"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:visibility="gone"
-                        android:id="@+id/waidiArea"
-                        android:layout_marginTop="1dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:orientation="horizontal"
-                        android:background="#ffffff">
-                        <TextView
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:gravity="center"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="非本市户籍来源"
-                            android:textSize="15sp"
-                            android:textColor="#666666"/>
-                        <com.weiwangcn.betterspinner.library.BetterSpinner
-                            android:entries="@array/out_code"
-                            android:id="@+id/editTextHukouOut"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:inputType="number"
                             android:layout_marginRight="16dp"
                             android:textColor="#666666"/>
                     </LinearLayout>
@@ -347,6 +321,64 @@
                             android:layout_marginRight="16dp"
                             android:textColor="#666666"/>
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/carrerLevelLinearLayout"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="职位"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:entries="@array/carrerLevel"
+                            android:id="@+id/carrerLevel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/jobTypeLinearLayout"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="#ffffff">
+                        <TextView
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="工作行业"
+                            android:textSize="15sp"
+                            android:textColor="#666666"/>
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:entries="@array/jobType"
+                            android:id="@+id/jobType"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
+                    </LinearLayout>
+
+
                     <LinearLayout
                         android:visibility="gone"
                         android:id="@+id/studyArea"
@@ -375,9 +407,11 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_marginTop="10dp"
+                        android:id="@+id/yearIncomeLinearLayout"
+                        android:visibility="gone"
+                        android:layout_marginTop="1dp"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="50dp"
                         android:orientation="horizontal"
                         android:background="#ffffff">
                         <TextView
@@ -386,9 +420,18 @@
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="上班出行方式"
+                            android:text="个人年收入"
                             android:textSize="15sp"
-                            android:textColor="#105df0"/>
+                            android:textColor="#666666"/>
+                        <com.weiwangcn.betterspinner.library.BetterSpinner
+                            android:entries="@array/yearIncome"
+                            android:id="@+id/yearIncome"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:layout_marginRight="16dp"
+                            android:textColor="#666666"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_marginTop="1dp"
@@ -402,12 +445,12 @@
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="常用出行方式"
+                            android:text="单位是否有免费停车位"
                             android:textSize="15sp"
                             android:textColor="#666666"/>
                         <com.weiwangcn.betterspinner.library.BetterSpinner
-                            android:entries="@array/traffic_way"
-                            android:id="@+id/editTextTraffic"
+                            android:entries="@array/hasFreeParking"
+                            android:id="@+id/hasFreeParking"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
