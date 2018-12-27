@@ -194,7 +194,6 @@ public class XiaoQuActivity extends Activity {
 
                 xiaoQu.start10 = "";
                 if(c01.isChecked()){
-                    xiaoQu.start10 = c01.getText().toString();
                     xiaoQu.isSelect01 = true;
                 }else {
                     xiaoQu.isSelect01 = false;

@@ -208,33 +208,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="1dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="#ffffff">
-                <TextView
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="出发地点性质"
-                    android:textSize="15sp"
-                    android:textColor="#666666"/>
-                <com.weiwangcn.betterspinner.library.BetterSpinner
-                    android:entries="@array/earth_type"
-                    android:id="@+id/editTextType"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:inputType="number"
-                    android:layout_marginRight="16dp"
-                    android:textColor="#666666"/>
-            </LinearLayout>
-
-
-            <LinearLayout
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -348,31 +321,6 @@
                     android:src="@drawable/ic_arrow_normal"/>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_marginTop="1dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="#ffffff">
-                <TextView
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="到达地点性质"
-                    android:textSize="15sp"
-                    android:textColor="#666666"/>
-                <com.weiwangcn.betterspinner.library.BetterSpinner
-                    android:entries="@array/earth_type"
-                    android:id="@+id/editTextInType"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:inputType="number"
-                    android:layout_marginRight="16dp"
-                    android:textColor="#666666"/>
-            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

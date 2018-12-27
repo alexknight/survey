@@ -47,39 +47,15 @@ public class TripWayActivity extends Activity {
     @InjectView(R.id.way)
     BetterSpinner spinnerWay;
 
-    @InjectView(R.id.subway)
-    BetterSpinner spinnerSubWay;
-
-    @InjectView(R.id.startTime)
-    EditText startTime;
-    boolean isStartTimeOK = true;
 
     @InjectView(R.id.waitTime)
     EditText waitTime;
     boolean isWaitTimeOK = true;
 
-    @InjectView(R.id.endTime)
-    EditText endTime;
-    boolean isEndTimeOK = true;
-
-    @InjectView(R.id.haveNext)
-    BetterSpinner spinnerHaveNext;
-
-
-    @InjectView(R.id.subwayArea)
-    View subwayArea;
-
-    @InjectView(R.id.startTimeArea)
-    View startTimeArea;
 
     @InjectView(R.id.waitTimeArea)
     View waitTimeArea;
 
-    @InjectView(R.id.haveNextArea)
-    View haveNextArea;
-
-    @InjectView(R.id.endTimeArea)
-    View endTimeArea;
 
     @InjectView(R.id.stopTypeArea)
     View stopTypeArea;
@@ -94,8 +70,6 @@ public class TripWayActivity extends Activity {
     EditText editTextOutFee;
 
     ArrayAdapter<String> adapter;
-    ArrayAdapter<String> adapter1;
-    ArrayAdapter<String> adapter2;
     ArrayAdapter<String> adapterStopType;
 
     private boolean isATrip = false;
@@ -138,10 +112,7 @@ public class TripWayActivity extends Activity {
     };
 
     private void processNext(){
-        if(!(isEndTimeOK && isWaitTimeOK && isStartTimeOK)){
-            Toast.makeText(TripWayActivity.this,"步行时间或候车时间超过10分钟，确认是否存在输入错误",Toast.LENGTH_LONG).show();
-            return;
-        }
+
         if(!saveData()){
             return;
         }
@@ -198,32 +169,17 @@ public class TripWayActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position == 0){
-                    subwayArea.setVisibility(View.GONE);
-                    startTimeArea.setVisibility(View.GONE);
                     waitTimeArea.setVisibility(View.GONE);
-                    haveNextArea.setVisibility(View.GONE);
-                    endTimeArea.setVisibility(View.GONE);
                     stopTypeArea.setVisibility(View.GONE);
                     stopFeeArea.setVisibility(View.GONE);
                 }else if(position == 3){
-                    subwayArea.setVisibility(View.VISIBLE);
-                    startTimeArea.setVisibility(View.VISIBLE);
                     waitTimeArea.setVisibility(View.VISIBLE);
-                    haveNextArea.setVisibility(View.VISIBLE);
-                    endTimeArea.setVisibility(View.GONE);
                     stopTypeArea.setVisibility(View.GONE);
                     stopFeeArea.setVisibility(View.GONE);
                 }else if(position == 1 || position == 10 || position == 11 || position == 12 || position == 13 || position == 14 || position == 15){
-                    subwayArea.setVisibility(View.GONE);
-                    startTimeArea.setVisibility(View.VISIBLE);
                     waitTimeArea.setVisibility(View.GONE);
-                    haveNextArea.setVisibility(View.VISIBLE);
-                    endTimeArea.setVisibility(View.GONE);
                 }else {
-                    subwayArea.setVisibility(View.GONE);
-                    startTimeArea.setVisibility(View.VISIBLE);
                     waitTimeArea.setVisibility(View.VISIBLE);
-                    haveNextArea.setVisibility(View.VISIBLE);
                 }
                 //添加停车选项
                 if(position == 1 && isATrip){
@@ -237,73 +193,12 @@ public class TripWayActivity extends Activity {
                 }
         });
 
-        spinnerHaveNext.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(position == 0){
-                    //yes
-                    endTimeArea.setVisibility(View.GONE);
-                }else {
-                    endTimeArea.setVisibility(View.VISIBLE);
-                }
-            }
-        });
 
-        adapter1 = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.subway));
-        spinnerSubWay.setAdapter(adapter1);
-        adapter2 = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.yes_no));
-        spinnerHaveNext.setAdapter(adapter2);
-
-        adapterStopType = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.stop_place_trip));
+        adapterStopType = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.stop_place_complan));
         stopType.setAdapter(adapterStopType);
 
-        startTime.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if(!hasFocus){
-                    String s = startTime.getText().toString();
-                    if(!TextUtils.isEmpty(s)){
-                        if(tripWay.totalTime < getCurrentTotalTime()){
-                            Toast.makeText(TripWayActivity.this,"累计时间已大于本次出行花费的总时间，请重新填写",Toast.LENGTH_LONG).show();
-                            startTime.setText("");
-                        }else {
-                            try{
-                                int st = Integer.valueOf(s);
-                                if(st > 10){
-                                    isStartTimeOK = false;
-                                    DialogUtils.createAlertDialog(TripWayActivity.this,
-                                            "步行时间或候车时间超过10分钟，确认是否存在输入错误",
-                                            "是","否", new DialogInterface.OnClickListener() {
-                                                @Override
-                                                public void onClick(DialogInterface dialog, int which) {
-                                                    //confirm
-                                                    startTime.setText("");
-                                                    dialog.dismiss();
-                                                    isStartTimeOK = true;
-
-                                                }
-                                            }, new DialogInterface.OnClickListener() {
-                                                @Override
-                                                public void onClick(DialogInterface dialog, int which) {
-                                                    dialog.dismiss();
-                                                    isStartTimeOK = true;
-                                                }
-                                            }).show();
-                                }else {
-                                    isStartTimeOK = true;
-                                }
-                            }catch (Exception e){
-
-                            }
-                        }
-
-                    }
-                }
-            }
-        });
 
         if(posTripWay > 0){
-            ((TextView)findViewById(R.id.textViewStartTime)).setText("换乘时间");
             findViewById(R.id.waitTimeArea).setVisibility(View.GONE);
         }
 
@@ -350,67 +245,18 @@ public class TripWayActivity extends Activity {
             }
         });
 
-        endTime.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if(!hasFocus){
-                    String s = endTime.getText().toString();
-                    if(!TextUtils.isEmpty(s)){
-                        if(tripWay.totalTime < getCurrentTotalTime()){
-                            Toast.makeText(TripWayActivity.this,"累计时间已大于本次出行花费的总时间，请重新填写",Toast.LENGTH_LONG).show();
-                            endTime.setText("");
-                        }else {
-                            try{
-                                int st = Integer.valueOf(s);
-                                if(st > 10){
-                                    isEndTimeOK = false;
-                                    DialogUtils.createAlertDialog(TripWayActivity.this,
-                                            "步行时间或候车时间超过10分钟，确认是否存在输入错误",
-                                            "是","否", new DialogInterface.OnClickListener() {
-                                                @Override
-                                                public void onClick(DialogInterface dialog, int which) {
-                                                    //confirm
-                                                    endTime.setText("");
-                                                    dialog.dismiss();
-                                                    isEndTimeOK = true;
-
-                                                }
-                                            }, new DialogInterface.OnClickListener() {
-                                                @Override
-                                                public void onClick(DialogInterface dialog, int which) {
-                                                    dialog.dismiss();
-                                                    isEndTimeOK = true;
-                                                }
-                                            }).show();
-                                }else {
-                                    isEndTimeOK = true;
-                                }
-                            }catch (Exception e){
-
-                            }
-                        }
-                    }
-                }
-            }
-        });
     }
 
     private int getCurrentTotalTime(){
         int i = 0;
         int j = 0;
         int k = 0;
-        String s = startTime.getText().toString();
         String l = waitTime.getText().toString();
-        String m = endTime.getText().toString();
-        if(!TextUtils.isEmpty(s)){
-            i = Integer.valueOf(s);
-        }
+
         if(!TextUtils.isEmpty(l)){
             j = Integer.valueOf(l);
         }
-        if(!TextUtils.isEmpty(m)){
-            k = Integer.valueOf(m);
-        }
+
         return i + j + k;
     }
 
@@ -434,24 +280,12 @@ public class TripWayActivity extends Activity {
                     if(!isEmpty(tripWay.tripWay)){
                         spinnerWay.setText(tripWay.tripWay);
                         if(tripWay.tripWay.equals("步行")){
-                            subwayArea.setVisibility(View.GONE);
-                            startTimeArea.setVisibility(View.GONE);
                             waitTimeArea.setVisibility(View.GONE);
-                            haveNextArea.setVisibility(View.GONE);
-                            endTimeArea.setVisibility(View.GONE);
 
                         }else if(tripWay.tripWay.equals("轨道")){
-                            subwayArea.setVisibility(View.VISIBLE);
-                            startTimeArea.setVisibility(View.VISIBLE);
                             waitTimeArea.setVisibility(View.VISIBLE);
-                            haveNextArea.setVisibility(View.VISIBLE);
-                            endTimeArea.setVisibility(View.GONE);
                         }else {
-                            subwayArea.setVisibility(View.GONE);
-                            startTimeArea.setVisibility(View.VISIBLE);
                             waitTimeArea.setVisibility(View.VISIBLE);
-                            haveNextArea.setVisibility(View.VISIBLE);
-                            endTimeArea.setVisibility(View.GONE);
                         }
 
                         //添加停车选项
@@ -469,24 +303,16 @@ public class TripWayActivity extends Activity {
                         }
                     }
 
-                    if(!isEmpty(tripWay.subWay)){
-                        spinnerSubWay.setText(tripWay.subWay);
-                    }
 
-                    startTime.setText(String.valueOf(tripWay.startWalkTime));
 
                     waitTime.setText(String.valueOf(tripWay.waitTime));
 
                     if(!isEmpty(tripWay.hasNext)){
-                        spinnerHaveNext.setText(tripWay.hasNext);
                         if(tripWay.hasNext.equals("否")){
-                            endTimeArea.setVisibility(View.VISIBLE);
                         }else {
-                            endTimeArea.setVisibility(View.GONE);
                         }
                     }
 
-                    endTime.setText(String.valueOf(tripWay.endWalkTime));
                 }
 
             }
@@ -501,36 +327,6 @@ public class TripWayActivity extends Activity {
             return false;
         }
 
-        if(subwayArea.getVisibility() == View.VISIBLE){
-            if(!isEmpty(spinnerSubWay.getText().toString())){
-                tripWay.subWay = spinnerSubWay.getText().toString();
-            }else {
-                Toast.makeText(TripWayActivity.this,"请选择轨道线路号！",Toast.LENGTH_LONG).show();
-                return false;
-            }
-        }
-
-        if(haveNextArea.getVisibility() == View.VISIBLE){
-            if(!isEmpty(spinnerHaveNext.getText().toString())){
-                tripWay.hasNext = spinnerHaveNext.getText().toString();
-            }else {
-                Toast.makeText(TripWayActivity.this,"请选择是否有下一种交通方式或换乘！",Toast.LENGTH_LONG).show();
-                return false;
-            }
-        }else {
-            tripWay.hasNext = "否";
-        }
-
-        if(startTimeArea.getVisibility() == View.VISIBLE){
-            if(!isEmpty(startTime.getText().toString())){
-                tripWay.startWalkTime = Integer.valueOf(startTime.getText().toString());
-            }else {
-                Toast.makeText(TripWayActivity.this,"请输入步行至取车点或候车地点的时间！",Toast.LENGTH_LONG).show();
-                return false;
-            }
-        }else {
-            tripWay.startWalkTime = 0;
-        }
 
         if(stopTypeArea.getVisibility() == View.VISIBLE){
             if(!isEmpty(stopType.getText().toString())){
@@ -566,16 +362,6 @@ public class TripWayActivity extends Activity {
             tripWay.waitTime = 0;
         }
 
-        if(endTimeArea.getVisibility() == View.VISIBLE){
-            if(!isEmpty(endTime.getText().toString())){
-                tripWay.endWalkTime = Integer.valueOf(endTime.getText().toString());
-            }else {
-                Toast.makeText(TripWayActivity.this,"请输入下车后步行至终点的时间！",Toast.LENGTH_LONG).show();
-                return false;
-            }
-        }else {
-            tripWay.endWalkTime = 0;
-        }
 
         if(posFamily < 0 || posPerson < 0 || posTrip < 0 || posTripWay < 0){
             return false;

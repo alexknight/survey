@@ -25,7 +25,6 @@ public class Trip implements Serializable {
     public String arriveTime = "";
     public String arriveAddress = "";
     public String arriveAddressDetail = "";
-    public String arriveAddressType = "";
 
 
     public int beginTime = 0;
@@ -44,7 +43,6 @@ public class Trip implements Serializable {
         if(lastTrip != null){
             this.outAddress = lastTrip.arriveAddress;
             this.outAddressDetail = lastTrip.arriveAddressDetail;
-            this.outAddressType = lastTrip.arriveAddressType;
         }
     }
 
@@ -94,7 +92,7 @@ public class Trip implements Serializable {
                 TextUtils.isEmpty(aim));
 
         boolean outTypeFinish = (!TextUtils.isEmpty(outAddress) && !outAddress.startsWith("x=")) || !TextUtils.isEmpty(outAddressType);
-        boolean inTypeFinish = (!TextUtils.isEmpty(arriveAddress) && !arriveAddress.startsWith("x=")) || !TextUtils.isEmpty(arriveAddressType);
+        boolean inTypeFinish = (!TextUtils.isEmpty(arriveAddress) && !arriveAddress.startsWith("x="));
 
         return isFamily && isTripsFinish && commonFinish && outTypeFinish && inTypeFinish;
     }

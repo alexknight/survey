@@ -62,15 +62,7 @@ public class TripInfoActivity extends Activity {
     @InjectView(R.id.editTextAim)
     BetterSpinner spinnerAim;
 
-    @InjectView(R.id.editTextType)
-    BetterSpinner spinnerOutType;
-
-    @InjectView(R.id.editTextInType)
-    BetterSpinner spinnerInType;
-    
     private ArrayAdapter<String> adapterAim;
-    private ArrayAdapter<String> adapterOutType;
-    private ArrayAdapter<String> adapterInType;
 
     private int posFamily;
     private int posPerson;
@@ -91,12 +83,8 @@ public class TripInfoActivity extends Activity {
         ButterKnife.inject(this);
         
         adapterAim = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.aim));
-        adapterInType = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.earth_type));
-        adapterOutType = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.earth_type));
         spinnerAim.setAdapter(adapterAim);
-        spinnerInType.setAdapter(adapterInType);
-        spinnerOutType.setAdapter(adapterOutType);
-        
+
         Calendar ca = Calendar.getInstance();
         final int mYear = ca.get(Calendar.YEAR);
         final int mMonth = ca.get(Calendar.MONTH);
@@ -305,12 +293,6 @@ public class TripInfoActivity extends Activity {
                             tv_out_address_detail.setText(lastTrip.arriveAddressDetail);
                         }
 
-
-                        if(!isEmpty(lastTrip.arriveAddressType)){
-                            spinnerOutType.setText(lastTrip.arriveAddressType);
-                        }else {
-                            spinnerOutType.setText("");
-                        }
                     }else {
                         if(!isEmpty(trip.outAddress)){
                             tv_out_address.setText(trip.outAddress);
@@ -320,10 +302,6 @@ public class TripInfoActivity extends Activity {
                             tv_out_address_detail.setText(trip.outAddressDetail);
                         }
 
-
-                        if(!isEmpty(trip.outAddressType)){
-                            spinnerOutType.setText(trip.outAddressType);
-                        }
                     }
 
                     if(!isEmpty(trip.aim)){
@@ -348,10 +326,6 @@ public class TripInfoActivity extends Activity {
                         tv_in_address_detail.setText(trip.arriveAddressDetail);
                     }
 
-                    if(!isEmpty(trip.arriveAddressType)){
-                        spinnerInType.setText(trip.arriveAddressType);
-                    }
-
 
                 }
 
@@ -373,8 +347,6 @@ public class TripInfoActivity extends Activity {
                 }else {
                     tv_out_address.setText(address);
                     tv_out_address_detail.setText(addressDetail);
-                    spinnerOutType.setText(addressType);
-                    spinnerOutType.setDropDownHeight(0);
                 }
             }else {
                 String address = "x="+data.getStringExtra("Ing") + "  y="+data.getStringExtra("Iat");
@@ -383,7 +355,6 @@ public class TripInfoActivity extends Activity {
                 }else {
                     tv_out_address.setText(address);
                     tv_out_address_detail.setText(data.getStringExtra("DetailedAddress"));
-                    spinnerOutType.setDropDownHeight(WindowManager.LayoutParams.WRAP_CONTENT);
                 }
             }
         }else if (resultCode == RESULT_OK && requestCode == 2
@@ -396,8 +367,6 @@ public class TripInfoActivity extends Activity {
                 }else {
                     tv_in_address.setText(data.getStringExtra("address"));
                     tv_in_address_detail.setText(data.getStringExtra("addressDetail"));
-                    spinnerInType.setText(data.getStringExtra("addressType"));
-                    spinnerInType.setDropDownHeight(0);
                 }
             }else {
                 String address = "x="+data.getStringExtra("Ing") + "  y="+data.getStringExtra("Iat");
@@ -406,7 +375,6 @@ public class TripInfoActivity extends Activity {
                 }else {
                     tv_in_address.setText(address);
                     tv_in_address_detail.setText(data.getStringExtra("DetailedAddress"));
-                    spinnerInType.setDropDownHeight(WindowManager.LayoutParams.WRAP_CONTENT);
                 }
             }
         }
@@ -452,13 +420,6 @@ public class TripInfoActivity extends Activity {
                         return false;
                     }
 
-                    if(!isEmpty(spinnerOutType.getText().toString())){
-                        trip.outAddressType = spinnerOutType.getText().toString();
-                    }else if(TextUtils.isEmpty(tv_out_address.getText()) || tv_out_address.getText().toString().contains("x=")){
-                        Toast.makeText(TripInfoActivity.this, "请选择出发地点性质",Toast.LENGTH_LONG).show();
-                        return false;
-                    }
-
                     if(!isEmpty(tv_in_time.getText().toString())){
                         trip.arriveTime = tv_in_time.getText().toString();
                     }else {
@@ -477,13 +438,6 @@ public class TripInfoActivity extends Activity {
                         trip.arriveAddressDetail = tv_in_address_detail.getText().toString();
                     }else {
                         Toast.makeText(TripInfoActivity.this, "请选择到达地址",Toast.LENGTH_LONG).show();
-                        return false;
-                    }
-
-                    if(!isEmpty(spinnerInType.getText().toString())){
-                        trip.arriveAddressType = spinnerInType.getText().toString();
-                    }else if(TextUtils.isEmpty(tv_in_address.getText()) || tv_in_address.getText().toString().contains("x=")){
-                        Toast.makeText(TripInfoActivity.this, "请选择到达地点性质",Toast.LENGTH_LONG).show();
                         return false;
                     }
 

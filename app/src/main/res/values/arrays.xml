@@ -2,24 +2,23 @@
 <resources>
 
     <string-array name="traffic_way">
-        <item>步行</item>
-        <item>自驾小汽车</item>
-        <item>乘坐小汽车</item>
-        <item>轨道</item>
-        <item>公交车</item>
-        <item>出租车</item>
-        <item>单位班车</item>
-        <item>校车</item>
-        <item>网约车</item>
-        <item>拼车、顺风车</item>
-        <item>摩托车</item>
-        <item>货车</item>
-        <item>共享汽车</item>
-        <item>自行车</item>
+        <item>全程步行</item>
+        <item>自有自行车</item>
+        <item>公共自行车</item>
         <item>共享单车</item>
-        <item>电动车</item>
-        <item>黑车</item>
-        <item>其他</item>
+        <item>共享电动车</item>
+        <item>助动车和电动车</item>
+        <item>自驾小汽车</item>
+        <item>搭乘小汽车</item>
+        <item>公交车</item>
+        <item>地铁</item>
+        <item>顶灯出租车</item>
+        <item>网约车</item>
+        <item>租赁/共享汽车</item>
+        <item>摩托车</item>
+        <item>班车</item>
+        <item>水上巴士</item>
+        <item>其它</item>
     </string-array>
     <string-array name="stop_place_complan">
         <item>单位内停车场</item>
@@ -227,16 +226,15 @@
     <string-array name="aim">
         <item>上班</item>
         <item>上学</item>
-        <item>回家</item>
-        <item>回单位</item>
-        <item>公务外出</item>
-        <item>购物逛街</item>
-        <item>娱乐、公园游玩</item>
-        <item>外出就餐</item>
-        <item>看病探病</item>
+        <item>公务业务</item>
+        <item>生活购物</item>
+        <item>文娱（含餐饮）体育</item>
         <item>探亲访友</item>
-        <item>接送人</item>
-        <item>其它</item>
+        <item>接送学生</item>
+        <item>回家</item>
+        <item>回程或回单位</item>
+        <item>看病探病</item>
+        <item>其他</item>
     </string-array>
 
 
@@ -632,4 +630,24 @@
         <item>巴南区</item>
     </string-array>
 
+    <string-array name="earth_type">
+        <item>居住</item>
+        <item>商务办公</item>
+        <item>行政办公</item>
+        <item>商住两用</item>
+        <item>商业</item>
+        <item>宾馆</item>
+        <item>医疗</item>
+        <item>学校</item>
+        <item>工业</item>
+        <item>仓储</item>
+        <item>汽车站、火车站、机场等</item>
+        <item>公园、游乐园</item>
+        <item>其它</item>
+    </string-array>
+
+    <string-array name="yes_no">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
 </resources>

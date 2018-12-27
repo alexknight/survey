@@ -233,10 +233,6 @@ public class ExcelUtils {
                             sheetMember.addCell(new Label(23,memberId,member.isLocalNum.equals(textYes)?intDone:intUnDone));
                             sheetMember.addCell(new Label(24,memberId,insertString(member.phoneName)));
                             sheetMember.addCell(new Label(25,memberId,String.valueOf(member.leaveHzTimes)));
-                            sheetMember.addCell(new Label(26,memberId,String.valueOf(member.mainTrafficWay)));
-                            sheetMember.addCell(new Label(27,memberId,String.valueOf(member.tripTime)));
-                            sheetMember.addCell(new Label(28,memberId,insertString(member.objectPlace)));
-                            sheetMember.addCell(new Label(29,memberId,insertString(member.aim)));
                             sheetMember.addCell(new Label(30,memberId,insertString(member.bearMaxTime)));
                             sheetMember.addCell(new Label(31,memberId,TextUtils.isEmpty(member.isInHomeReason)?intUnDone:member.isInHomeReason));
 
@@ -266,7 +262,6 @@ public class ExcelUtils {
                                     sheetTrip.addCell(new Label(14,tripId,String.valueOf(addressArrive1[0])));
                                     sheetTrip.addCell(new Label(15,tripId,String.valueOf(addressArrive1[1])));
                                     sheetTrip.addCell(new Label(16,tripId,insertString(trip.arriveAddressDetail)));
-                                    sheetTrip.addCell(new Label(17,tripId,insertString(trip.arriveAddressType)));
 
                                     List<TripWay> tripWays = trip.tripWays;
                                     //交通方式1

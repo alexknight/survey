@@ -61,10 +61,10 @@ public class MemberInfoActivity extends Activity implements PopupMenu.OnMenuItem
     BetterSpinner carrerLevel;
 
     @InjectView(R.id.carrerLevelLinearLayout)
-    BetterSpinner carrerLevelLinearLayout;
+    LinearLayout carrerLevelLinearLayout;
 
     @InjectView(R.id.jobTypeLinearLayout)
-    BetterSpinner jobTypeLinearLayout;
+    LinearLayout jobTypeLinearLayout;
 
     @InjectView(R.id.jobType)
     BetterSpinner jobType;
@@ -253,14 +253,11 @@ public class MemberInfoActivity extends Activity implements PopupMenu.OnMenuItem
                 if(position != 0){
                     hukouDetailLinearLayout.setVisibility(View.GONE);
                     findViewById(R.id.liveTimeArea).setVisibility(View.VISIBLE);
-                    findViewById(R.id.farmerArea).setVisibility(View.GONE);
-                    findViewById(R.id.waidiArea).setVisibility(View.GONE);
+
                 }else {
                     //杭州户口
                     hukouDetailLinearLayout.setVisibility(View.VISIBLE);
                     findViewById(R.id.liveTimeArea).setVisibility(View.GONE);
-                    findViewById(R.id.farmerArea).setVisibility(View.GONE);
-                    findViewById(R.id.waidiArea).setVisibility(View.GONE);
                 }
                 spinnerLiveTime.setText("");
             }
@@ -406,8 +403,6 @@ public class MemberInfoActivity extends Activity implements PopupMenu.OnMenuItem
                     if(person.hukou.equals("重庆市主城九区户籍")){
                         findViewById(R.id.liveTimeArea).setVisibility(View.GONE);
                         spinnerLiveTime.setText("");
-                        findViewById(R.id.farmerArea).setVisibility(View.GONE);
-                        findViewById(R.id.waidiArea).setVisibility(View.GONE);
                     }else {
                         findViewById(R.id.liveTimeArea).setVisibility(View.VISIBLE);
                     }
@@ -547,12 +542,15 @@ public class MemberInfoActivity extends Activity implements PopupMenu.OnMenuItem
                     return false;
                 }
 
-                if(!isEmpty(jobType.getText().toString())){
-                    person.jobType = jobType.getText().toString();
-                }else {
-                    Toast.makeText(MemberInfoActivity.this,"请选择工作行业！",Toast.LENGTH_LONG).show();
-                    return false;
+                if(jobTypeLinearLayout.getVisibility() == View.VISIBLE){
+                    if(!isEmpty(jobType.getText().toString())){
+                        person.jobType = jobType.getText().toString();
+                    }else {
+                        Toast.makeText(MemberInfoActivity.this,"请选择工作行业！",Toast.LENGTH_LONG).show();
+                        return false;
+                    }
                 }
+
 
                 if(!isEmpty(yearIncome.getText().toString())){
                     person.yearIncome = yearIncome.getText().toString();

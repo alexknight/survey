@@ -38,9 +38,22 @@ public class Person implements Serializable {
     public int dianxinNum = 0;
     public String isLocalNum = "";
     public String phoneName = "";
-    public int leaveHzTimes = 0;
+    public String leaveHzTimes = "";
     public String bearMaxTime = "";
     public String workInHomeReason = "";
+
+    public boolean isSelect01 = false;
+    public boolean isSelect02 = false;
+    public boolean isSelect03 = false;
+    public boolean isSelect04 = false;
+    public boolean isSelect05 = false;
+    public boolean isSelect06 = false;
+    public boolean isSelect07 = false;
+    public boolean isSelect08 = false;
+    public boolean isSelect09 = false;
+
+    public List<String> choosen;
+
 
     public boolean isInHome =false;
 

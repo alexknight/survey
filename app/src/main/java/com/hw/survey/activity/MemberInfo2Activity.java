@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -17,6 +18,8 @@ import com.hw.survey.dao.DataUtil;
 import com.hw.survey.family.Family;
 import com.hw.survey.family.Person;
 import com.weiwangcn.betterspinner.library.BetterSpinner;
+
+import java.util.ArrayList;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -37,6 +40,36 @@ public class MemberInfo2Activity extends Activity {
     EditText yidong;
     EditText liantong;
     EditText dianxin;
+
+
+    @InjectView(R.id.ck_01)
+    CheckBox ck_01;
+
+    @InjectView(R.id.ck_02)
+    CheckBox ck_02;
+
+    @InjectView(R.id.ck_03)
+    CheckBox ck_03;
+
+    @InjectView(R.id.ck_04)
+    CheckBox ck_04;
+
+    @InjectView(R.id.ck_05)
+    CheckBox ck_05;
+
+    @InjectView(R.id.ck_06)
+    CheckBox ck_06;
+
+    @InjectView(R.id.ck_07)
+    CheckBox ck_07;
+
+    @InjectView(R.id.ck_08)
+    CheckBox ck_08;
+
+    @InjectView(R.id.ck_09)
+    CheckBox ck_09;
+
+
 
     @InjectView(R.id.leaveHzTimes)
     BetterSpinner leaveHzTimes;
@@ -113,12 +146,20 @@ public class MemberInfo2Activity extends Activity {
         adapterLeaveHzTimes = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.leaveHzTimes));
         adapterBearMaxTime = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.bearMaxTime));
 
-
         leaveHzTimes.setAdapter(adapterLeaveHzTimes);
-
 
         bearMaxTime = findViewById(R.id.bearMaxTime);
         bearMaxTime.setAdapter(adapterBearMaxTime);
+
+        ck_01.setChecked(person.isSelect01);
+        ck_02.setChecked(person.isSelect02);
+        ck_03.setChecked(person.isSelect03);
+        ck_04.setChecked(person.isSelect04);
+        ck_05.setChecked(person.isSelect05);
+        ck_06.setChecked(person.isSelect06);
+        ck_07.setChecked(person.isSelect07);
+        ck_08.setChecked(person.isSelect08);
+        ck_09.setChecked(person.isSelect09);
     }
 
     private boolean isEmpty(String s){
@@ -138,20 +179,6 @@ public class MemberInfo2Activity extends Activity {
                 leaveHzTimes.setText(String.valueOf(person.leaveHzTimes));
 
 
-
-                if(!isEmpty(person.hukou)){
-                    if(person.hukou.equals("重庆市主城九区户籍") || person.hukou.contains("重庆市")){
-                        findViewById(R.id.localArea).setVisibility(View.GONE);
-                    }else if((isEmpty(person.liveTime)) || (person.liveTime.equals("六个月以上"))){
-                        findViewById(R.id.localArea).setVisibility(View.GONE);
-                    }
-                }
-
-                if(!person.isStudent()){
-                    findViewById(R.id.phoneArea).setVisibility(View.GONE);
-                }
-
-
                 if(!isEmpty(person.bearMaxTime)){
                     bearMaxTime.setText(person.bearMaxTime);
                 }
@@ -162,7 +189,7 @@ public class MemberInfo2Activity extends Activity {
     private boolean saveCurrentMember(){
         if(posFamily > -1 &&MyApplication.currentUsers.getSelectUser().families.size() > posFamily){
             Family family =MyApplication.currentUsers.getSelectUser().families.get(posFamily);
-            if(posPerson > -1 && family != null && family.people != null &&
+            if(posPerson > -1  && family.people != null &&
                     family.people.size() > posPerson && person != null){
 
                 if(!isEmpty(yidong.getText().toString())){
@@ -188,12 +215,53 @@ public class MemberInfo2Activity extends Activity {
 
 
                 if(!isEmpty(leaveHzTimes.getText().toString())){
-                    person.leaveHzTimes = Integer.valueOf(leaveHzTimes.getText().toString());
+                    person.leaveHzTimes = leaveHzTimes.getText().toString();
                 }else {
                     Toast.makeText(MemberInfo2Activity.this,"近一年乘坐飞机出行的次数不能为空！",Toast.LENGTH_LONG).show();
                     return false;
                 }
 
+                ArrayList<String> s = new ArrayList<>();
+
+                if(ck_01.isChecked()){
+                    person.isSelect01 = true;
+                    s.add("高铁或城际铁路");
+                }
+                if (ck_03.isChecked()){
+                    person.isSelect03 = true;
+                    s.add("普通铁路");
+                }
+                if (ck_04.isChecked()){
+                    person.isSelect04 = true;
+                    s.add("长途客车");
+                }
+                if (ck_05.isChecked()){
+                    person.isSelect05 = true;
+                    s.add("旅游大巴");
+                }
+                if (ck_06.isChecked()){
+                    person.isSelect06 = true;
+                    s.add("出租车");
+                }
+                if (ck_07.isChecked()){
+                    person.isSelect07 = true;
+                    s.add("网约车");
+                }
+                if (ck_08.isChecked()){
+                    person.isSelect08 = true;
+                    s.add("私人小汽车");
+                }
+                if (ck_09.isChecked()){
+                    person.isSelect09 = true;
+                    s.add("其他");
+                }
+
+                if (s.size()>2){
+                    Toast.makeText(MemberInfo2Activity.this,"最近一个月离开的杭州的主要交通工具不超过两项",Toast.LENGTH_LONG).show();
+                    return false;
+                }else{
+                    person.choosen = s;
+                }
 
                 family.people.set(posPerson,person);
 
