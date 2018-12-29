@@ -1,7 +1,9 @@
 package com.hw.survey.activity;
 
 import android.app.Activity;
+import android.app.Application;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -89,8 +91,6 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
     @InjectView(R.id.limitCarNum)
     EditText limitCarNum;
 
-    @InjectView(R.id.editTextCar)
-    EditText car;
 
     @InjectView(R.id.editTextMobike)
     EditText moto;
@@ -98,11 +98,8 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
     @InjectView(R.id.spinner_house_size)
     BetterSpinner spinner_house_size;
 
-    @InjectView(R.id.spinner_house_belong)
-    BetterSpinner spinner_house_belong;
 
     ArrayAdapter<String> adapterHouseSize;
-    ArrayAdapter<String> adapterHouseBelong;
     ArrayAdapter<String> adapterFinishTime;
 
     private int pos;
@@ -120,9 +117,6 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
 
         adapterHouseSize = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.house_size));
         spinner_house_size.setAdapter(adapterHouseSize);
-
-        adapterHouseBelong = new ArrayAdapter<>(this,R.layout.spinner_item,getResources().getStringArray(R.array.house_belong));
-        spinner_house_belong.setAdapter(adapterHouseBelong);
 
         adapterFinishTime = new ArrayAdapter<String>(this,R.layout.spinner_item,getResources().getStringArray(R.array.house_age));
         buildFinishTime = findViewById(R.id.buildFinishTime);
@@ -180,6 +174,7 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
 
             @Override
             public void afterTextChanged(Editable s) {
+
                 if(TextUtils.isEmpty(s.toString()))
                     return;
                 int i = Integer.valueOf(s.toString());
@@ -236,38 +231,34 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
             }
         }
 
-        if (Integer.valueOf(editTextCar.getText().toString())>0){
-            hangzhouCarNumLinearLayout.setVisibility(View.VISIBLE);
-            newEnergyCarNumLinearLayout.setVisibility(View.VISIBLE);
-        }else if (Integer.valueOf(editTextCar.getText().toString())==0){
-            hangzhouCarNumLinearLayout.setVisibility(View.INVISIBLE);
-            newEnergyCarNumLinearLayout.setVisibility(View.INVISIBLE);
-        }
+        editTextCar.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
 
-//        car.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-//
-//            }
-//
-//            @Override
-//            public void onTextChanged(CharSequence s, int start, int before, int count) {
-//
-//            }
-//
-//            @Override
-//            public void afterTextChanged(Editable s) {
-//                if(TextUtils.isEmpty(s.toString()))
-//                    return;
-//                int carNum = Integer.valueOf(s.toString());
-//                if(carNum > 0){
-//                    ViewUtils.enableSpinner(carBelong);
-//                }else {
-//                    ViewUtils.disableSpinner(carBelong);
-//                }
-//
-//            }
-//        });
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+                if(TextUtils.isEmpty(s.toString()))
+                    return;
+                int num = Integer.valueOf(s.toString());
+                if (num > 0){
+                    hangzhouCarNumLinearLayout.setVisibility(View.VISIBLE);
+                    newEnergyCarNumLinearLayout.setVisibility(View.VISIBLE);
+                }else {
+                    hangzhouCarNumLinearLayout.setVisibility(View.INVISIBLE);
+                    newEnergyCarNumLinearLayout.setVisibility(View.INVISIBLE);
+                }
+
+
+            }
+        });
+
 
         btn_prev.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -284,15 +275,6 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
         });
 
         final EditText carNum = findViewById(R.id.editTextCar);
-
-        findViewById(R.id.btn_car_detail).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(FamilyInfoActivity.this, CarDetailActivity.class);
-                intent.putExtra("carNum",Integer.valueOf(carNum.getText().toString()));
-                startActivity(intent);
-            }
-        });
 
         initView();
     }
@@ -346,12 +328,6 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
                     return false;
                 }
 
-                if(!isEmpty(spinner_house_belong.getText().toString())){
-                    family.houseBelong = spinner_house_belong.getText().toString();
-                }else {
-                    Toast.makeText(FamilyInfoActivity.this,"请选择房屋产权",Toast.LENGTH_LONG).show();
-                    return false;
-                }
 
                 if(!isEmpty(total.getText().toString())){
                     family.totalNum = Integer.valueOf(total.getText().toString());
@@ -369,8 +345,8 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
                 }
 
 
-                if(!isEmpty(car.getText().toString())){
-                    family.carNum = Integer.valueOf(car.getText().toString());
+                if(!isEmpty(editTextCar.getText().toString())){
+                    family.carNum = Integer.valueOf(editTextCar.getText().toString());
                 }
 
 
@@ -410,7 +386,7 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
                 }
 
                 if(family.carNum > 0){
-                    car.setText(String.valueOf(family.carNum));
+                    editTextCar.setText(String.valueOf(family.carNum));
                 }
 
                 if(family.motoNum > 0){
@@ -420,11 +396,6 @@ public class FamilyInfoActivity extends Activity implements PopupMenu.OnMenuItem
                 if(!TextUtils.isEmpty(family.houseSize)){
                     spinner_house_size.setText(family.houseSize);
                 }
-
-                if(!TextUtils.isEmpty(family.houseBelong)){
-                    spinner_house_belong.setText(family.houseBelong);
-                }
-
 
             }
         }

@@ -732,6 +732,10 @@ public class LocationActivity extends Activity
                     .longitude(location.getLongitude()).build();
             mBaiduMap.setMyLocationData(locData);
 
+            if (location.getAddress().address!=null){
+                System.out.println("");
+            }
+
             if(location.getCity() != null){
                 cityName = location.getCity();
             }
@@ -749,12 +753,12 @@ public class LocationActivity extends Activity
 
     @Override
     public void onGetPoiDetailResult(PoiDetailResult arg0) {
-
+        System.out.println();
     }
 
     @Override
     public void onGetPoiIndoorResult(PoiIndoorResult poiIndoorResult) {
-
+        System.out.println();
     }
 
     @Override
@@ -768,6 +772,10 @@ public class LocationActivity extends Activity
 
             searchAddressAdapter.notifyDataSetChanged();
             return;
+        }
+
+        if (result.error.name().equals("PERMISSION_UNFINISHED")){
+            finish();
         }
         if (result.error == SearchResult.ERRORNO.NO_ERROR) {
             List<PoiInfo> list = result.getAllPoi();

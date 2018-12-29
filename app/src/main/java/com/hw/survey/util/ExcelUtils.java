@@ -200,7 +200,6 @@ public class ExcelUtils {
                     sheetFamily.addCell(new Label(19, familyId, insertString(family.stopFee)));
                     sheetFamily.addCell(new Label(21, familyId, insertString(family.batteryCar)));
                     sheetFamily.addCell(new Label(22, familyId, insertString(family.houseSize)));
-                    sheetFamily.addCell(new Label(24, familyId, insertString(family.houseBelong)));
                     sheetFamily.addCell(new Label(25, familyId, insertString(family.phone)));
 
                     List<Person> members = family.people;

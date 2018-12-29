@@ -212,31 +212,6 @@
                 android:layout_marginRight="16dp"
                 android:textColor="#666666"/>
         </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="1dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:background="#ffffff">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:text="住房性质"
-                android:textColor="#666666"
-                android:textSize="15sp" />
-            <com.weiwangcn.betterspinner.library.BetterSpinner
-                android:id="@+id/spinner_house_belong"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:inputType="number"
-                android:layout_marginRight="16dp"
-                android:textColor="#666666"/>
-        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
@@ -437,15 +412,6 @@
                 android:selectAllOnFocus="true"
                 android:layout_marginRight="16dp"
                 android:textColor="#666666"/>
-            <Button
-                android:visibility="gone"
-                android:text="详细情况"
-                android:id="@+id/btn_car_detail"
-                android:paddingRight="20dp"
-                android:paddingLeft="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginRight="16dp" />
         </LinearLayout>
 
         <LinearLayout

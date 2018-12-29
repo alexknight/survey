@@ -192,11 +192,14 @@ public class MainActivity extends Activity implements OnMenuItemClickListener {
                     return;
                 }else if(p > -1 && currentUsers.getUsers().get(p).isSame(currentUser)){
                     currentUsers.setSelectId(p);
-                    if(currentUsers.getSelectUser().isXiaoQuFinish){
-                        Intent intent = new Intent(MainActivity.this, FamilyListActivity.class);
-                        startActivity(intent);
-                        return;
-                    }
+//                    if(currentUsers.getSelectUser().isXiaoQuFinish){
+//                        Intent intent = new Intent(MainActivity.this, FamilyListActivity.class);
+//                        startActivity(intent);
+//                        return;
+//                    }
+                    Intent intent = new Intent(MainActivity.this, FamilyListActivity.class);
+                    startActivity(intent);
+                    return;
                 }else {
                     User user = new User();
                     user.selectQu = currentUser.selectQu;
@@ -212,7 +215,7 @@ public class MainActivity extends Activity implements OnMenuItemClickListener {
 
                 }
                 DataUtil.saveUsers(MainActivity.this.getApplicationContext(), currentUsers);
-                Intent intent = new Intent(MainActivity.this, SheQuActivity.class);
+                Intent intent = new Intent(MainActivity.this, FamilyListActivity.class);
                 startActivity(intent);
             }
         });

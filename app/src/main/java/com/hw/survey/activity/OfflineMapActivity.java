@@ -66,14 +66,22 @@ public class OfflineMapActivity extends Activity implements MKOfflineMapListener
         // 获取热闹城市列表
         ArrayList<MKOLSearchRecord> records1 = mOffline.getHotCityList();
         if (records1 != null) {
-            hotCities.add("重庆市(132)   --86.6M");
-            hotCityNames.add("重庆市");
+/*            hotCities.add("重庆市(132)   --86.6M");
+            hotCityNames.add("重庆市");*/
             for (MKOLSearchRecord r : records1) {
                 //V4.5.0起，保证数据不溢出，使用long型保存数据包大小结果
-                hotCities.add(r.cityName + "(" + r.cityID + ")" + "   --"
-                        + this.formatDataSize(r.dataSize));
-                hotCityNames.add(r.cityName);
+                if (!r.cityName.contains("杭州")){
+                    hotCities.add(r.cityName + "(" + r.cityID + ")" + "   --"
+                            + this.formatDataSize(r.dataSize));
+                    hotCityNames.add(r.cityName);
+                }else{
+                    hotCities.add(0,r.cityName + "(" + r.cityID + ")" + "   --"
+                            + this.formatDataSize(r.dataSize));
+                    hotCityNames.add(0, r.cityName);
+                }
             }
+            hotCities.add(4,"重庆市(132)   --86.6M");
+            hotCityNames.add(4,"重庆市");
         }
         ListAdapter hAdapter = (ListAdapter) new ArrayAdapter<String>(this,
                 R.layout.hot_city_list, hotCities);

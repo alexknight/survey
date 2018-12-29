@@ -33,7 +33,6 @@ public class Family implements Serializable {
 
     public String batteryCar = "";
     public String houseSize = "";
-    public String houseBelong = "";
     public String phone = "";
     public int isDone = 0;
 
@@ -54,7 +53,7 @@ public class Family implements Serializable {
                 totalNum == 0  ||
                 TextUtils.isEmpty(buildFinishTime) ||
                 TextUtils.isEmpty(batteryCar) ||
-                TextUtils.isEmpty(houseSize)) || TextUtils.isEmpty(houseBelong);
+                TextUtils.isEmpty(houseSize));
         if(carNum == 0){
             return isBaseOK;
         }else {

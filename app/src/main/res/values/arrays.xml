@@ -20,6 +20,26 @@
         <item>水上巴士</item>
         <item>其它</item>
     </string-array>
+
+    <string-array name="traffic_way2">
+        <item>自有自行车</item>
+        <item>公共自行车</item>
+        <item>共享单车</item>
+        <item>共享电动车</item>
+        <item>助动车和电动车</item>
+        <item>自驾小汽车</item>
+        <item>搭乘小汽车</item>
+        <item>公交车</item>
+        <item>地铁</item>
+        <item>顶灯出租车</item>
+        <item>网约车</item>
+        <item>租赁/共享汽车</item>
+        <item>摩托车</item>
+        <item>班车</item>
+        <item>水上巴士</item>
+        <item>其它</item>
+    </string-array>
+
     <string-array name="stop_place_complan">
         <item>单位内停车场</item>
         <item>公共停车场</item>
@@ -650,4 +670,113 @@
         <item>是</item>
         <item>否</item>
     </string-array>
+
+    <string-array name="subwayLines">
+        <item>一号线</item>
+        <item>二号线</item>
+        <item>四号线</item>
+    </string-array>
+
+    <string-array name="changeStation">
+        <item>未换乘</item>
+        <item>彭埠</item>
+        <item>火车东站</item>
+        <item>近江</item>
+        <item>凤起路</item>
+        <item>钱江</item>
+    </string-array>
+
+    <string-array name="yihaoxian">
+        <item>湘湖</item>
+        <item>滨康路</item>
+        <item>西兴</item>
+        <item>滨和路</item>
+        <item>江陵路</item>
+        <item>近江</item>
+        <item>婺江路</item>
+        <item>城站</item>
+        <item>定安路</item>
+        <item>龙翔桥</item>
+        <item>凤起路</item>
+        <item>武林广场</item>
+        <item>西湖文化广场</item>
+        <item>打铁关</item>
+        <item>闸弄口</item>
+        <item>火车东</item>
+        <item>彭埠</item>
+        <item>七堡</item>
+        <item>九和路</item>
+        <item>九堡</item>
+        <item>客运中心</item>
+        <item>下沙西</item>
+        <item>金沙湖</item>
+        <item>高沙路</item>
+        <item>文泽路</item>
+        <item>文海南路</item>
+        <item>云水</item>
+        <item>下沙江滨</item>
+        <item>乔司南</item>
+        <item>乔司</item>
+        <item>翁梅</item>
+        <item>余杭高铁站</item>
+        <item>南苑</item>
+        <item>临平</item>
+    </string-array>
+
+    <string-array name="erhaoxian">
+        <item>朝阳</item>
+        <item>曹家桥</item>
+        <item>潘水</item>
+        <item>人民路</item>
+        <item>杭发厂</item>
+        <item>人民广场</item>
+        <item>建设一路</item>
+        <item>建设三路</item>
+        <item>振宁路</item>
+        <item>飞虹路</item>
+        <item>盈丰路</item>
+        <item>钱江世纪城</item>
+        <item>钱江路</item>
+        <item>庆春广场</item>
+        <item>庆菱路</item>
+        <item>建国北路</item>
+        <item>中河北路</item>
+        <item>凤起路</item>
+        <item>武林门</item>
+        <item>沈塘桥</item>
+        <item>学院路</item>
+        <item>古翠路</item>
+        <item>丰潭路</item>
+        <item>文新</item>
+        <item>三坝</item>
+        <item>虾龙圩</item>
+        <item>三墩</item>
+        <item>墩祥街</item>
+        <item>金家渡</item>
+        <item>白洋</item>
+        <item>杜甫村</item>
+        <item>良渚</item>
+    </string-array>
+
+    <string-array name="sihaoxian">
+        <item>彭埠</item>
+        <item>火车东站</item>
+        <item>新风</item>
+        <item>新塘</item>
+        <item>景芳</item>
+        <item>钱江路</item>
+        <item>江锦路</item>
+        <item>市民中心</item>
+        <item>城星路</item>
+        <item>近江</item>
+        <item>甬江路</item>
+        <item>南星桥</item>
+        <item>复兴路</item>
+        <item>水澄桥</item>
+        <item>联庄</item>
+        <item>中医药大学</item>
+        <item>杨家墩</item>
+        <item>浦沿</item>
+    </string-array>
+
 </resources>

@@ -160,10 +160,6 @@ public class TripInfo2Activity extends Activity {
                         outPersonNum.setText(String.valueOf(trip.outNum));
                         if(trip.outNum == 0){
                             ViewUtils.disableSpinner(spinner);
-                        }else {
-                            if(!isEmpty(trip.isHaveFamily)){
-                                spinner.setText(trip.isHaveFamily);
-                            }
                         }
                     }else {
                         stopFee.setEnabled(false);

@@ -47,234 +47,15 @@
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="交通方式"
-                    android:textSize="15sp"
-                    android:textColor="#666666"/>
-                <com.weiwangcn.betterspinner.library.BetterSpinner
-                    android:entries="@array/traffic_way"
-                    android:id="@+id/way"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_marginRight="16dp"
-                    android:textColor="#666666"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/tripPeopleNumLinearLayout"
-                android:layout_marginTop="1dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="#ffffff">
-                <TextView
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="同行人数"
-                    android:textSize="15sp"
-                    android:textColor="#666666"/>
-                <EditText
-                    android:id="@+id/tripPeopleNum"
-                    android:layout_width="0dp"
-                    android:inputType="number"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:selectAllOnFocus="true"
-                    android:textColor="#666666"/>
-                <TextView
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="16dp"
-                    android:textColor="#666666"
-                    android:textSize="15sp"
-                    android:text="人"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/tripCostLinearLayout"
-                android:layout_marginTop="1dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="#ffffff">
-                <TextView
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="本次出行总费用（元）"
-                    android:textSize="15sp"
-                    android:textColor="#666666"/>
-                <EditText
-                    android:id="@+id/tripCost"
-                    android:layout_width="0dp"
-                    android:inputType="number"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:selectAllOnFocus="true"
-                    android:textColor="#666666"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="#ffffff">
-                <TextView
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="目的地停车情况"
+                    android:text="交通方式-至少一种"
                     android:textSize="15sp"
                     android:textColor="#105df0"/>
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/stopTypeArea"
-                android:layout_marginTop="1dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="#ffffff">
-                <TextView
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="停车方式"
-                    android:textSize="15sp"
-                    android:textColor="#666666"/>
-                <com.weiwangcn.betterspinner.library.BetterSpinner
-                    android:id="@+id/stopType"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_marginRight="16dp"
-                    android:textColor="#666666"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/waitTimeArea"
-                android:layout_marginTop="1dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="#ffffff">
-                <TextView
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="停车时间"
-                    android:textSize="15sp"
-                    android:textColor="#666666"/>
-                <EditText
-                    android:id="@+id/waitTime"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:inputType="number"
-                    android:selectAllOnFocus="true"
-                    android:textColor="#666666"/>
-                <TextView
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="16dp"
-                    android:textColor="#666666"
-                    android:textSize="15sp"
-                    android:text="小时"/>
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:id="@+id/stopFeeArea"
-                android:layout_marginTop="1dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="#ffffff">
-                <TextView
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="停车费用"
-                    android:selectAllOnFocus="true"
-                    android:textSize="15sp"
-                    android:textColor="#666666"/>
-                <EditText
-                    android:id="@+id/editTextOutFee"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:inputType="number"
-                    android:hint="请输入"
-                    android:textSize="15sp"
-                    android:selectAllOnFocus="true"
-                    android:gravity="center_vertical|right"
-                    android:text=""
-                    android:layout_marginRight="8dp"
-                    android:textColor="#666666"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:gravity="center_vertical"
-                    android:layout_height="match_parent"
-                    android:textSize="15sp"
-                    android:layout_marginRight="10dp"
-                    android:text="元"
-                    android:textColor="#666666" />
-            </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#ffffff">
-
-        </LinearLayout>
-        <LinearLayout
+                android:id="@+id/firstWayLinearLayout"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="#ffffff">
-
-                <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:orientation="horizontal"
-                    android:background="#ffffff">
-                    <TextView
-                        android:paddingLeft="16dp"
-                        android:paddingRight="16dp"
-                        android:gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="公交换乘"
-                        android:textSize="15sp"
-                        android:textColor="#105df0"/>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/busChangeTimesLinearLayout"
-                android:layout_marginTop="1dp"
-                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:background="#ffffff">
@@ -284,55 +65,46 @@
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="公交换乘次数"
+                    android:text="第一种交通方式"
                     android:textSize="15sp"
                     android:textColor="#666666"/>
-                <EditText
-                    android:id="@+id/busChangeTimes"
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:entries="@array/traffic_way"
+                    android:id="@+id/first_way"
                     android:layout_width="0dp"
-                    android:inputType="number"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:selectAllOnFocus="true"
-                    android:textColor="#666666"/>
-                <TextView
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
                     android:layout_marginRight="16dp"
-                    android:textColor="#666666"
-                    android:textSize="15sp"
-                    android:text="次"/>
+                    android:textColor="#666666"/>
             </LinearLayout>
-
-
             <LinearLayout
+                android:id="@+id/secondWayLinearLayout"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:background="#ffffff">
-
-                <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:orientation="horizontal"
-                    android:background="#ffffff">
-                    <TextView
-                        android:paddingLeft="16dp"
-                        android:paddingRight="16dp"
-                        android:gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="地铁服务情况"
-                        android:textSize="15sp"
-                        android:textColor="#105df0"/>
-                </LinearLayout>
+                <TextView
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="第二种交通方式"
+                    android:textSize="15sp"
+                    android:textColor="#666666"/>
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:entries="@array/traffic_way"
+                    android:id="@+id/second_way"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="16dp"
+                    android:textColor="#666666"/>
             </LinearLayout>
-
             <LinearLayout
-                android:layout_marginTop="1dp"
+                android:id="@+id/thirdWayLinearLayout"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:orientation="horizontal"
@@ -343,25 +115,21 @@
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="首次到达车站花费时间(分钟)"
+                    android:text="第三种交通方式"
                     android:textSize="15sp"
                     android:textColor="#666666"/>
-                <EditText
-                    android:id="@+id/firstArriveStationTime"
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:entries="@array/traffic_way"
+                    android:id="@+id/third_way"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:inputType="number"
-                    android:hint="请输入"
-                    android:textSize="15sp"
-                    android:gravity="center_vertical|right"
-                    android:text=""
                     android:layout_marginRight="16dp"
                     android:textColor="#666666"/>
             </LinearLayout>
-
             <LinearLayout
-                android:layout_marginTop="1dp"
+                android:id="@+id/fourthWayLinearLayout"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:orientation="horizontal"
@@ -372,36 +140,21 @@
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="上车处地铁线"
+                    android:text="第四种交通方式"
                     android:textSize="15sp"
                     android:textColor="#666666"/>
                 <com.weiwangcn.betterspinner.library.BetterSpinner
-                    android:id="@+id/startSubwayLine"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_marginRight="16dp"
-                    android:textColor="#666666"/>
-                <TextView
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="上车站点"
-                    android:textSize="15sp"
-                    android:textColor="#666666"/>
-                <com.weiwangcn.betterspinner.library.BetterSpinner
-                    android:id="@+id/startStation"
+                    android:entries="@array/traffic_way"
+                    android:id="@+id/fourth_way"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:layout_marginRight="16dp"
                     android:textColor="#666666"/>
             </LinearLayout>
-
             <LinearLayout
-                android:layout_marginTop="1dp"
+                android:id="@+id/fifthWayLinearLayout"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:orientation="horizontal"
@@ -412,27 +165,12 @@
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="换乘处地铁线"
+                    android:text="第五种交通方式"
                     android:textSize="15sp"
                     android:textColor="#666666"/>
                 <com.weiwangcn.betterspinner.library.BetterSpinner
-                    android:id="@+id/changeSubwayLine"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_marginRight="16dp"
-                    android:textColor="#666666"/>
-                <TextView
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="换乘站点"
-                    android:textSize="15sp"
-                    android:textColor="#666666"/>
-                <com.weiwangcn.betterspinner.library.BetterSpinner
-                    android:id="@+id/changeSubwaystation"
+                    android:entries="@array/traffic_way"
+                    android:id="@+id/fifth_way"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -440,74 +178,6 @@
                     android:textColor="#666666"/>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_marginTop="1dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="#ffffff">
-                <TextView
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="下车处地铁线"
-                    android:textSize="15sp"
-                    android:textColor="#666666"/>
-                <com.weiwangcn.betterspinner.library.BetterSpinner
-                    android:id="@+id/leaveSubwayLine"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_marginRight="16dp"
-                    android:textColor="#666666"/>
-                <TextView
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="下车站点"
-                    android:textSize="15sp"
-                    android:textColor="#666666"/>
-                <com.weiwangcn.betterspinner.library.BetterSpinner
-                    android:id="@+id/leaveSubwayStation"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_marginRight="16dp"
-                    android:textColor="#666666"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_marginTop="1dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:background="#ffffff">
-                <TextView
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="最后一次下车至目的地时间(分钟)"
-                    android:textSize="15sp"
-                    android:textColor="#666666"/>
-                <EditText
-                    android:id="@+id/lastCost"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:inputType="number"
-                    android:hint="请输入"
-                    android:textSize="15sp"
-                    android:gravity="center_vertical|right"
-                    android:text=""
-                    android:layout_marginRight="16dp"
-                    android:textColor="#666666"/>
-            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

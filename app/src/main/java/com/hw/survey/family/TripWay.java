@@ -22,6 +22,16 @@ public class TripWay implements Serializable {
     public String stopType = "";
     public int stopFee = 0;
 
+    public String tripPeopleNum = "";
+    public String tripCost = "";
+    public String busChangeTimes = "";
+    public String lastCost = "";
+    public String firstArriveStationTime = "";
+
+    public String startStation = "";
+    public String changeSubwaystation = "";
+    public String leaveSubwayStation = "";
+
 
     public int totalTime = 0;
 
